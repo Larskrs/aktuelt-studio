@@ -25,6 +25,7 @@ export default function Home () {
             </main>
             <MaxWidthWrapper>
                 <LinedTitle title="Sjangerfilmer" color="var(--red-400)" lineBackground="linear-gradient(-90deg, var(--red-100), var(--background-100))"></LinedTitle>
+                
                 <FilmBanner films={[
                     {
                         poster: "/dbl/DBL_PLAKAT_WIDE.jpg",

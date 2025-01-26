@@ -6,7 +6,7 @@ export default function FilmBanner ({films=[]}) {
     return (
         <div className={styles.c}>
             {films.map((f,i) => {
-                return <BannerItem image={f.poster} video={f.preview} url={f.url} />
+                return <BannerItem key={f.name + " " + i} image={f.poster} video={f.preview} url={f.url} />
             })}
         </div>
     );
