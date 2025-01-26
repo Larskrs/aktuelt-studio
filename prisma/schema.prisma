@@ -1,0 +1,213 @@
+datasource db {
+  provider          = "mysql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  ADMIN
+  DIRECTOR
+  WRITER
+  USER
+}
+
+model User {
+  id            String          @id @default(cuid())
+  name          String?
+  username      String?         @unique
+  email         String?         @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  sessions      Session[]
+  // Optional for WebAuthn support
+  Authenticator Authenticator[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  role Role @default(USER)
+
+  // Joined Data
+  articles Article[] @relation("ArticleAuthors")
+  files    File[]
+  batches  Batch[]
+  articlereview ArticleVerification[] @relation("ArticleVerificationReviewer")
+  articleapplicant ArticleVerification[] @relation("ArticleVerificationApplicant")
+}
+
+model Account {
+  id                       String  @id @default(cuid())
+  userId                   String
+  type                     String
+  provider                 String
+  providerAccountId        String
+  refresh_token            String? @db.Text
+  access_token             String? @db.Text
+  expires_at               Int?
+  token_type               String?
+  scope                    String?
+  id_token                 String? @db.Text
+  session_state            String?
+  refresh_token_expires_in Int?
+  user                     User?   @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+}
+
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// Optional for WebAuthn support
+model Authenticator {
+  credentialID         String  @unique
+  userId               String
+  providerAccountId    String
+  credentialPublicKey  String
+  counter              Int
+  credentialDeviceType String
+  credentialBackedUp   Boolean
+  transports           String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, credentialID])
+}
+
+model Article {
+  id              String            @id @default(cuid())
+  versions        ArticleVersion[]
+  authors         User[] @relation("ArticleAuthors")
+  createdAt       DateTime          @default(now())
+  categories      Category[]
+  type            ArticleType @default(NEWS)
+}
+
+model ArticleVersion {
+  id            Int      @id @default(autoincrement())
+  title         String   @db.MediumText
+  subtitle      String   @default("")
+  image         String   @db.LongText
+  location      String   @default("Bamble")
+
+  components    String   @db.LongText
+  createdAt     DateTime @default(now())
+
+  article       Article @relation(fields: [articleId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  articleId     String
+
+  visibility    ArticleVisibility @default(DRAFT)
+
+  verification  ArticleVerification? @relation
+  verificationId Int?               // Fremmednøkkel referert i ArticleVerification
+}
+enum ArticleVisibility {
+  HIDDEN
+  DRAFT
+  PUBLIC
+}
+enum ArticleType {
+  NEWS
+  OPINION
+  COMMENT
+  ADVERTISEMENT
+}
+enum VerificationStatus {
+  PENDING
+  PROCESSING
+  DENIED
+  ACCEPTED
+  POSTPONED
+}
+model ArticleVerification {
+  id                    Int      @id @default(autoincrement())
+  status                VerificationStatus @default(PENDING)
+  applicant             User @relation("ArticleVerificationApplicant", fields: [applicantId], references: [id], onDelete: Cascade)
+  applicantId           String
+  reviewer              User? @relation("ArticleVerificationReviewer", fields: [reviewerId], references: [id], onDelete: Cascade)
+  reviewerId            String?
+  articleVersion        ArticleVersion     @relation(fields: [articleVersionId], references: [id], onDelete: Cascade)
+  articleVersionId      Int                @unique
+
+  reviewedAt            DateTime?
+  createdAt             DateTime @default(now())
+}
+
+model ComponentPage {
+  id              String            @id @unique @default(cuid())
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  versions        ComponentPageVersion[]
+}
+model ComponentPageVersion {
+  id              Int      @id @default(autoincrement())
+
+  components      String   @db.LongText
+  createdAt       DateTime @default(now())
+
+  componentPage   ComponentPage @relation(fields: [componentPageId], references: [id])
+  componentPageId String
+}
+model Category {
+  name            String            @unique
+  id              String            @id @unique @default(cuid())
+  description     String?
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  articles        Article[]
+  batches         Batch[]
+}
+model Batch {
+  name            String
+  id              String            @id @default(cuid())
+  files           File[]
+  categories      Category[]
+
+  user            User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId          String
+
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+}
+model File {
+  id              String            @id @unique @default(cuid())
+  name            String
+  address         String
+  type            String
+  data            String?  @db.LongText
+
+  batch           Batch @relation(fields: [batchId], references: [id])
+  batchId         String
+
+  user            User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId          String
+
+  createdAt       DateTime          @default(now())
+}

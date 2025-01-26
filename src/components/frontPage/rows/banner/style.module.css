@@ -1,0 +1,12 @@
+.priority {
+    color: var(--primary-500);
+    height: 100%;
+}
+.priority {
+    display: inline-block;
+}
+.priority > * {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.3rem; /* Optional spacing between elements */
+}

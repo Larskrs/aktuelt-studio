@@ -1,0 +1,14 @@
+.linedTitle {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+}
+.linedTitle span:first-child, .linedTitle span:last-child {
+    height: 0.25rem;
+    border-radius: 0.25rem;
+}
+.linedTitle span:last-child {
+    rotate: 180deg;
+}

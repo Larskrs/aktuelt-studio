@@ -1,0 +1,99 @@
+.section {
+    cursor: pointer;
+    width: 100%;
+
+    position: relative;
+    cursor: pointer;
+}
+.section > * {
+    user-select: none;
+}
+.section:hover .overlay > * {
+    translate: 0px -16px;
+}
+.full .img {
+    height: 400px !important;
+}
+.priority {
+    background-color: var(--priority);
+    color: var(--priority-foreground);
+}
+.normal {
+    background-color: var(--normal);
+}
+.title {
+    display: inline;
+    font-size: 2rem;
+}
+.details {
+    padding: 0.5rem 1rem 0rem 1rem;
+    width: 100%;
+}
+.section:hover {
+    text-decoration: underline;
+}
+.latest {
+    color: var(--primary-500);
+    height: 100%;
+}
+.latest {
+    display: inline-block;
+}
+.latest > * {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.3rem; /* Optional spacing between elements */
+}
+.section .img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    /* aspect-ratio: 16/9; */
+    object-fit: cover;
+    overflow: hidden;
+}
+.section p {
+    letter-spacing: 1px;
+    font-family: var(--font-inter);
+    font-weight: 500;
+    margin: 8px 0px 0px 0px;
+    margin-bottom: 4px;
+}
+.section h1 {
+    font-family: var(--font-inter);
+}
+.overlay {
+    position: absolute;
+    bottom: 0px;
+    min-height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--white-900);
+    background: linear-gradient(transparent, var(--secondary-25));
+}
+.overlay > * {
+    transition: translate 250ms var(--curve-1);
+}
+.fullImage {
+    height: 100% !important;
+    aspect-ratio: unset !important;
+    max-height: unset !important;
+    object-fit: cover;
+    position: relative;
+}
+.wrappedText {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.normal .wrappedText span {
+    padding-right: 0.5rem;
+    background-color: var(--normal);
+}
+.priority .wrappedText span {
+    padding-right: 0.5rem;
+    background-color: var(--priority);
+    color: var(--priority-foreground);
+}

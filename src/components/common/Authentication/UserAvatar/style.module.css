@@ -1,0 +1,18 @@
+.c {
+    padding-inline: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0px;
+}
+.c p {
+    font-size: 1rem;
+}
+.c img {
+    height: 1.75rem;
+    width: auto;
+    margin: 0px;
+    border-radius: 50%;
+}

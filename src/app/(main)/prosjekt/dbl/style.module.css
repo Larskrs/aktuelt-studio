@@ -1,0 +1,38 @@
+.c {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.c::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-90deg, transparent, rgba(0,0,0,0.5), black);
+    z-index: 2;
+}
+
+.background {
+    position:   absolute;
+    top:        0px;
+    left:       0px;
+    width:      100%;
+    height:     100%;
+    object-fit: cover;
+    animation: 2s cubic-bezier(0.075, 0.82, 0.165, 1) img-show;
+}
+@keyframes img-show {
+    0% {
+        scale: 2;
+        opacity: 0;
+    }
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}

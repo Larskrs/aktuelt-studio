@@ -1,0 +1,26 @@
+.c {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--secondary-100);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 75vw;
+    max-height: 40rem;
+    min-height: 40rem;
+    display: flex;
+    flex-direction: column;
+}
+.background {
+    background-color: black;
+    opacity: 0.25;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}

@@ -1,107 +1,363 @@
+
 :root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --text-50: hwb(257 4% 94%);
+  --text-100: #1f1f1f;
+  --text-200: rgb(67, 67, 67);
+  --text-300: rgb(100, 100, 100);
+  --text-400: #7d7d7d;
+  --text-500: #a6a6a6;
+  --text-600: #bebebe;
+  --text-700: #cacaca;
+  --text-800: #deddde;
+  --text-900: #f0f0f0;
+  --text-950: #ffffff;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-50: rgb(6, 1, 15);
+  --background-75: rgb(13, 12, 14);
+  --background-100: rgb(6, 1, 16);
+  --background-200: #0a072c;
+  --background-300: #0f0944;
+  --background-400: #625f6a;
+  --background-500: #7b7683;
+  --background-600: #97929b;
+  --background-700: #b3afb4;
+  --background-800: #d0cdd0;
+  --background-900: #eceaeb;
+  --background-950: #f6f5f7;
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+  --primary-50: rgb(22, 3, 22);
+  --primary-100: rgb(44, 6, 45);
+  --primary-200: rgb(88, 13, 89);
+  --primary-300: rgb(132, 19, 134);
+  --primary-400: rgb(176, 25, 179);
+  --primary-500: #dc20df;
+  --primary-600: rgb(227, 76, 230);
+  --primary-700: rgb(234, 121, 236);
+  --primary-800: rgb(241, 166, 242);
+  --primary-900: rgb(248, 210, 249);
+  --primary-950: rgb(251, 233, 252);
 
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
+  --secondary-50: rgb(25, 0, 3);
+  --secondary-100: rgb(50, 1, 6);
+  --secondary-200: rgb(101, 1, 11);
+  --secondary-300: rgb(151, 2, 17);
+  --secondary-400: rgb(202, 2, 22);
+  --secondary-500: #fc031c;
+  --secondary-600: rgb(253, 53, 73);
+  --secondary-700: rgb(253, 104, 119);
+  --secondary-800: rgb(254, 154, 164);
+  --secondary-900: rgb(254, 205, 210);
+  --secondary-950: rgb(255, 230, 232);
 
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+  --accent-50: rgb(5, 20, 12);
+  --accent-100: rgb(11, 40, 23);
+  --accent-200: rgb(22, 80, 46);
+  --accent-300: rgb(33, 120, 69);
+  --accent-400: rgb(44, 160, 92);
+  --accent-500: rgb(76,255,100);
+  --accent-600: rgb(95, 211, 143);
+  --accent-700: rgb(135, 222, 171);
+  --accent-800: rgb(175, 233, 199);
+  --accent-900: rgb(215, 244, 227);
+  --accent-950: rgb(235, 250, 241);
+
+  --red-50: rgb(115, 0, 11);
+  --red-100: rgb(130, 0, 13);
+  --red-150: rgb(145, 0, 15);
+  --red-200: rgb(160, 0, 17);
+  --red-250: rgb(175, 0, 19);
+  --red-300: rgb(190, 0, 21);
+  --red-350: rgb(205, 0, 23);
+  --red-400: rgb(220, 0, 25);
+  --red-450: rgb(235, 0, 27);
+  --red-500: rgb(252, 3, 28);
+  --red-550: rgb(236, 22, 31);
+  --red-600: rgb(220, 41, 34);
+  --red-650: rgb(204, 60, 37);
+  --red-700: rgb(188, 79, 40);
+  --red-750: rgb(172, 98, 43);
+  --red-800: rgb(156, 117, 46);
+  --red-850: rgb(140, 136, 49);
+  --red-900: rgb(124, 155, 52);
+  --red-950: rgb(108, 174, 55);
+
+  --blue-50: rgb(0, 15, 71);
+  --blue-100: rgb(0, 31, 112);
+  --blue-150: rgb(0, 47, 153);
+  --blue-200: rgb(0, 63, 194);
+  --blue-250: rgb(0, 79, 235);
+  --blue-300: rgb(0, 95, 255);
+  --blue-350: rgb(23, 111, 255);
+  --blue-400: rgb(46, 127, 255);
+  --blue-450: rgb(69, 143, 255);
+  --blue-500: rgb(92, 159, 255);
+  --blue-550: rgb(115, 175, 255);
+  --blue-600: rgb(138, 191, 255);
+  --blue-650: rgb(161, 207, 255);
+  --blue-700: rgb(184, 223, 255);
+  --blue-750: rgb(207, 239, 255);
+  --blue-800: rgb(230, 255, 255);
+  --blue-850: rgb(209, 255, 255);
+  --blue-900: rgb(188, 255, 255);
+  --blue-950: rgb(167, 255, 255);
+
+  --green-50: rgb(0, 43, 19);
+  --green-100: rgb(0, 59, 34);
+  --green-150: rgb(0, 75, 49);
+  --green-200: rgb(0, 91, 64);
+  --green-250: rgb(0, 107, 79);
+  --green-300: rgb(27, 123, 94);
+  --green-350: rgb(54, 139, 109);
+  --green-400: rgb(81, 155, 124);
+  --green-450: rgb(108, 171, 139);
+  --green-500: rgb(135, 187, 154);
+  --green-550: rgb(162, 203, 169);
+  --green-600: rgb(189, 219, 184);
+  --green-650: rgb(216, 235, 199);
+  --green-700: rgb(243, 251, 214);
+  --green-750: rgb(255, 252, 225);
+  --green-800: rgb(255, 246, 211);
+  --green-850: rgb(255, 240, 197);
+  --green-900: rgb(255, 234, 183);
+  --green-950: rgb(255, 228, 169);
+
+  --orange-50: rgb(53, 18, 0);
+  --orange-100: rgb(79, 26, 0);
+  --orange-150: rgb(105, 34, 0);
+  --orange-200: rgb(131, 42, 0);
+  --orange-250: rgb(157, 50, 0);
+  --orange-300: rgb(183, 58, 0);
+  --orange-350: rgb(209, 66, 0);
+  --orange-400: rgb(235, 74, 0);
+  --orange-450: rgb(255, 97, 13);
+  --orange-500: rgb(255, 160, 51);
+  --orange-550: rgb(255, 183, 84);
+  --orange-600: rgb(255, 206, 117);
+  --orange-650: rgb(255, 229, 150);
+  --orange-700: rgb(255, 252, 183);
+  --orange-750: rgb(255, 255, 204);
+  --orange-800: rgb(255, 250, 184);
+  --orange-850: rgb(255, 244, 165);
+  --orange-900: rgb(255, 239, 146);
+  --orange-950: rgb(255, 234, 127);
+
+  --purple-50: rgb(20, 6, 34);
+  --purple-100: rgb(41, 12, 68);
+  --purple-150: rgb(61, 18, 102);
+  --purple-200: rgb(82, 24, 136);
+  --purple-250: rgb(103, 30, 170);
+  --purple-300: rgb(124, 36, 204);
+  --purple-350: rgb(134, 40, 214);
+  --purple-400: rgb(144, 44, 224);
+  --purple-450: rgb(154, 48, 234);
+  --purple-500: rgb(164, 52, 244);
+  --purple-550: rgb(174, 56, 254);
+  --purple-600: rgb(184, 60, 255);
+  --purple-650: rgb(190, 63, 255);
+  --purple-700: rgb(196, 67, 255);
+  --purple-750: rgb(202, 71, 255);
+  --purple-800: rgb(208, 75, 255);
+  --purple-850: rgb(214, 79, 255);
+  --purple-900: rgb(220, 83, 255);
+  --purple-950: rgb(226, 87, 255);
+
+  --yellow-50: rgb(71, 34, 0);
+  --yellow-100: rgb(98, 47, 0);
+  --yellow-150: rgb(125, 60, 0);
+  --yellow-200: rgb(152, 119, 0);
+  --yellow-250: rgb(179, 143, 0);
+  --yellow-300: rgb(206, 165, 0);
+  --yellow-350: rgb(233, 171, 0);
+  --yellow-400: rgb(255, 217, 0);
+  --yellow-450: rgb(255, 198, 26);
+  --yellow-500: rgb(255, 211, 51);
+  --yellow-550: rgb(255, 218, 77);
+  --yellow-600: rgb(255, 226, 103);
+  --yellow-650: rgb(255, 233, 129);
+  --yellow-700: rgb(255, 241, 155);
+  --yellow-750: rgb(255, 248, 181);
+  --yellow-800: rgb(255, 255, 207);
+  --yellow-850: rgb(255, 255, 219);
+  --yellow-900: rgb(255, 255, 231);
+  --yellow-950: rgb(255, 255, 243);
+
+  --teal-50: rgb(0, 29, 29);
+  --teal-100: rgb(0, 45, 45);
+  --teal-150: rgb(0, 61, 61);
+  --teal-200: rgb(0, 77, 77);
+  --teal-250: rgb(0, 93, 93);
+  --teal-300: rgb(0, 109, 109);
+  --teal-350: rgb(0, 125, 125);
+  --teal-400: rgb(0, 141, 141);
+  --teal-450: rgb(0, 157, 157);
+  --teal-500: rgb(51, 204, 204);
+  --teal-550: rgb(77, 214, 214);
+  --teal-600: rgb(102, 224, 224);
+  --teal-650: rgb(128, 234, 234);
+  --teal-700: rgb(153, 244, 244);
+  --teal-750: rgb(179, 254, 254);
+  --teal-800: rgb(204, 255, 255);
+  --teal-850: rgb(214, 255, 255);
+  --teal-900: rgb(224, 255, 255);
+  --teal-950: rgb(234, 255, 255);
+
+  --pink-50: rgb(34, 0, 17);
+  --pink-100: rgb(68, 0, 34);
+  --pink-150: rgb(102, 0, 51);
+  --pink-200: rgb(136, 0, 68);
+  --pink-250: rgb(170, 0, 85);
+  --pink-300: rgb(204, 0, 102);
+  --pink-350: rgb(229, 22, 122);
+  --pink-400: rgb(242, 44, 142);
+  --pink-450: rgb(255, 66, 162);
+  --pink-500: rgb(255, 51, 153);
+  --pink-550: rgb(255, 89, 170);
+  --pink-600: rgb(255, 127, 187);
+  --pink-650: rgb(255, 165, 204);
+  --pink-700: rgb(255, 203, 221);
+  --pink-750: rgb(255, 221, 233);
+  --pink-800: rgb(255, 229, 235);
+  --pink-850: rgb(255, 237, 237);
+  --pink-900: rgb(255, 245, 239);
+  --pink-950: rgb(255, 253, 241);
+
+  --cyan-50: rgb(0, 29, 29);
+  --cyan-100: rgb(0, 45, 45);
+  --cyan-150: rgb(0, 61, 61);
+  --cyan-200: rgb(0, 77, 77);
+  --cyan-250: rgb(0, 93, 93);
+  --cyan-300: rgb(0, 109, 109);
+  --cyan-350: rgb(0, 125, 125);
+  --cyan-400: rgb(0, 141, 141);
+  --cyan-450: rgb(0, 157, 157);
+  --cyan-500: rgb(0, 255, 255);
+  --cyan-550: rgb(77, 255, 255);
+  --cyan-600: rgb(153, 255, 255);
+  --cyan-650: rgb(230, 255, 255);
+  --cyan-700: rgb(255, 255, 230);
+  --cyan-750: rgb(255, 255, 153);
+  --cyan-800: rgb(255, 255, 77);
+  --cyan-850: rgb(255, 230, 0);
+  --cyan-900: rgb(255, 204, 0);
+  --cyan-950: rgb(255, 179, 0);
+
+  --lime-50: rgb(34, 47, 0);
+  --lime-100: rgb(68, 93, 0);
+  --lime-150: rgb(102, 140, 0);
+  --lime-200: rgb(136, 186, 0);
+  --lime-250: rgb(170, 233, 0);
+  --lime-300: rgb(187, 240, 8);
+  --lime-350: rgb(204, 247, 16);
+  --lime-400: rgb(220, 254, 24);
+  --lime-450: rgb(237, 255, 42);
+  --lime-500: rgb(170, 233, 70);
+  --lime-550: rgb(187, 239, 96);
+  --lime-600: rgb(204, 246, 123);
+  --lime-650: rgb(220, 252, 150);
+  --lime-700: rgb(237, 255, 177);
+  --lime-750: rgb(245, 255, 195);
+  --lime-800: rgb(252, 255, 213);
+  --lime-850: rgb(255, 255, 220);
+  --lime-900: rgb(255, 255, 228);
+  --lime-950: rgb(255, 255, 235);
+
+  --curve-snap: cubic-bezier(0.4, 0, 0.2, 1);
+
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
+:root {
+font-size: 16px;
+}
+html, body {
+overscroll-behavior-x: none;
+}
+@media only screen and (max-width: 900px) {
+:root {
+  font-size: 14px;
+}
+}
+@media only screen and (max-width: 700px) {
+:root {
+  font-size: 12px;
+}
+}
+@media only screen and (min-width: 1600px) {
+:root {
+  font-size: 18px;
+}
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+--nav-height: 5rem;
+}
+select {
+display: flex;
+appearance: none;
+width: fit-content;
+font-size: 1rem;
+padding: 8px;
+background-color: var(--background-200);
+border: 1px solid var(--background-200);
+border-radius: 0.25rem;
+color: white;
+cursor: pointer;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+max-width: 100vw;
+overflow-x: hidden;
+overscroll-behavior:none;
+scroll-behavior: smooth;
+background-color: var(--background-50);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+* {
+  --scrollOffset: 0px;
 }
+
 
 a {
-  color: inherit;
-  text-decoration: none;
+color: inherit;
+text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+html {
+  color-scheme: dark;
+}
+}
+
+.white {
+filter: none;
+}
+.invert {
+filter: invert(15%);
+}
+.contrast {
+filter: none;
+}
+
+button,
+textarea,
+input {
+  font-family: inherit;
+}
+button {
+padding: 8px 16px;
+font-size: 14px;
+background-color: var(--background-100);
+border: 1px solid var(--background-200);
+border-radius: 4px;
+cursor: pointer;
+transition: all 125ms ease-in-out;
+}
+button:hover {
+background-color: var(--background-200);
+border: 1px solid var(--background-300);
 }

@@ -1,0 +1,62 @@
+.nav {
+    display: flex;
+    gap: 2rem;
+    background: linear-gradient(-90deg, var(--secondary-25), var(--secondary-100));
+    align-items: center;
+}
+.nav > *:last-child {
+    margin-left: auto;
+}
+.nav .logo {
+    color: var(--white-900);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem !important;
+    gap: 16px;
+    background-color: var(--secondary-100);
+    padding: .5rem 1rem;
+}
+.nav .logo img {
+    animation: logoRotate 50s linear infinite;
+    height: 2.5rem;
+    width: auto;
+}
+.nav h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+.nav .links {
+    font-size: 1rem;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.nav .links a:hover {
+    color: var(--primary-500);
+}
+.active {
+    color: var(--primary-500);
+}
+.inactive {
+    color: var(--white-900);
+}
+
+@media only screen and (max-width: 700px) {
+
+    .nav h3 {
+        display: none;
+    }
+
+}
+
+@keyframes logoRotate {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}

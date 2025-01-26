@@ -3,16 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.mjs",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "node server.mjs",
+    "lint": "next lint",
+    "dbgen": "npx prisma generate",
+    "dbpush": "npx prisma db push"
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.7.4",
+    "@prisma/client": "^6.2.1",
     "eslint": "9.19.0",
     "eslint-config-next": "15.1.6",
+    "http": "^0.0.1-security",
     "next": "15.1.6",
+    "next-auth": "^5.0.0-beta.25",
+    "prisma": "^6.2.1",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "socket.io": "^4.8.1",
+    "url": "^0.11.4",
+    "winston": "^3.17.0"
   }
 }
