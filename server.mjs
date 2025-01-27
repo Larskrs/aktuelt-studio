@@ -1,13 +1,17 @@
+import dotenv from "dotenv"
+dotenv.config()
 import { createServer } from "http";
 import { parse } from "url";
 import next from "next";
 import { Server } from "socket.io"; // Import Socket.IO server
 import { logger } from "./logger.mjs";
 
-const port = parseInt(process.env.PORT || "3000", 10);
+const port = parseInt(process.env.PORT);
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
+
+console.log(`Starting up nextjs server at port: ${port}...`)
 
 let io;
 
