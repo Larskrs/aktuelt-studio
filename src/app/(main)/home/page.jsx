@@ -1,3 +1,4 @@
+"use client"
 import MaxWidthWrapper from "@/components/wrappers/MaxWidthWrapper";
 import styles from "./style.module.css"
 import Image from "next/image";
@@ -5,26 +6,26 @@ import Banner from "@/components/wrappers/FilmBanner/Banner";
 import Link from "next/link";
 import FilmBanner from "@/components/wrappers/FilmBanner";
 import LinedTitle from "@/components/common/LinedTitle";
+import classNames from "classnames";
+import Hero from "@/components/layout/Hero";
+import TypingEffect from "@/components/common/TypingEffect";
 
 export default function Home () {
     return (
         <body className={styles.c}>
-            <main className={styles.hero}>
-                    <Image className={styles.backdrop} src={"/dbl/DBL_PLAKAT_WIDE.jpg"} width={1920} height={1080} />
-                    <div className={styles.header}>
-                        <MaxWidthWrapper>
-                            <div className={styles.body}>
-                                <h1>Desperados, Banditos & Litagos</h1>
-                                <p>Året er 1886. En ung mann drømte om et bedre liv og lot seg lokke av løftene om den amerikanske drømmen. Med bare hunden sin som følgesvenn forlot han Norge og satte kurs mot USA. Men det skulle ikke ta lang tid før han innså at den amerikanske drømmen ikke var så idyllisk som han hadde forestilt seg.
-</p>
-                                
-                            </div>
-                            <Image className={styles.image} src={"/dbl/DBL_PLAKAT_NARROW.jpg"} width={300} height={600} />
-                        </MaxWidthWrapper>
-                    </div>
-            </main>
-            <MaxWidthWrapper>
-                <LinedTitle title="Sjangerfilmer" color="var(--red-400)" lineBackground="linear-gradient(-90deg, var(--red-100), var(--background-100))"></LinedTitle>
+            <Hero
+                alignment={"left"}
+                background={<video alt="backdrop" autoPlay muted playsInline loop className={styles.backdrop} src={"https://bamblingen.no/api/v1/files?fileId=20250126-db3c39a422d58b2fc902d9412183bf91f74e0e0cdf9d4de9"} width={1920} height={1080} />}
+            >
+                    <TypingEffect typeStyle={{color: "var(--primary-500)"}} textStyle={{fontSize: "4rem"}} prefix="Det finnes alltid en bedre måte å skape " prompts={["film", "tv", "reklamefilm", "musikkvideo"]} />
+                    {/* <Image alt="poster" className={styles.titleImage} src={"/branding/logo/aktueltstudio.png"} width={600} height={400} /> */}
+                    {/* <p>Året er 1886. En ung mann drømte om et bedre liv og lot seg lokke av løftene om den amerikanske drømmen. Med bare hunden sin som følgesvenn forlot han Norge og satte kurs mot USA. Men det skulle ikke ta lang tid før han innså at den amerikanske drømmen ikke var så idyllisk som han hadde forestilt seg.</p> */}
+                    {/* <div className={styles.callToAction}>
+                        <button className={styles.btn}>Se Film</button>
+                    </div> */}
+            </Hero>
+            <MaxWidthWrapper className={styles.padding}>
+                {/* <LinedTitle title="Sjangerfilmer" color="var(--text-600)" lineBackground="linear-gradient(-90deg, var(--text-400), var(--text-100))"></LinedTitle> */}
                 
                 <FilmBanner films={[
                     {
@@ -45,6 +46,16 @@ export default function Home () {
                 ]}>
                 </FilmBanner>
             </MaxWidthWrapper>
+            <Hero
+                alignment={"left"}
+                background={<Image alt="backdrop" className={styles.backdrop} src={"/dbl/DBL_PLAKAT_WIDE_NO_LOGO.jpg"} width={1920} height={1080} />}
+            >
+                    <Image alt="poster" className={styles.titleImage} src={"/dbl/DBL_LOGO_CRAP.png"} width={600} height={600} />
+                    <p>Året er 1886. En ung mann drømte om et bedre liv og lot seg lokke av løftene om den amerikanske drømmen. Med bare hunden sin som følgesvenn forlot han Norge og satte kurs mot USA. Men det skulle ikke ta lang tid før han innså at den amerikanske drømmen ikke var så idyllisk som han hadde forestilt seg.</p>
+                    <div className={styles.callToAction}>
+                        <button className={styles.btn}>Se Film</button>
+                    </div>
+            </Hero>
         </body>
     );
 }
