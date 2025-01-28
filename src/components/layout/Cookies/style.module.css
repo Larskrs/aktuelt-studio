@@ -95,7 +95,7 @@
 .button:hover {
     background-color: var(--primary-500);
     border: 2px solid var(--primary-500);
-    color: var(--secondary-100);
+    color: var(--background-950);
 }
 .accepted {
     animation: slideDown 1s cubic-bezier(.35,.17,.3,.86) forwards;
