@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import classNames from "classnames";
 
-export default function Hero ({children, background, alignment="center"}) {
+export default function Hero ({className, children, background, alignment="center"}) {
     return (
-            <main className={classNames(styles.hero, styles?.[alignment])}>
+            <main className={classNames(styles.hero, className, styles?.[alignment])}>
                     {background}
                     <div className={styles.header}>
                         <MaxWidthWrapper className={classNames(styles.body)}>

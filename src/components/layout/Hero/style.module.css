@@ -45,7 +45,7 @@
     position: relative;
 }
 .hero .header h1 {
-    text-align: left;
+    text-align: inhreit;
     font-size: 3.5rem;
     max-width: 60%;
     line-height: 1em;
@@ -55,10 +55,10 @@
     font-size: 1.1rem;
     width: 100%;
     max-width: 32rem;
-    text-align: left;
+    text-align: inherit;
     color: var(--text-100);
     line-height: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 
@@ -70,4 +70,15 @@
 }
 .center .header {
     background: transparent;
+}
+
+
+.right .header .body {
+    align-items: flex-end;
+}
+.right .header {
+    background: linear-gradient(-90deg, var(--background-950), transparent);
+}
+.right .header p, .right .header h1 {
+    text-align: right;
 }

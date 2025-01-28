@@ -12,13 +12,6 @@
     position: relative;
     z-index: 1;
 }
-.hero {
-    width: 100%;
-    height: 38rem;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-}
 .backdrop {
     width: 100%;
     height: 100%;
@@ -40,56 +33,25 @@
     margin-bottom: 2em;
     filter: drop-shadow(0px 0px 25px black);
 }
-.hero .header {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    z-index: 2;
-    padding-inline: 2rem;
-    background: linear-gradient(90deg, black, transparent);
-    /* text-shadow: 4px 8px 20px rgba(0,0,0,0.5); */
-}
-.hero .header .body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100%;
-    position: relative;
-}
-.hero .header h1 {
-    text-align: left;
-    font-size: 3.5rem;
-    max-width: 60%;
-    line-height: 1em;
-    margin-bottom: 0.36em;
-}
-.hero .header p {
-    font-size: 1.1rem;
-    width: 100%;
-    max-width: 32rem;
-    text-align: left;
-    color: var(--text-700);
-    line-height: 1.5em;
-    margin-bottom: 1em;
+.hero h2 {
+    margin-bottom: 0.5em;
 }
 .padding {
     padding-block: 1.5rem 1.5rem;
 }
 
 .btn {
-    background-color: var(--background-200);
+    background-color: var(--secondary-300);
     color: var(--background-900);
     border: none;
+    border-radius: 0.25rem;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding: 0.5rem 2rem;
     transition: all 200ms var(--curve-snap);
 }
 .btn:hover {
-    background-color: var(--background-100);
+    background-color: var(--secondary-200);
     border: none;
     color: black;
-    padding: 0.5rem 2.5rem;
 }
