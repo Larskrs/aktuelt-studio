@@ -40,7 +40,7 @@ export default function Cookies({children, policyId}) {
       <div className={styles.holder}>
           <div className={styles.notice}>
             <h3>Bruk av informasjonskapsler</h3>
-            <p>Vi bruker essensielle informasjonskapsler for å drifte nettstedet. For å fortsette å bruke <b>bamblingen.no</b> må du godta disse nødvendige informasjonskapsler.</p>
+            <p>Vi bruker essensielle informasjonskapsler for å drifte nettstedet. For å fortsette å bruke <b>aktuelt.tv</b> må du godta disse nødvendige informasjonskapsler.</p>
           </div>
 
         <div className={styles.row}>

@@ -1,66 +1,65 @@
 
 :root {
-  --text-50: hwb(257 4% 94%);
-  --text-100: #1f1f1f;
-  --text-200: rgb(67, 67, 67);
-  --text-300: rgb(100, 100, 100);
-  --text-400: #7d7d7d;
-  --text-500: #a6a6a6;
-  --text-600: #bebebe;
-  --text-700: #cacaca;
-  --text-800: #deddde;
-  --text-900: #f0f0f0;
-  --text-950: #ffffff;
-
-  --background-50: rgb(6, 1, 15);
-  --background-75: rgb(13, 12, 14);
-  --background-100: rgb(6, 1, 16);
-  --background-200: #0a072c;
-  --background-300: #0f0944;
-  --background-400: #260974;
-  --background-500: #3c0693;
-  --background-600: #3b00a2;
-  --background-700: #6500c9;
-  --background-800: #d0cdd0;
-  --background-900: #eceaeb;
-  --background-950: #f6f5f7;
-
-  --primary-50: rgb(22, 3, 22);
-  --primary-100: rgb(44, 6, 45);
-  --primary-200: rgb(88, 13, 89);
-  --primary-300: rgb(132, 19, 134);
-  --primary-400: rgb(176, 25, 179);
-  --primary-500: #dc20df;
-  --primary-600: rgb(227, 76, 230);
-  --primary-700: rgb(234, 121, 236);
-  --primary-800: rgb(241, 166, 242);
-  --primary-900: rgb(248, 210, 249);
-  --primary-950: rgb(251, 233, 252);
-
-  --secondary-50: rgb(25, 0, 3);
-  --secondary-100: rgb(50, 1, 6);
-  --secondary-200: rgb(101, 1, 11);
-  --secondary-300: rgb(151, 2, 17);
-  --secondary-400: rgb(202, 2, 22);
-  --secondary-500: #fc031c;
-  --secondary-600: rgb(253, 53, 73);
-  --secondary-700: rgb(253, 104, 119);
-  --secondary-800: rgb(254, 154, 164);
-  --secondary-900: rgb(254, 205, 210);
-  --secondary-950: rgb(255, 230, 232);
-
-  --accent-50: rgb(5, 20, 12);
-  --accent-100: rgb(11, 40, 23);
-  --accent-200: rgb(22, 80, 46);
-  --accent-300: rgb(33, 120, 69);
-  --accent-400: rgb(44, 160, 92);
-  --accent-500: rgb(76,255,100);
-  --accent-600: rgb(95, 211, 143);
-  --accent-700: rgb(135, 222, 171);
-  --accent-800: rgb(175, 233, 199);
-  --accent-900: rgb(215, 244, 227);
-  --accent-950: rgb(235, 250, 241);
-
+  --text-50: rgb(242, 242, 242);
+  --text-100: rgb(230, 230, 230);
+  --text-200: rgb(204, 204, 204);
+  --text-300: rgb(179, 179, 179);
+  --text-400: rgb(153, 153, 153);
+  --text-500: rgb(128, 128, 128);
+  --text-600: rgb(102, 102, 102);
+  --text-700: rgb(77, 77, 77);
+  --text-800: rgb(51, 51, 51);
+  --text-900: rgb(26, 26, 26);
+  --text-950: rgb(13, 13, 13);
+  
+  --background-50: rgb(245, 235, 250);
+  --background-100: rgb(235, 215, 244);
+  --background-200: rgb(215, 175, 233);
+  --background-300: rgb(194, 135, 222);
+  --background-400: rgb(174, 95, 211);
+  --background-500: rgb(154, 55, 200);
+  --background-600: rgb(123, 44, 160);
+  --background-700: rgb(92, 33, 120);
+  --background-800: rgb(62, 22, 80);
+  --background-900: rgb(31, 11, 40);
+  --background-950: rgb(15, 5, 20);
+  
+  --primary-50: rgb(248, 229, 255);
+  --primary-100: rgb(241, 204, 255);
+  --primary-200: rgb(226, 153, 255);
+  --primary-300: rgb(212, 102, 255);
+  --primary-400: rgb(197, 51, 255);
+  --primary-500: rgb(183, 0, 255);
+  --primary-600: rgb(146, 0, 204);
+  --primary-700: rgb(110, 0, 153);
+  --primary-800: rgb(73, 0, 102);
+  --primary-900: rgb(37, 0, 51);
+  --primary-950: rgb(18, 0, 26);
+  
+  --secondary-50: rgb(245, 240, 240);
+  --secondary-100: rgb(234, 225, 225);
+  --secondary-200: rgb(214, 194, 194);
+  --secondary-300: rgb(193, 164, 164);
+  --secondary-400: rgb(172, 134, 134);
+  --secondary-500: rgb(152, 103, 103);
+  --secondary-600: rgb(121, 83, 83);
+  --secondary-700: rgb(91, 62, 62);
+  --secondary-800: rgb(61, 41, 41);
+  --secondary-900: rgb(30, 21, 21);
+  --secondary-950: rgb(15, 10, 10);
+  
+  --accent-50: rgb(250, 235, 237);
+  --accent-100: rgb(244, 215, 219);
+  --accent-200: rgb(233, 175, 183);
+  --accent-300: rgb(222, 135, 147);
+  --accent-400: rgb(211, 95, 110);
+  --accent-500: rgb(200, 55, 74);
+  --accent-600: rgb(160, 44, 59);
+  --accent-700: rgb(120, 33, 45);
+  --accent-800: rgb(80, 22, 30);
+  --accent-900: rgb(40, 11, 15);
+  --accent-950: rgb(20, 5, 7);
+  
   --red-50: rgb(115, 0, 11);
   --red-100: rgb(130, 0, 13);
   --red-150: rgb(145, 0, 15);

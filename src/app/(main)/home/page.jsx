@@ -12,7 +12,7 @@ import TypingEffect from "@/components/common/TypingEffect";
 
 export default function Home () {
     return (
-        <body className={styles.c}>
+        <div className={styles.c}>
             <Hero
                 alignment={"left"}
                 background={<video alt="backdrop" autoPlay muted playsInline loop className={styles.backdrop} src={"https://bamblingen.no/api/v1/files?fileId=20250126-db3c39a422d58b2fc902d9412183bf91f74e0e0cdf9d4de9"} width={1920} height={1080} />}
@@ -28,21 +28,13 @@ export default function Home () {
                 {/* <LinedTitle title="Sjangerfilmer" color="var(--text-600)" lineBackground="linear-gradient(-90deg, var(--text-400), var(--text-100))"></LinedTitle> */}
                 
                 <FilmBanner films={[
-                    {
-                        poster: "/dbl/DBL_PLAKAT_WIDE.jpg",
-                        preview: "https://bamblingen.no/api/v1/files?fileId=20250117-9ee7a71675a719101ba4df6a025f08f93eb5fa7e5fe81222",
-                        name: "Desperados, Banditos & Litagos",
-                    },
+                    
                     {
                         poster: "/dbl/DBL_PLAKAT_WIDE.jpg",
                         preview: "https://bamblingen.no/api/v1/files?fileId=20250126-db3c39a422d58b2fc902d9412183bf91f74e0e0cdf9d4de9",
                         name: "Desperados, Banditos & Litagos"
                     },
-                    {
-                        poster: "/dbl/DBL_PLAKAT_WIDE.jpg",
-                        preview: "https://bamblingen.no/api/v1/files?fileId=20250117-e68c03dd9eca6c10373616ceb15889a739e1486a06cc532c",
-                        name: "Desperados, Banditos & Litagos"
-                    }
+
                 ]}>
                 </FilmBanner>
             </MaxWidthWrapper>
@@ -56,6 +48,6 @@ export default function Home () {
                         <button className={styles.btn}>Se Film</button>
                     </div>
             </Hero>
-        </body>
+        </div>
     );
 }

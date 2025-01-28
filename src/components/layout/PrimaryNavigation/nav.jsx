@@ -23,8 +23,7 @@ export default function Navigation () {
     return (
         <nav className={styles.nav}>
                 <Link href={"/"} className={styles.logo}>
-                    <Image src={"/logo/bamblingen/logo-yellow-symbol.png"} alt="bambl2ngen logo" quality={50} width={64} height={64} />
-                    <h3>Bamblingen</h3>
+                    <Image src={"/branding/logo/aktueltstudio.png"} alt="bambl2ngen logo" quality={50} width={64*2.5} height={64} />
                 </Link>
                 <div className={styles.links}>
                         {links.map(link =>

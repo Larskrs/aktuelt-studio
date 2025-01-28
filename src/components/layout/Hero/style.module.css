@@ -33,7 +33,7 @@
     align-items: center;
     z-index: 2;
     padding-inline: 2rem;
-    background: linear-gradient(90deg, black, transparent);
+    background: linear-gradient(90deg, var(--background-950), transparent);
     /* text-shadow: 4px 8px 20px rgba(0,0,0,0.5); */
 }
 .hero .header .body {
@@ -56,7 +56,7 @@
     width: 100%;
     max-width: 32rem;
     text-align: left;
-    color: var(--text-700);
+    color: var(--text-100);
     line-height: 1.5em;
     margin-bottom: 1em;
 }
