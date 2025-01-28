@@ -6,6 +6,7 @@
     width: 100%;
     max-width: 700px;
     min-height: 8rem;
+    max-height: 8rem;
     height: auto;
     overflow: hidden;
     aspect-ratio: 3/1;
