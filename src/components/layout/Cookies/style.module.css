@@ -13,7 +13,7 @@
     align-items: center;
     padding: 8px;
     color: var(--primary-500);
-    background: var(--background-100);
+    background: var(--background-700);
     /* background: white; */
     opacity: 1;
     backdrop-filter: blur(50px);
