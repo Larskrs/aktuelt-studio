@@ -1,7 +1,7 @@
 .nav {
     display: flex;
     gap: 2rem;
-    background: linear-gradient(-90deg, var(--primary-950), var(--primary-900));
+    background: linear-gradient(90deg, var(--background-950), var(--background-925));
     align-items: center;
 }
 .nav > *:last-child {

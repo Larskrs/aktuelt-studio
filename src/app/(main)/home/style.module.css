@@ -1,7 +1,7 @@
 .c {
     display: flex;
     flex-direction: column;
-    background-color: var(--background-950);
+    background: linear-gradient(90deg, var(--background-950), var(--background-925));
 }
 .background {
     width: 100%;
@@ -37,11 +37,11 @@
     margin-bottom: 0.5em;
 }
 .padding {
-    padding-block: 1.5rem 1.5rem;
+    padding-block: .5rem .5rem;
 }
 
 .btn {
-    background-color: var(--secondary-300);
+    background-color: var(--background-200);
     color: var(--background-900);
     border: none;
     border-radius: 0.25rem;
@@ -51,7 +51,20 @@
     transition: all 200ms var(--curve-snap);
 }
 .btn:hover {
-    background-color: var(--secondary-200);
+    background-color: var(--background-100);
     border: none;
     color: black;
+}
+.callToAction {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center;
+}
+.callToAction span {
+    color: var(--text-100);
+    font-weight: 700;
+    letter-spacing: .25px;
+    font-size: 1.125rem;
 }

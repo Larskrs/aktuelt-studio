@@ -1,18 +1,16 @@
 .banner {
     display: flex;
     flex-direction: row;
-    background-color: var(--background-200);
+    background-color: transparent;
     position: relative;
-    width: 100%;
-    max-width: 700px;
+    width: 33.334%;
     min-height: 8rem;
-    max-height: 8rem;
+    max-height: 16rem;
     height: auto;
     overflow: hidden;
     aspect-ratio: 3/1;
-    box-shadow: 0px 0px 20px black;
     cursor: pointer;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 .banner video {
     transition: all 300ms var(--curve-snap);
@@ -60,4 +58,32 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .banner {
+        width: 100%;
+        align-items: center;
+        margin-inline: auto;
+    }
+    .banner:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        max-width: 60%;
+        margin-inline: auto;
+    }
+    .banner:nth-child(3) {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
+@media screen and (max-width: 700px) {
+    .banner:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        max-width: 100%;
+    }
 }

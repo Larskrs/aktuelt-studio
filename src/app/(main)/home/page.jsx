@@ -9,6 +9,7 @@ import LinedTitle from "@/components/common/LinedTitle";
 import classNames from "classnames";
 import Hero from "@/components/layout/Hero";
 import TypingEffect from "@/components/common/TypingEffect";
+import CountdownTimer from "@/components/common/CountdownTimer";
 
 export default function Home () {
     return (
@@ -28,10 +29,20 @@ export default function Home () {
                 {/* <LinedTitle title="Sjangerfilmer" color="var(--text-600)" lineBackground="linear-gradient(-90deg, var(--text-400), var(--text-100))"></LinedTitle> */}
                 
                 <FilmBanner films={[
-                    
+
                     {
                         poster: "/dbl/DBL_PLAKAT_WIDE.jpg",
-                        preview: "https://bamblingen.no/api/v1/files?fileId=20250126-db3c39a422d58b2fc902d9412183bf91f74e0e0cdf9d4de9",
+                        preview: "https://bamblingen.no/api/v1/files?fileId=20250128-e81c22616f1047d76ec791aad5d33fdc42f8bc2f9185c694",
+                        name: "Desperados, Banditos & Litagos"
+                    },
+                    {
+                        poster: "/dbl/DBL_PLAKAT_WIDE.jpg",
+                        preview: "https://bamblingen.no/api/v1/files?fileId=20250128-e81c22616f1047d76ec791aad5d33fdc42f8bc2f9185c694",
+                        name: "Desperados, Banditos & Litagos"
+                    },
+                    {
+                        poster: "/dbl/DBL_PLAKAT_WIDE.jpg",
+                        preview: "https://bamblingen.no/api/v1/files?fileId=20250128-e81c22616f1047d76ec791aad5d33fdc42f8bc2f9185c694",
                         name: "Desperados, Banditos & Litagos"
                     },
 
@@ -42,12 +53,12 @@ export default function Home () {
                 className={styles.hero}
                 alignment={"left"}
                 background={<Image alt="backdrop" className={styles.backdrop} src={"/dbl/DBL_PLAKAT_WIDE_NO_LOGO.jpg"} width={1920} height={1080} />}
-            >       
-                    <h2>Vår nyeste produksjon</h2>
+            >
                     <Image alt="poster" className={styles.titleImage} src={"/dbl/DBL_LOGO_CRAP.png"} width={600} height={600} />
                     <p>Året er 1886. En ung mann drømte om et bedre liv og lot seg lokke av løftene om den amerikanske drømmen. Med bare hunden sin som følgesvenn forlot han Norge og satte kurs mot USA. Men det skulle ikke ta lang tid før han innså at den amerikanske drømmen ikke var så idyllisk som han hadde forestilt seg.</p>
                     <div className={styles.callToAction}>
-                        <Link href={"/prosjekt/dbl"} className={styles.btn}>Se Film</Link>
+                        {/* <Link href={"/prosjekt/dbl"} className={classNames(styles.btn, styles.upcoming)}>Se Film</Link> */}
+                        <span>Kommer ut 12 Februar </span>
                     </div>
             </Hero>
             <Hero
