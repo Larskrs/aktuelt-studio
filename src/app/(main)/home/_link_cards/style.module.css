@@ -29,7 +29,9 @@
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    padding: 1rem;
+    transition: 125ms all var(--curve-snap);
+    outline: var(--background-925) 2px solid;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.232);
 }
 .card::after {
     content: "";
@@ -51,10 +53,17 @@
     object-fit: cover;
     object-position: center;
     z-index: 0;
+    transition: 125ms all var(--curve-snap);
 }
 .card:hover .link {
     height: 3rem;
     width: 3rem;
+}
+.card:hover {
+    background-color: var(--background-800);
+}
+.card:hover .image {
+    scale: 1.125;
 }
 .card .link {
     position: absolute;
@@ -79,6 +88,7 @@
     font-size: 1.1rem;
     z-index: 10;
     text-align: left;
+    padding: 1rem;
 }
 
 
@@ -87,6 +97,7 @@
     .grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 20rem 25rem;
+        max-width: 650px;
     }
     .title {
         grid-column-start: 1;
@@ -98,8 +109,31 @@
         justify-content: center;
         text-align: center;
         height: 100%;
+        padding-top: 0px;
     }
     .title h1 {
         font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 75vw;
+    }
+    .content > h1 {
+        font-size: 1.5rem;
+    }
+    .title {
+        height: fit-content;
+        margin-bottom: 1.5rem;
+    }
+    .title h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .title p {
+        font-size: 1.25rem;
     }
 }

@@ -3,6 +3,7 @@ import styles from "./style.module.css"
 import Link from "next/link";
 import Image from "next/image";
 import LocalImage from "@/components/common/LocalImage";
+import LinedTitle from "@/components/common/LinedTitle";
 
 export default function LinkCards ({}) {
     return (
@@ -11,27 +12,31 @@ export default function LinkCards ({}) {
                 <div className={styles.title} href={"/dbl"}>
                     <p><b>Film</b> er et medium som forteller mer enn et vanlig bilde. Det er emosjonelt og mer tilgjengelig til de fleste, vi spesialiserer i å fange dine uforglemmelige minner i film.</p>
                 </div>
-                <Card href={"/dbl"}>
-                    <h1>Kontakt oss</h1>
+                <Card href={"/prosjekt/jenter-15"}
+                    background={<LocalImage alt={"jenter-15-plakat"} quality={100} className={styles.image} width={320} height={720} src={"https://bamblingen.no/api/v1/files?fileId=20250129-14cb02f9dc4ea3f86813cdfb9b65ad64457d36324cae84a1"} />}
+                >
+                    <h1>IF Storm</h1>
                 </Card>
-                <Card href={"/dbl"}>
-                    <h1>Finn priss</h1>
+                <Card href={"/prosjekt/elvins-teater"}
+                    background={<LocalImage alt={"elvins-teater-plakat"} quality={100} className={styles.image} width={600} height={720} src={"https://bamblingen.no/api/v1/files?fileId=20250129-30b7f5beb799f6f63ce2085bc36bc8b5c6d8ffb0cfa59eee"} />}
+                >
+                    <h1>Drangedal Kommune</h1>
                 </Card>
             </MaxWidthWrapper>
         </div>
     );
 }
 
-export function Card ({children, href}) {
+export function Card ({children, href, background=()=>{<></>}}) {
     return (
-        <div className={styles.card}>
-            {/* <LocalImage quality={100} className={styles.image} width={320} height={720} src={"https://bamblingen.no/api/v1/files?fileId=20250117-e4896345caa93d06ab820dca48d6e9cda0bb52682f9acc9a"} /> */}
+        <Link href={href} className={styles.card}>
+            {background}
             <div className={styles.content}>
                 {children}
             </div>
-            <Link className={styles.link} href={href}>
-                <Image width={64} height={64} src={"/icons/ui/Open_Circle.svg"} />
-            </Link>
-        </div>
+            <span className={styles.link} href={href}>
+                <Image alt="open-link-button-symbol" width={64} height={64} src={"/icons/ui/Open_Circle.svg"} />
+            </span>
+        </Link>
     )
 }
