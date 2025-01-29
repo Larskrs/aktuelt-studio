@@ -18,7 +18,7 @@
     object-fit: cover;
     position: absolute;
     z-index: 1;
-    opacity: 1;
+    opacity: 0.765;
 }
 .titleImage {
     width: auto;
@@ -35,6 +35,18 @@
 }
 .hero h2 {
     margin-bottom: 0.5em;
+}
+.hero p {
+    color: var(--text-100);
+    font-size: 1.25em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+    max-width: 38rem;
+}
+.hero p a {
+    border-bottom: 1px solid var(--text-200);
+    color: var(--text-200);
+    margin-left: 1rem;
 }
 .padding {
     padding-block: .5rem .5rem;

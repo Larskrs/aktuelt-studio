@@ -9,8 +9,8 @@ import UserAvatar from "@/components/common/Authentication/UserAvatar"
 export default function Navigation () {
 
     const links = [
-        { href: "/nyheter", display: "Nyheter"},
-        { href: "/radio", display: "Radio"},
+        // { href: "/nyheter", display: "Nyheter"},
+        // { href: "/radio", display: "Radio"},
         // { href: "/ai-artikkel", display: "AI"},
         // { href: "/meninger", display: "Meninger"},
         // { href: "/satire", display: "Satire"},
