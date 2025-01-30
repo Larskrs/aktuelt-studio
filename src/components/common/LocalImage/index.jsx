@@ -1,7 +1,10 @@
 import Image from "next/image";
 
 export default function LocalImage({ src, ...props }) {
-    if (src?.startsWith(process.env.NEXT_PUBLIC_URL)) {
+    if (src?.startsWith("https://bamblingen.no")) {
+        src = src.replace("https://bamblingen.no", "");
+    }
+    if (src?.startsWith("https://aktuelt.tv")) {
         src = src.replace("https://aktuelt.tv", "");
     }
 
