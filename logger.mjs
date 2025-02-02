@@ -1,5 +1,6 @@
 // logger.mjs
 import { createLogger, format, transports } from 'winston';
+import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -8,7 +9,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Define log file path
-const logFilePath = path.join(__dirname, 'logs');
+const logFilePath = path.join(__dirname, 'app.log');
+
+// Function to clear logs
+export function ClearLogs() {
+  fs.writeFileSync(logFilePath, '', 'utf8');
+}
 
 // Custom log format
 const logFormat = format.printf(({ level, message, timestamp }) => {
@@ -23,12 +29,9 @@ const logger = createLogger({
     logFormat
   ),
   transports: [
-    // File transport
+    // File transport (single log file)
     new transports.File({
       filename: logFilePath,
-      maxsize: 5242880, // 5MB
-      maxFiles: 1,
-      tailable: true,
     }),
     // Console transport
     new transports.Console({

@@ -4,7 +4,7 @@ import { createServer } from "http";
 import { parse } from "url";
 import next from "next";
 import { Server } from "socket.io"; // Import Socket.IO server
-import logger from "./logger.mjs";
+import logger, { ClearLogs } from "./logger.mjs";
 
 const port = parseInt(process.env.PORT);
 const dev = process.env.NODE_ENV !== "production";
@@ -16,6 +16,10 @@ console.log(`Starting up nextjs server at port: ${port}...`)
 let io;
 
 app.prepare().then(() => {
+
+  // Clear previous logs
+  ClearLogs()
+
   // Create HTTP server
   const server = createServer((req, res) => {
     const parsedUrl = parse(req.url, true);
