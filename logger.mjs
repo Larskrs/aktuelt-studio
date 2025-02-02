@@ -7,8 +7,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Define log directory
-const logDir = path.join(__dirname, 'logs');
+// Define log file path
+const logFilePath = path.join(__dirname, 'logs');
 
 // Custom log format
 const logFormat = format.printf(({ level, message, timestamp }) => {
@@ -25,9 +25,9 @@ const logger = createLogger({
   transports: [
     // File transport
     new transports.File({
-      filename: path.join(logDir, `${new Date().toISOString().replace(/:/g, '-')}.log`),
+      filename: logFilePath,
       maxsize: 5242880, // 5MB
-      maxFiles: 5,
+      maxFiles: 1,
       tailable: true,
     }),
     // Console transport
