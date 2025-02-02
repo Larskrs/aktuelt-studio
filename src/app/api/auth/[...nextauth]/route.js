@@ -7,7 +7,7 @@ export const GET = async (req, res) => {
     logger.info("Auth Request");
     return handlers.GET(req, res);
   } catch (err) {
-    logger.error(err.message);
+    logger.info(err.message);
     return NextResponse.json({ error: err.message }, { status: 500 });
   }
 };
