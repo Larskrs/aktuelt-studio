@@ -20,21 +20,21 @@
   --background-500: #9a37c8;
   --background-600: #7b2ca0;
   --background-700: #5c2178;
-  --background-800: #3e1650;
-  --background-900: #1f0b28;
+  --background-800: #1f0b28;
+  --background-900: #16081c;
   --background-950: #0f0514;
   --background-925: #08030b;
   
   --primary-50: #f8e5ff;
   --primary-100: #f1ccff;
-  --primary-200: #e299ff;
-  --primary-300: #d466ff;
+  --primary-200: #d877ff;
+  --primary-300: rgb(204, 74, 255);
   --primary-400: #c533ff;
   --primary-500: #b700ff;
   --primary-600: #9200cc;
-  --primary-700: #6e0099;
-  --primary-800: #490066;
-  --primary-900: #250033;
+  --primary-700: #5a007d;
+  --primary-800: #330047;
+  --primary-900: #190022;
   --primary-950: #12001a;
   
   --secondary-50: #ffe5e5;

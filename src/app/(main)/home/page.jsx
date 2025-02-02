@@ -12,6 +12,7 @@ import TypingEffect from "@/components/common/TypingEffect";
 import CountdownTimer from "@/components/common/CountdownTimer";
 import LocalImage from "@/components/common/LocalImage";
 import LinkCards from "./_link_cards";
+import BannerSection from "./_banner_"
 
 export default function Home () {
     return (
@@ -61,6 +62,7 @@ export default function Home () {
             </Hero>
 
             <LinkCards />
+            <BannerSection />
         </div>
     );
 }
