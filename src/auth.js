@@ -5,6 +5,7 @@ import Google from "next-auth/providers/google"
 
 import { db } from "@/lib/db"
 import { JWTOptions } from "next-auth/jwt"
+import logger from "../logger.mjs"
 
 const providers = [Google({
   clientId: process.env.AUTH_GOOGLE_ID,
@@ -34,6 +35,18 @@ export const { handlers, auth, signIn, signOut } =  NextAuth({
 
       return session;
     }
+  },
+  debug: process.env?.NODE_ENV == "development",
+  logger: {
+    error(code, ...message) {
+      logger.error(code, message)
+    },
+    warn(code, ...message) {
+      logger.warn(code, message)
+    },
+    debug(code, ...message) {
+      logger.info(code, message)
+    },
   },
   async jwt({ token, user }) {
     const dbUser = await db.user.findFirst({
