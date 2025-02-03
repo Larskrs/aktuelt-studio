@@ -57,7 +57,7 @@ export default function Home () {
                     </p>
                     <div className={styles.callToAction}>
                         {/* <Link href={"/prosjekt/dbl"} className={classNames(styles.btn, styles.upcoming)}>Se Film</Link> */}
-                        <span>Kommer ut 12 Februar </span>
+                        <span>Kommer ut 13 Februar </span>
                     </div>
             </Hero>
 
