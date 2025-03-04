@@ -12,7 +12,7 @@ export default function LinkCards ({}) {
             <MaxWidthWrapper className={styles.grid}>
                 <div className={styles.title} href={"/dbl"}>
                     <h1>Har du en ide?</h1>
-                    <p><blod>Kontakt oss</blod></p>
+                    <p><bold>Kontakt oss</bold></p>
                 </div>
             </MaxWidthWrapper>
         </div>

@@ -38,15 +38,15 @@
     margin-bottom: 0.5em;
 }
 .hero p {
-    color: var(--text-100);
-    font-size: 1.25em;
-    line-height: 1.6em;
+    color: var(--text-400);
+    font-size: 1.2em;
+    
+    line-height: 1.4em;
     margin-bottom: 1em;
-    max-width: 38rem;
+    max-width: 25em;
 }
 .hero p a {
     border-bottom: 1px solid var(--text-200);
-    color: var(--text-200);
     margin-left: 1rem;
 }
 .padding {

@@ -13,9 +13,9 @@ export default function LinkCards ({}) {
                     <p><b>Film</b> er et medium som forteller mer enn et vanlig bilde. Det er emosjonelt og mer tilgjengelig til de fleste, vi spesialiserer i å fange dine uforglemmelige minner i film.</p>
                 </div>
                 <Card href={"/prosjekt/dbl"}
-                    background={<LocalImage alt={"dbl-plakat"} quality={100} className={styles.image} width={250} height={350} src={"/dbl/DBL_PLAKAT_NARROW.jpg"} />}
+                    background={<LocalImage alt={"dbl-plakat"} quality={100} className={styles.image} width={500} height={700} src={"/dbl/DBL_PLAKAT_NARROW.jpg"} />}
                 >
-                    <LocalImage alt="nomination" className={styles.nomination} src={"/icons/ui/Amandus_Fiction_Nomination.svg"} width={200} height={60} />
+                    <LocalImage alt="nomination" className={styles.nomination} src={"/icons/ui/Amandus_Fiction_Nomination.svg"} width={300} height={50} />
                     {/* <h1>IF Storm</h1> */}
                 </Card>
                 <Card href={"/prosjekt/elvins-teater"}

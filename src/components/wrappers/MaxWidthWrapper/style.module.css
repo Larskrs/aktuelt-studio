@@ -1,5 +1,5 @@
 .maxWidth {
-    max-width: 950px;
+    max-width: 1500px;
     width: 100%;
     padding-inline: 1rem;
     margin-inline: auto;
@@ -13,6 +13,6 @@
 }
 @media (min-width: 701px) {
     .maxWidth {
-        max-width: 1200px;
+        max-width: 1500px;
     }
 }
