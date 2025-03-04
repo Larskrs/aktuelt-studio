@@ -19,7 +19,7 @@ export default function LinkCards ({}) {
                     {/* <h1>IF Storm</h1> */}
                 </Card>
                 <Card href={"/prosjekt/elvins-teater"}
-                    background={<LocalImage alt={"elvins-teater-plakat"} quality={100} className={styles.image} width={600} height={720} src={"https://bamblingen.no/api/v1/files?fileId=20250129-30b7f5beb799f6f63ce2085bc36bc8b5c6d8ffb0cfa59eee"} />}
+                    background={<LocalImage alt={"elvins-teater-plakat"} quality={100} className={styles.image} width={600} height={720} src={"/images/jobs/elvins-teater/Elvins-Teater-Plakat.png"} />}
                 >
                     {/* <h1>Drangedal Kommune</h1> */}
                 </Card>
