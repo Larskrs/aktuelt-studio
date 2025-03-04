@@ -12,15 +12,16 @@ export default function LinkCards ({}) {
                 <div className={styles.title} href={"/dbl"}>
                     <p><b>Film</b> er et medium som forteller mer enn et vanlig bilde. Det er emosjonelt og mer tilgjengelig til de fleste, vi spesialiserer i å fange dine uforglemmelige minner i film.</p>
                 </div>
-                <Card href={"/prosjekt/jenter-15"}
-                    background={<LocalImage alt={"jenter-15-plakat"} quality={100} className={styles.image} width={320} height={720} src={"https://bamblingen.no/api/v1/files?fileId=20250129-14cb02f9dc4ea3f86813cdfb9b65ad64457d36324cae84a1"} />}
+                <Card href={"/prosjekt/dbl"}
+                    background={<LocalImage alt={"dbl-plakat"} quality={100} className={styles.image} width={250} height={350} src={"/dbl/DBL_PLAKAT_NARROW.jpg"} />}
                 >
-                    <h1>IF Storm</h1>
+                    <LocalImage alt="nomination" className={styles.nomination} src={"/icons/ui/Amandus_Fiction_Nomination.svg"} width={200} height={60} />
+                    {/* <h1>IF Storm</h1> */}
                 </Card>
                 <Card href={"/prosjekt/elvins-teater"}
                     background={<LocalImage alt={"elvins-teater-plakat"} quality={100} className={styles.image} width={600} height={720} src={"https://bamblingen.no/api/v1/files?fileId=20250129-30b7f5beb799f6f63ce2085bc36bc8b5c6d8ffb0cfa59eee"} />}
                 >
-                    <h1>Drangedal Kommune</h1>
+                    {/* <h1>Drangedal Kommune</h1> */}
                 </Card>
             </MaxWidthWrapper>
         </div>
