@@ -3,8 +3,10 @@ import { useEffect, useRef } from 'react';
 import Hls from 'hls.js';
 import classNames from 'classnames';
 
-export default function VideoPlayer({ poster, src, className, ...props }) {
-    const videoRef = useRef(null);
+export default function VideoPlayer({ videoRef = null, poster, src, className, ...props }) {
+    if (videoRef == null) {
+        videoRef = useRef(null)
+    }
 
     useEffect(() => {
         if (videoRef.current) {
