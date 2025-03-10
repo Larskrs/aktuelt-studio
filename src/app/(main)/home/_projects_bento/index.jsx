@@ -16,7 +16,7 @@ export default function ProjectsBento ({}) {
                     {/* <Image src={"/dbl/DBL_PLAKAT_NARROW.jpg"} width={400} height={600} /> */}
                         <VideoPlayer loop controls={false} autoPlay muted playsInline className={styles.video} src={"https://bamblingen.no/api/v1/files/video?v=20250206-1c40218641027a0a"} />
                     <div className={styles.info}>
-                        <h4>En stor variasjon av produksjoner</h4>
+                        <h4>En bred variasjon av produksjoner.</h4>
                         <p>I 2023 produserte vi en TikTok for Ung i Trafikken sin sosiale mediekonto gjennom deres TikTok-konkurranse, hvor vi vant prisen for beste film.</p>
                     </div>
                 </div>

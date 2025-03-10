@@ -1,5 +1,5 @@
 import LocalImage from "@/components/common/LocalImage";
-import Hero from "./_hero";
+import Hero from "@/components/layout/Hero";
 import Margin from "@/components/common/Margin";
 import Link from "next/link";
 import React from "react";

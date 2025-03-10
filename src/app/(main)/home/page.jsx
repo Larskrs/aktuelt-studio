@@ -53,12 +53,12 @@ export default function Home () {
 
             <Margin.Block amount={5} />
             
-            {/* <DBL /> */}
             
 
             <ProjectsBento />
             {/* <BannerSection /> */}
-            <Margin.Block amount={12} ></Margin.Block>
+            <Margin.Block amount={2} ></Margin.Block>
+            <DBL />
         </div>
     );
 }

@@ -1,12 +1,24 @@
 "use client"
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Hls from 'hls.js';
+import styles from "./style.module.css"
 import classNames from 'classnames';
 
-export default function VideoPlayer({ videoRef = null, poster, src, className, ...props }) {
-    if (videoRef == null) {
-        videoRef = useRef(null)
-    }
+export default function VideoPlayer({ progressBar, poster, src, className, ...props }) {
+    const videoRef = useRef(null)
+    const [currentTime, setCurrentTime] = useState(0)
+    const [duration, setDuration] = useState(0)
+    const [playing, setPlaying] = useState(false)
+
+    useEffect(() => {
+        
+        setDuration(videoRef.current.duration)
+        const interval = setInterval(() => {
+            setCurrentTime(videoRef.current.currentTime)
+            setPlaying(!videoRef.current.paused)
+        }, 250);       
+        return () => clearInterval(interval);
+    }, [videoRef, currentTime, duration])
 
     useEffect(() => {
         if (videoRef.current) {
@@ -22,5 +34,11 @@ export default function VideoPlayer({ videoRef = null, poster, src, className, .
         }
     }, [src]);
 
-    return <video {...props} poster={poster} className={classNames(className)} ref={videoRef}  />;
+    return <div className={classNames(className, styles.v)}>
+            <video {...props} poster={poster} ref={videoRef} />;
+            {videoRef?.current && <span className={styles.progress} style={{
+                width: currentTime / duration * videoRef.current.clientWidth,
+                opacity: playing ? 1 : 0
+                }}></span>}
+        </div>
 }

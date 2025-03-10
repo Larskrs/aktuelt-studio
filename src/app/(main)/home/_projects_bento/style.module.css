@@ -53,6 +53,10 @@
     scale: 1;
     border-radius: 2rem;
 }
+.card .video video {
+    object-fit: cover;
+    border-radius: 2rem;
+}
 .info {
     color: hsl(var(--secondary-hue), 75%, 90%);
     padding: 1.75rem 2rem;
