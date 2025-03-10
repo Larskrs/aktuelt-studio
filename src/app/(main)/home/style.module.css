@@ -1,9 +1,10 @@
 .c {
     display: flex;
     flex-direction: column;
-    background-color: hsl(var(--primary-hue), 25%, 5%);
+    background-color: hsl(var(--primary-hue), 75%, 90%);
     color: hsl(var(--primary-hue), 50%, 90%);
     padding-bottom: 2rem;
+    gap: 2rem;
 }
 .background {
     width: 100%;

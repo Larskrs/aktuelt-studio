@@ -1,7 +1,7 @@
 .g {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 100%;
     width: 100%;
     gap: 1rem;
@@ -15,14 +15,38 @@
     max-height: 90dvh;
 }
 
-.one {
+.rtl .media, .ltr .body {
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.rtl .body, .ltr .media {
+    grid-row-start: 1;
+    grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end: 2;
+}
 
+.media {
     width: 100%;
     height: 100%;
+}
+.body {
+    width: 100%;
+    height: 100%;
+    background-color: transparent !important;
+}
+.body .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+
+    font-size: 1.25rem;
+    color: hsl(var(--primary-hue), 10%, 5%);
 }
 
 .card {
@@ -30,11 +54,8 @@
     border-radius: 2rem;
     overflow: hidden;
     box-shadow: 0rem 1rem 2rem 0rem transparent;
-    background: hsl(var(--primary-hue), 100%, 5%);
+    background: transparent;
     transition: all 250ms var(--curve-snap);
-}
-.card:hover {
-    box-shadow: 0rem 1rem 2rem 0rem hsl(var(--primary-hue), 100%, 50%);
 }
 .card img {
     width: 100%;
@@ -72,31 +93,22 @@
 .info p {
     margin-top: 0.5em;
 }
-.one {
+.media {
     font-size: 1.5em;
 }
-.three img {
-
-}
-.card::after {
-    content: "";
-    background: linear-gradient(0deg, hsl(var(--primary-hue), 25%, 5%), transparent);
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-}
-
-.one .info {
+.media .info {
     color: hsl(var(--secondary-hue), 75%, 70%);
+}
+
+.ltr > .media {
+    
 }
 
 
 @media screen and (max-width: 700px) {
     .g {
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
     .c {
         height: auto;
@@ -106,10 +118,10 @@
         font-size: 2.5rem;
     }
     .card {
-        max-height: 90dvh;
+        max-height: 30dvh;
     }
-    .one {
+    .media {
         height: 50rem;
-        max-height: 90dvh;
+        max-height: 75dvh;
     }
 }

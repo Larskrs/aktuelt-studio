@@ -16,6 +16,7 @@ import Margin from "@/components/common/Margin";
 import ProjectsBento from "./_projects_bento";
 import DBL from "./dbl";
 import Hero from "./_hero";
+import Split from "./_split"
 
 export default function Home () {
     return (
@@ -51,11 +52,26 @@ export default function Home () {
 
             <Hero />
 
-            <Margin.Block amount={5} />
-            
-            
-
-            <ProjectsBento />
+            <Split
+                direction="rtl"
+                media={{
+                    type: "video",
+                    src: "https://bamblingen.no/api/v1/files/video?v=20250206-1c40218641027a0a"
+                }}
+            >
+                <h4>En bred variasjon av produksjoner.</h4>
+                <p>I 2023 produserte vi en TikTok for Ung i Trafikken sin sosiale mediekonto gjennom deres TikTok-konkurranse, hvor vi vant prisen for beste film.</p>
+            </Split>
+            <Margin.Block amount={2} />
+            <Split
+                media={{
+                    type: "video",
+                    src: "https://bamblingen.no/api/v1/files/video?v=20250206-0fb468341fa3733f"
+                }}
+            >
+                <h4>Ikke redd for å provosere!</h4>
+                <p>Vår historie er ikke dekket av roseblader. Vi er kjent for – og stolte av – å utfordre grenser for hva som kan skapes.</p>
+            </Split>
             {/* <BannerSection /> */}
             <Margin.Block amount={2} ></Margin.Block>
             <DBL />

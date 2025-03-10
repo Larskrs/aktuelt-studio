@@ -15,7 +15,7 @@
     right: 0px;
     width: 0px;
     height: 0.5rem;
-    background-color: hsl(var(--primary-hue), 50%, 25%);
+    background-color: hsl(var(--primary-hue), 100%,75%);
     z-index: 2;
     transition: all 250ms linear;
 }
