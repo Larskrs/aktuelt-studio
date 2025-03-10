@@ -19,8 +19,9 @@
   --background-400: #ae5fd3;
   --background-500: #9a37c8;
   --background-600: #7b2ca0;
-  --background-700: #5c2178;
+  --background-700: #1f092e;
   --background-800: #1f0b28;
+  --background-750: #1a0b21;
   --background-900: #16081c;
   --background-950: #0f0514;
   --background-925: #08030b;
@@ -36,6 +37,8 @@
   --primary-800: #330047;
   --primary-900: #190022;
   --primary-950: #12001a;
+
+  --primary-hue: 283;
   
   --secondary-50: #ffe5e5;
   --secondary-100: #ffcccc;
@@ -265,7 +268,7 @@
 
   --fontSize-xxl: 4rem;
 
-  color-scheme: dark;
+    color-scheme: light;
 }
 
 :root {
@@ -304,7 +307,7 @@ appearance: none;
 width: fit-content;
 font-size: 1rem;
 padding: 8px;
-background-color: var(--background-200);
+background-color: hsl(var(--primary-hue), 25%, 80%);
 border: 1px solid var(--background-200);
 border-radius: 0.25rem;
 color: white;

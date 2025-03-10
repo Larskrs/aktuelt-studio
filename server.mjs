@@ -8,7 +8,7 @@ import logger, { ClearLogs } from "./logger.mjs";
 
 const port = parseInt(process.env.PORT);
 const dev = process.env.NODE_ENV !== "production";
-const app = next({ dev });
+const app = next({ dev, turbo: dev });
 const handle = app.getRequestHandler();
 
 console.log(`Starting up nextjs server at port: ${port}...`)

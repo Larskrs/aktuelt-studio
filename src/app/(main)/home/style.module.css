@@ -1,7 +1,8 @@
 .c {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(90deg, var(--background-950), var(--background-925));
+    background-color: hsl(var(--primary-hue), 25%, 90%);
+    color: hsl(var(--primary-hue), 50%, 90%);
     padding-bottom: 2rem;
 }
 .background {
@@ -19,8 +20,12 @@
     object-fit: cover;
     position: absolute;
     z-index: 1;
-    opacity: 0.765;
+    opacity: 1;
+    filter: blur(10px);
+    scale: 1.1;
+    object-position: right;
 }
+
 .titleImage {
     width: auto;
     max-width: 100%;
@@ -32,13 +37,12 @@
     border-radius: 8px;
     cursor: pointer;
     margin-bottom: 2em;
-    filter: drop-shadow(0px 0px 25px black);
 }
 .hero h2 {
     margin-bottom: 0.5em;
 }
 .hero p {
-    color: var(--text-400);
+    color: hsl(var(--primary-hue), 10%, 90%);
     font-size: 1.2em;
     
     line-height: 1.4em;
@@ -54,7 +58,7 @@
 }
 
 .btn {
-    background-color: var(--background-200);
+    background-color:  hsl(var(--primary-hue), 100%, 50%);
     color: var(--background-900);
     border: none;
     border-radius: 0.25rem;
@@ -76,7 +80,7 @@
     align-items: center;
 }
 .callToAction span {
-    color: var(--text-100);
+    color: hsl(var(--primary-hue), 100%, 80%);
     font-weight: 700;
     letter-spacing: .25px;
     font-size: 1.125rem;

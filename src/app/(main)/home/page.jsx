@@ -14,6 +14,7 @@ import LocalImage from "@/components/common/LocalImage";
 import LinkCards from "./_link_cards";
 import BannerSection from "./_banner_"
 import Margin from "@/components/common/Margin";
+import ProjectsBento from "./_projects_bento";
 
 export default function Home () {
     return (
@@ -50,7 +51,11 @@ export default function Home () {
                 className={styles.hero}
                 alignment={"left"}
                 background={<LocalImage alt="backdrop" className={styles.backdrop} src={"/dbl/DBL_PLAKAT_WIDE_NO_LOGO.jpg"} width={1920} height={1080} />}
-            >
+            >       
+                    <div className={styles.content}>
+
+                    </div>
+                
                     <LocalImage alt="poster" className={styles.titleImage} src={"/dbl/DBL_LOGO_CRAP.png"} width={600} height={600} />
                     <LocalImage alt="nomination" className={styles.nomination} src={"/icons/ui/Amandus_Fiction_Nomination.svg"} width={200} height={60} />
                     <Margin.Block amount={1} />
@@ -62,10 +67,15 @@ export default function Home () {
                         {/* <Link href={"/prosjekt/dbl"} className={classNames(styles.btn, styles.upcoming)}>Se Film</Link> */}
                         <span>Kommer ut 12 april</span>
                     </div>
+
+                    <div className={styles.right}>
+
+                    </div>
             </Hero>
 
-            <LinkCards />
-            <BannerSection />
+            <ProjectsBento />
+            {/* <BannerSection /> */}
+            <Margin.Block amount={12} ></Margin.Block>
         </div>
     );
 }
