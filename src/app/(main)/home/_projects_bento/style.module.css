@@ -6,10 +6,12 @@
     width: 100%;
     gap: 1rem;
     padding-bottom: 1rem;
+    padding-inline: 1rem;
 }
 
 .c {
-    height: 40rem;
+    height: 60rem;
+    max-height: 90dvh;
 }
 
 .one {
@@ -59,4 +61,23 @@
 
 .one .info {
     color: hsl(var(--secondary-hue), 75%, 70%);
+}
+
+
+@media screen and (max-width: 700px) {
+    .g {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .c {
+        height: auto;
+        max-height: unset;
+    }
+    .card {
+        max-height: 90dvh;
+    }
+    .one {
+        height: 100dvh;
+        max-height: 90dvh;
+    }
 }
