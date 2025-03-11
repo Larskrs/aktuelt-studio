@@ -10,14 +10,18 @@ export default function VideoPlayer({ clickToFullScreen=true, forceMuted, progre
     const [currentTime, setCurrentTime] = useState(0)
     const [duration, setDuration] = useState(0)
     const [playing, setPlaying] = useState(false)
+    const [visible, setVisible] = useState(false)
     const [isFullscreen, setIsFullscreen] = useState(false)
+    const [loaded, setLoaded] = useState(false)
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
+                    setVisible(true)
                     videoRef.current.play();
                 } else {
+                    setVisible(false)
                     videoRef.current.pause();
                 }
             },
@@ -35,6 +39,10 @@ export default function VideoPlayer({ clickToFullScreen=true, forceMuted, progre
             if (videoElement) observer.unobserve(videoElement);
         };
     }, []);
+
+    useEffect(() => {
+        if (loaded) console.log("We loaded vidoe...")
+    }, [loaded])
 
     const openFullScreen = () => {
         if (videoRef.current) {
@@ -81,18 +89,23 @@ export default function VideoPlayer({ clickToFullScreen=true, forceMuted, progre
     }, [videoRef, currentTime, duration])
 
     useEffect(() => {
+        if (loaded) { return; }
+        if (!visible) { return; }
+
         if (videoRef.current) {
             if (videoRef.current.canPlayType('application/vnd.apple.mpegurl')) {
                 // Safari støtter HLS direkte
                 videoRef.current.src = src;
+                setLoaded(true)
             } else if (Hls.isSupported()) {
                 // For andre nettlesere, bruk hls.js
                 const hls = new Hls();
                 hls.loadSource(src);
                 hls.attachMedia(videoRef.current);
+                setLoaded(true)
             }
         }
-    }, [src]);
+    }, [src, visible]);
 
     return <div
         ref={containerRef}
