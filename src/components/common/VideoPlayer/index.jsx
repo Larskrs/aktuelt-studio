@@ -16,17 +16,15 @@ export default function VideoPlayer({ clickToFullScreen=true, forceMuted, progre
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    setVisible(true)
                     videoRef.current.play();
                 } else {
-                    setVisible(false)
                     videoRef.current.pause();
                 }
             },
             {   
                 root: null,
                 rootMargin: "0px",
-                threshold: 0.1, 
+                threshold: 0.5, 
             } // Adjust threshold as needed
         );
     
