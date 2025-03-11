@@ -4,11 +4,13 @@ import Hls from 'hls.js';
 import styles from "./style.module.css"
 import classNames from 'classnames';
 
-export default function VideoPlayer({ progressBar, poster, src, className, ...props }) {
+export default function VideoPlayer({ clickToFullScreen=true, forceMuted, progressBar, poster, src, className, ...props }) {
     const videoRef = useRef(null)
+    const containerRef = useRef(null)
     const [currentTime, setCurrentTime] = useState(0)
     const [duration, setDuration] = useState(0)
     const [playing, setPlaying] = useState(false)
+    const [isFullscreen, setIsFullscreen] = useState(false)
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -30,7 +32,40 @@ export default function VideoPlayer({ progressBar, poster, src, className, ...pr
         };
     }, []);
 
+    const openFullScreen = () => {
+        if (videoRef.current) {
+            if (videoRef.current.requestFullscreen) {
+                videoRef.current.requestFullscreen();
+            } else if (videoRef.current.webkitRequestFullscreen) { 
+                // Safari
+                videoRef.current.webkitRequestFullscreen();
+            } else if (videoRef.current.msRequestFullscreen) { 
+                // IE/Edge
+                videoRef.current.msRequestFullscreen();
+            }
+        }
+    };
+
     useEffect(() => {
+        const handleFullscreenChange = () => {
+            setIsFullscreen(document.fullscreenElement !== null);
+            videoRef.current.play()
+            videoRef.current.muted = !isFullscreen
+        };
+    
+        document.addEventListener("fullscreenchange", handleFullscreenChange);
+        document.addEventListener("webkitfullscreenchange", handleFullscreenChange); // Safari
+        document.addEventListener("msfullscreenchange", handleFullscreenChange); // Edge
+    
+        return () => {
+            document.removeEventListener("fullscreenchange", handleFullscreenChange);
+            document.removeEventListener("webkitfullscreenchange", handleFullscreenChange);
+            document.removeEventListener("msfullscreenchange", handleFullscreenChange);
+        };
+    }, []);
+
+    useEffect(() => {
+        
         
         setDuration(videoRef.current.duration)
         const interval = setInterval(() => {
@@ -38,6 +73,7 @@ export default function VideoPlayer({ progressBar, poster, src, className, ...pr
             setPlaying(!videoRef.current.paused)
         }, 250);       
         return () => clearInterval(interval);
+
     }, [videoRef, currentTime, duration])
 
     useEffect(() => {
@@ -54,11 +90,18 @@ export default function VideoPlayer({ progressBar, poster, src, className, ...pr
         }
     }, [src]);
 
-    return <div className={classNames(className, styles.v, playing ? styles.playing : styles.paused)}>
-            <video {...props} poster={poster} ref={videoRef} />;
+    return <div
+        ref={containerRef}
+        onClick={() => {openFullScreen()}}
+        className={classNames(
+            className,
+            styles.v, playing ? styles.playing : styles.paused,
+        )}
+        >
+            <video {...props} poster={poster} ref={videoRef} className={isFullscreen ? styles.fullscreen : "" } />;
             {videoRef?.current && <span className={styles.progress} style={{
                 width: currentTime / duration * videoRef.current.clientWidth,
-                opacity: playing ? 1 : 0
+                opacity: playing ? 1 : 0,
                 }}></span>}
         </div>
 }
