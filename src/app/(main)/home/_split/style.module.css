@@ -14,7 +14,7 @@
 
 .c {
     height: 40rem;
-    max-height: 90dvh;
+    max-height: 90vh;
 }
 
 .rtl .media, .ltr .body {
@@ -122,10 +122,10 @@
         font-size: 2.5rem;
     }
     .card {
-        max-height: 50dvh;
+        max-height: 50vh;
     }
     .media {
         height: 50rem;
-        max-height: 75dvh;
+        max-height: 75vh;
     }
 }
