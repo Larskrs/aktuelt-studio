@@ -20,7 +20,7 @@ export default function ProjectsBento ({
                         {media.type == "image" && <Image src={"/dbl/DBL_PLAKAT_NARROW.jpg"} width={400} height={600} />}
                         {media.type == "video" && <VideoPlayer loop controls={false} autoPlay muted playsInline className={styles.video} src={media.src} />}
                 </div>
-                <div className={classNames(styles.body, styles.card)}>
+                <div className={classNames(styles.body)}>
                     <div className={styles.info}>
                         {children}
                     </div>

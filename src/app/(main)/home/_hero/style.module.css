@@ -53,6 +53,7 @@
 
 @media screen and (max-width: 700px) {
     .c {
-        max-height: 100vh;
+        height: 100vh;
+        max-height: 50rem;
     }
 }

@@ -11,6 +11,26 @@ export default function VideoPlayer({ progressBar, poster, src, className, ...pr
     const [playing, setPlaying] = useState(false)
 
     useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    videoRef.current.play();
+                } else {
+                    videoRef.current.pause();
+                }
+            },
+          { threshold: 0.125 } // Adjust threshold as needed
+        );
+    
+        const videoElement = videoRef.current;
+        if (videoElement) observer.observe(videoElement);
+    
+        return () => {
+            if (videoElement) observer.unobserve(videoElement);
+        };
+    }, []);
+
+    useEffect(() => {
         
         setDuration(videoRef.current.duration)
         const interval = setInterval(() => {
@@ -34,7 +54,7 @@ export default function VideoPlayer({ progressBar, poster, src, className, ...pr
         }
     }, [src]);
 
-    return <div className={classNames(className, styles.v)}>
+    return <div className={classNames(className, styles.v, playing ? styles.playing : styles.paused)}>
             <video {...props} poster={poster} ref={videoRef} />;
             {videoRef?.current && <span className={styles.progress} style={{
                 width: currentTime / duration * videoRef.current.clientWidth,
