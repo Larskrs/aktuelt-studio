@@ -11,7 +11,11 @@ export default function FadeOnScroll ({children, className}) {
                 ([entry]) => {
                     setVisible(entry.isIntersecting)
                 },
-              { threshold: 0.125 } // Adjust threshold as needed
+            {   
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.1, 
+            } // Adjust threshold as needed
             );
         
             const el = ref.current;
@@ -26,7 +30,7 @@ export default function FadeOnScroll ({children, className}) {
         <div 
         ref={ref}
         style={{
-            transition: "opacity 500ms linear",
+            transition: "opacity 1s linear",
             opacity: visible ? 1 : 0
         }}
         className={classNames(className)}

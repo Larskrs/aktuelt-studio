@@ -21,7 +21,11 @@ export default function VideoPlayer({ clickToFullScreen=true, forceMuted, progre
                     videoRef.current.pause();
                 }
             },
-          { threshold: 0.125 } // Adjust threshold as needed
+            {   
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.1, 
+            } // Adjust threshold as needed
         );
     
         const videoElement = videoRef.current;
