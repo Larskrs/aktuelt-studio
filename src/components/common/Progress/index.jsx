@@ -2,7 +2,7 @@ import classNames from "classnames"
 import styles from "./style.module.css"
 import { useState } from "react"
 
-export default function ({max, value, style, barClass, containerClass}) {
+export default function Progress ({max, value, style, barClass, containerClass}) {
 
     return (
         <div style={style} className={classNames(containerClass, styles.c)}>
