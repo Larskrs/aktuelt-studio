@@ -30,8 +30,9 @@ export default function FadeOnScroll ({children, className}) {
         <div 
         ref={ref}
         style={{
-            transition: "opacity 1s linear",
-            opacity: visible ? 1 : 0
+            transition: "all 1s var(--curve-snap)",
+            opacity: visible ? 1 : 0,
+            scale: visible ? 1 : 0.75
         }}
         className={classNames(className)}
         >

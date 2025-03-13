@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import Hls from 'hls.js';
 import styles from "./style.module.css"
 import classNames from 'classnames';
+import Progress from '../Progress';
 
 export default function VideoPlayer({ clickToFullScreen=true, forceMuted, progressBar, poster, src, className, ...props }) {
     const videoRef = useRef(null)
@@ -104,9 +105,6 @@ export default function VideoPlayer({ clickToFullScreen=true, forceMuted, progre
         )}
         >
             <video {...props} poster={poster} ref={videoRef} className={isFullscreen ? styles.fullscreen : "" } />;
-            {videoRef?.current && <span className={styles.progress} style={{
-                width: currentTime / duration * videoRef.current.clientWidth,
-                opacity: playing ? 1 : 0,
-                }}></span>}
+            <Progress max={duration} value={currentTime} containerClass={styles.progress} />
         </div>
 }

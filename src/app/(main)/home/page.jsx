@@ -51,7 +51,9 @@ export default function Home () {
                 </FilmBanner>
             </MaxWidthWrapper> */}
 
-            <Hero />
+            <FadeOnScroll>
+                <Hero />
+            </FadeOnScroll>
             
             <FadeOnScroll>
                 <Split
