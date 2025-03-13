@@ -39,6 +39,7 @@
   --primary-950: #12001a;
 
   --primary-hue: 265;
+  --secondary-hue: 60;
   /* --primary-hue: 170; */
   /* --primary-hue: 120; */
   /* --primary-hue: 80; */
@@ -295,9 +296,14 @@ overscroll-behavior-x: none;
   --fontSize-xxl: 3rem;
 }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
 :root {
   font-size: 18px;
+}
+}
+@media only screen and (min-width: 1500px) {
+:root {
+  font-size: 19px;
 }
 }
 
@@ -306,7 +312,7 @@ box-sizing: border-box;
 padding: 0;
 margin: 0;
 --nav-height: 5rem;
-transition: color 0.3s ease, background-color 0.3s ease;
+transition: color 0.3s ease, background-color 0.3s ease, background 0.3s ease;
 }
 select {
 display: flex;

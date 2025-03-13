@@ -16,7 +16,6 @@
     right: 2rem;
     border-radius: 0.25rem;
     height: 0.5rem;
-    background-color: hsl(var(--primary-hue), 100%,90%);
     z-index: 2;
     transition: all 250ms linear;
 }
