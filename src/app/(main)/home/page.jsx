@@ -65,6 +65,7 @@ export default function Home () {
                     <p>I 2023 produserte vi en TikTok for Ung i Trafikken sin sosiale mediekonto gjennom deres TikTok-konkurranse, hvor vi vant prisen for beste film.</p>
                 </Split>
             </FadeOnScroll>
+                <BannerSection />
             <FadeOnScroll>
                 <Split
                     media={{
@@ -76,7 +77,6 @@ export default function Home () {
                     <p>Vår historie er ikke dekket av roseblader. Vi er kjent for – og stolte av – å utfordre grenser for hva som kan skapes.</p>
                 </Split>
             </FadeOnScroll>
-            {/* <BannerSection /> */}
             <Margin.Block amount={2} ></Margin.Block>
             <DBL />
         </div>

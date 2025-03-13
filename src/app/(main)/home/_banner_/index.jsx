@@ -9,10 +9,12 @@ import TextArea from "@/components/editor/input/TextArea";
 export default function LinkCards ({}) {
     return (
         <div className={styles.c}>
-            <MaxWidthWrapper className={styles.grid}>
-                <div className={styles.title} href={"/dbl"}>
-                    <h1>Har du en ide?</h1>
-                    <p><bold>Kontakt oss</bold></p>
+            <MaxWidthWrapper className={styles.c}>
+                <div className={styles.grid}>
+                    <div className={styles.title} href={"/dbl"}>
+                        <h1>Har du en ide?</h1>
+                        <p><bold>Kontakt oss</bold></p>
+                    </div>
                 </div>
             </MaxWidthWrapper>
         </div>

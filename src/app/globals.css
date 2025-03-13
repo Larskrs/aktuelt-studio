@@ -29,7 +29,7 @@
   --primary-50: #f8e5ff;
   --primary-100: #f1ccff;
   --primary-200: #d877ff;
-  --primary-300: rgb(204, 74, 255);
+  --primary-300: hsl(265, 100%, 65%);
   --primary-400: #c533ff;
   --primary-500: #b700ff;
   --primary-600: #9200cc;
@@ -38,7 +38,13 @@
   --primary-900: #190022;
   --primary-950: #12001a;
 
-  --primary-hue: 283;
+  --primary-hue: 265;
+  /* --primary-hue: 170; */
+  /* --primary-hue: 120; */
+  /* --primary-hue: 80; */
+  /* --primary-hue: 45; */
+  /* --primary-hue: 30; */
+  /* --primary-hue: 0; */
   
   --secondary-50: #ffe5e5;
   --secondary-100: #ffcccc;
@@ -300,6 +306,7 @@ box-sizing: border-box;
 padding: 0;
 margin: 0;
 --nav-height: 5rem;
+transition: color 0.3s ease, background-color 0.3s ease;
 }
 select {
 display: flex;

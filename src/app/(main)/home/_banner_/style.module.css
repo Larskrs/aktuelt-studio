@@ -1,7 +1,6 @@
 .grid {
     width: 100%;
     padding: 1rem;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -9,8 +8,9 @@
     align-items: center;
     gap: 1rem;
 
-    background-color: var(--primary-900);
+    background-color: hsl(var(--primary-hue), 100%, 70%);
     border-radius: 1rem;
+    color: hsl(var(--primary-hue), 100%, 25%);;
 }
 .title {
     display: flex;
