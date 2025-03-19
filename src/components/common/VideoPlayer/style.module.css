@@ -8,17 +8,6 @@
     height: 100%;
     width: 100%;
 }
-.progress {
-    display: flex;
-    position: absolute !important;
-    bottom: 1.5rem;
-    left: 2rem;
-    right: 2rem;
-    border-radius: 0.25rem;
-    height: 0.5rem;
-    z-index: 2;
-    transition: all 250ms linear;
-}
 
 .fullscreen {
     width: 100vw !important;

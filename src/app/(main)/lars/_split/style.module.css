@@ -13,7 +13,7 @@
 }
 
 .c {
-    height: 40rem;
+    height: 30rem;
     max-height: 90vh;
 }
 
@@ -49,12 +49,12 @@
     height: 100%;
 
     font-size: 1.25rem;
-    color: hsl(var(--primary-hue), 25%, 80%);
+    color: hsl(var(--primary-hue), 10%, 5%);
 }
 
 .card {
     position: relative;
-    border-radius: 0rem;
+    border-radius: 2rem;
     overflow: hidden;
     box-shadow: 0rem 1rem 2rem 0rem transparent;
     background: transparent;
@@ -76,11 +76,11 @@
     left: 0px;
     top: 0px;
     scale: 1;
-    border-radius: 0rem;
+    border-radius: 2rem;
 }
 .card .video video {
     object-fit: cover;
-    border-radius: 0rem;
+    border-radius: 2rem;
 }
 .info {
     color: hsl(var(--secondary-hue), 75%, 90%);
@@ -92,11 +92,9 @@
 }
 .info h4 {
     font-size: 2.5em;
-    color: hsl(var(--primary-hue), 50%, 85%);
 }
 .info p {
     margin-top: 0.5em;
-    color: hsl(var(--primary-hue), 25%, 60%);
 }
 .media {
     font-size: 1.5em;

@@ -10,7 +10,8 @@
     overflow: hidden;
     aspect-ratio: 3/1;
     cursor: pointer;
-    border-radius: 1rem;
+    border-radius: 0rem;
+    background-color: hsl(var(--primary-hue), 50%, 7.5%);
 }
 .banner video {
     transition: all 300ms var(--curve-snap);

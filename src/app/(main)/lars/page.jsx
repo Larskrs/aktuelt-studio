@@ -2,15 +2,6 @@
 import MaxWidthWrapper from "@/components/wrappers/MaxWidthWrapper";
 import styles from "./style.module.css"
 import Image from "next/image";
-import Banner from "@/components/wrappers/FilmBanner/Banner";
-import Link from "next/link";
-import FilmBanner from "@/components/wrappers/FilmBanner";
-import LinedTitle from "@/components/common/LinedTitle";
-import classNames from "classnames";
-import TypingEffect from "@/components/common/TypingEffect";
-import CountdownTimer from "@/components/common/CountdownTimer";
-import LocalImage from "@/components/common/LocalImage";
-import LinkCards from "./_link_cards";
 import BannerSection from "./_banner_"
 import Margin from "@/components/common/Margin";
 import ProjectsBento from "./_projects_bento";
@@ -28,14 +19,12 @@ export default function Home () {
             >
                     <TypingEffect typeStyle={{color: "var(--primary-500)"}} textStyle={{fontSize: "var(--fontSize-xxl)"}} prefix="Det finnes alltid en bedre måte å skape " prompts={["film", "tv", "reklamefilm", "musikkvideo"]} />
             </Hero> */}
-
-                <Hero />
-                <MaxWidthWrapper className={styles.padding}>
+            {/* <MaxWidthWrapper className={styles.padding}>
                 <FilmBanner films={[
 
                     {
-                        poster: "",
-                        preview: "",
+                        poster: "/dbl/DBL_PLAKAT_WIDE.jpg",
+                        preview: "https://bamblingen.no/api/v1/files?fileId=20250128-e81c22616f1047d76ec791aad5d33fdc42f8bc2f9185c694",
                         name: "Desperados, Banditos & Litagos"
                     },
                     {
@@ -44,14 +33,18 @@ export default function Home () {
                         name: "Desperados, Banditos & Litagos"
                     },
                     {
-                        poster: "",
-                        preview: "",
+                        poster: "/dbl/DBL_PLAKAT_WIDE.jpg",
+                        preview: "https://bamblingen.no/api/v1/files?fileId=20250128-e81c22616f1047d76ec791aad5d33fdc42f8bc2f9185c694",
                         name: "Desperados, Banditos & Litagos"
                     },
 
                 ]}>
                 </FilmBanner>
-            </MaxWidthWrapper>
+            </MaxWidthWrapper> */}
+
+            <FadeOnScroll>
+                <Hero />
+            </FadeOnScroll>
             
             <FadeOnScroll>
                 <Split
@@ -65,7 +58,6 @@ export default function Home () {
                     <p>I 2023 produserte vi en TikTok for Ung i Trafikken sin sosiale mediekonto gjennom deres TikTok-konkurranse, hvor vi vant prisen for beste film.</p>
                 </Split>
             </FadeOnScroll>
-
             <FadeOnScroll>
                 <BannerSection hue={265}>
                     <h1>Vårt arbeid</h1>
@@ -84,7 +76,7 @@ export default function Home () {
                 </Split>
             </FadeOnScroll>
             <FadeOnScroll>
-                <BannerSection hue={140} image="">
+                <BannerSection hue={65} image="">
                     <h1>Vårt arbeid</h1>
                     <p>Vi skaper unike filmproduksjoner, reklamefilmer og musikkvideoer skreddersydd for dine behov.</p>
                 </BannerSection>

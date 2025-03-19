@@ -1,17 +1,10 @@
 .c {
     display: flex;
     flex-direction: column;
-    background-color: hsl(var(--primary-hue), 75%, 2.5%);
+    background-color: hsl(var(--primary-hue), 75%, 90%);
     color: hsl(var(--primary-hue), 50%, 90%);
     padding-bottom: 2rem;
     gap: 2rem;
-}
-.c:after {
-    position: fixed;
-    bottom: 0px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
 }
 .background {
     width: 100%;
@@ -42,7 +35,7 @@
     height: auto;
     z-index: 1;
     right: 0px;
-    border-radius: 0px;
+    border-radius: 8px;
     cursor: pointer;
     margin-bottom: 2em;
 }
@@ -62,14 +55,14 @@
     margin-left: 1rem;
 }
 .padding {
-    padding: 1rem !important;
+    padding-block: .5rem .5rem;
 }
 
 .btn {
     background-color:  hsl(var(--primary-hue), 100%, 50%);
     color: var(--background-900);
     border: none;
-    border-radius: 0rem;
+    border-radius: 0.25rem;
     font-weight: 600;
     font-size: 1.25rem;
     padding: 0.5rem 2rem;

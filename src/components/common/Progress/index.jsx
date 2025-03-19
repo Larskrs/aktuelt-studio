@@ -6,8 +6,8 @@ export default function Progress ({max, value, style, barClass, containerClass})
 
     return (
         <div style={style} className={classNames(containerClass, styles.c)}>
-            {<span className={classNames(styles.b, barClass)} style={{
-                width: `${(value / max * 100)}%`,
+            {<span className={classNames(barClass, styles.b)} style={{
+                width: `${(value / max * 100)}%`
             }}></span>}
         </div>
     )

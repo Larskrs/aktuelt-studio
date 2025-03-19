@@ -18,7 +18,7 @@ export default function Banner ({image="/dbl/DBL_PLAKAT_WIDE", alt="banner", vid
 
     return (
         <Link href={url} className={styles.banner} onMouseEnter={StartPreview} onMouseLeave={PausePreview}>
-            <LocalImage className={styles.fill} alt={alt + " poster"} width={1920} height={1080} src={image} />
+            {image && <LocalImage className={styles.fill} alt={alt + " poster"} width={1920} height={1080} src={image} />}
             <video muted ref={previewRef} alt={alt + " preview"} loop playsInline src={video} />
         </Link>
     );

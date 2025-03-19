@@ -105,6 +105,6 @@ export default function VideoPlayer({ clickToFullScreen=true, forceMuted, progre
         )}
         >
             <video {...props} poster={poster} ref={videoRef} className={isFullscreen ? styles.fullscreen : "" } />;
-            <Progress max={duration} value={currentTime} containerClass={styles.progress} />
+            <Progress max={duration} value={currentTime} />
         </div>
 }
