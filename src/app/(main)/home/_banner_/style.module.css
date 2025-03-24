@@ -10,7 +10,7 @@
     align-items: center;
     gap: 1rem;
 
-    background-color: hsl(var(--hue), 100%, 25%);
+    background-color: hsl(var(--hue), 75%, 12.5%);
     border-radius: 0rem;
     
     overflow: hidden;
@@ -38,17 +38,18 @@
     text-align: start;
     padding: 1.75em 2em;
     z-index: 2;
-    background: linear-gradient(90deg, hsl(var(--hue), 100%, 22.5%) 36%, transparent 100%);
+    background: linear-gradient(90deg, hsl(var(--hue), 75%, 15%) 36%, transparent 100%);
 }
 .body h1 {
     font-size: 2.5rem;
     margin-bottom: 0.25em;
-    color: hsl(var(--hue), 100%, 90%);;
+    color: hsl(var(--hue), 90%, 65%);;
 }
 .body p {
     font-size: 1.25em;
-    line-height: 1.5em;
-    color: hsl(var(--hue), 75%, 75%);;
+    line-height: 1.25em;
+    font-weight: 400;
+    color: hsl(var(--hue), 75%, 75%);
 }
 
 @media screen and (max-width: 700px) {

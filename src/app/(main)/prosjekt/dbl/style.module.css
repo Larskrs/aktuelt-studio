@@ -6,6 +6,9 @@
     overflow: auto;
 }
 .g {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     position: relative;
 }
 .background {

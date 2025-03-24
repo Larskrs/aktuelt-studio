@@ -7,11 +7,12 @@ import MaxWidthWrapper from "@/components/wrappers/MaxWidthWrapper";
 import FadeOnScroll from "@/components/wrappers/FadeOnScroll";
 import Split from "../../home/_split"
 import Single from "../../home/_single";
+import BannerSection from "../../home/_banner_"
 
 export default function DBL_PAGE () {
     return (
         <div className={styles.c}>
-            <LocalImage className={styles.background} quality={100} width={1920} height={1080} src={"/dbl/DBL_PLAKAT_16.9.jpg"} />
+            {/* <LocalImage className={styles.background} quality={100} width={1920} height={1080} src={"/dbl/DBL_PLAKAT_16.9.jpg"} /> */}
 
             <MaxWidthWrapper className={styles.g}>
                 <FadeOnScroll>
@@ -25,6 +26,12 @@ export default function DBL_PAGE () {
                         <h4>2 år, 2 filmer, 1 drøm</h4>
                         <p>I 2023, starten av VGS, og før Aktuelt Studio i det heletatt var en ide, begynte produksjonen av DBL.</p>
                     </Single>
+                </FadeOnScroll>
+                <FadeOnScroll>
+                    <BannerSection hue={0} image="">
+                        <h1>Vårt arbeid</h1>
+                        <p>Vi skaper unike filmproduksjoner, reklamefilmer og musikkvideoer skreddersydd for dine behov.</p>
+                    </BannerSection>
                 </FadeOnScroll>
                 <FadeOnScroll>
                     <Split

@@ -9,6 +9,7 @@
     padding-inline: 1rem;
     align-items: center;
     position: relative;
+    margin-top: 6rem;
 }
 
 .c {
@@ -27,7 +28,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(transparent, hsla(var(--primary-hue), 25%, 5%, 75%)) !important;
 }
 .body .info {
     display: flex;
@@ -69,6 +69,19 @@
 }
 .card .video video {
     object-fit: cover;
+    position: relative;
+}
+.card .video::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(transparent, hsla(var(--primary-hue), 25%, 5%, 75%)) !important;
 }
 .info {
     /* color: hsl(var(--primary-hue), 75%, 90%); */
@@ -85,6 +98,7 @@
 .info p {
     color: hsl(var(--primary-hue), 50%, 90%);
     margin-top: 0.5em;
+    line-height: 1.25em;
     max-width: 70%;
 }
 .media {
@@ -118,5 +132,9 @@
     .media {
         height: 50rem;
         max-height: 75vh;
+        position: relative;
+    }
+    .body, .body {
+        position: relative;
     }
 }

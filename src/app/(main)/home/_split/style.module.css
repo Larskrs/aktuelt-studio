@@ -96,6 +96,7 @@
 }
 .info p {
     margin-top: 0.5em;
+    line-height: 1.25em;
     color: hsl(var(--primary-hue), 25%, 80%);
 }
 .media {

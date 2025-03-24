@@ -18,6 +18,7 @@ import DBL from "./dbl";
 import Hero from "./_hero";
 import Split from "./_split"
 import FadeOnScroll from "@/components/wrappers/FadeOnScroll";
+import SingleColumn from "./_single";
 
 export default function Home () {
     return (
@@ -66,6 +67,8 @@ export default function Home () {
                 </Split>
             </FadeOnScroll>
 
+            
+
             <FadeOnScroll>
                 <BannerSection hue={265}>
                     <h1>Vårt arbeid</h1>
@@ -73,7 +76,7 @@ export default function Home () {
                 </BannerSection>
             </FadeOnScroll>
             <FadeOnScroll>
-                <Split
+                <SingleColumn
                     media={{
                         type: "video",
                         src: "https://bamblingen.no/api/v1/files/video?v=20250206-0fb468341fa3733f"
@@ -81,13 +84,7 @@ export default function Home () {
                 >
                     <h4>Ikke redd for å provosere!</h4>
                     <p>Vår historie er ikke dekket av roseblader. Vi er kjent for – og stolte av – å utfordre grenser for hva som kan skapes.</p>
-                </Split>
-            </FadeOnScroll>
-            <FadeOnScroll>
-                <BannerSection hue={140} image="">
-                    <h1>Vårt arbeid</h1>
-                    <p>Vi skaper unike filmproduksjoner, reklamefilmer og musikkvideoer skreddersydd for dine behov.</p>
-                </BannerSection>
+                </SingleColumn>
             </FadeOnScroll>
             <Margin.Block amount={2} ></Margin.Block>
             <DBL />

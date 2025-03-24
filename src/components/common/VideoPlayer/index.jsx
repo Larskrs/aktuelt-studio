@@ -5,7 +5,7 @@ import styles from "./style.module.css"
 import classNames from 'classnames';
 import Progress from '../Progress';
 
-export default function VideoPlayer({ clickToFullScreen=true, forceMuted, progressBar, poster, src, className, ...props }) {
+export default function VideoPlayer({ progress=true, clickToFullScreen=true, forceMuted, progressBar, poster, src, className, ...props }) {
     const videoRef = useRef(null)
     const containerRef = useRef(null)
     const [currentTime, setCurrentTime] = useState(0)
@@ -105,6 +105,6 @@ export default function VideoPlayer({ clickToFullScreen=true, forceMuted, progre
         )}
         >
             <video {...props} poster={poster} ref={videoRef} className={isFullscreen ? styles.fullscreen : "" } />;
-            <Progress max={duration} value={currentTime} />
+            {progress && <Progress barClass={styles.progress} containerClass={styles.progressBar} max={duration} value={currentTime} />}
         </div>
 }
