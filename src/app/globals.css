@@ -334,8 +334,15 @@ overflow-x: hidden;
 overscroll-behavior:none;
 scroll-behavior: smooth;
 background-color: var(--background-50);
+font-family: var(--font-inter);
 }
 
+h1, h2, h3, h4 {
+  font-family: var(--font-antonio);
+}
+p {
+  font-family: var(--font-inter) !important;
+}
 
 * {
   --scrollOffset: 0px;

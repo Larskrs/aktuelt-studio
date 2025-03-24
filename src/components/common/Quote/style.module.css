@@ -1,0 +1,11 @@
+.linedTitle {
+    width: 100%;
+    gap: 2rem;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 0.5em;
+    font-size: 3rem;
+    font-family: var(--font-antonio);
+    color: hsla(var(--hue), 90%, 30%, 100%);
+    padding: 1rem;
+}

@@ -6,15 +6,17 @@
     align-items: center;
     margin-bottom: 0.5em;
     font-size: 1.5rem;
+    color: hsla(var(--hue), 100%, 40%, 100%);
 }
 .linedTitle h1 {
     font-weight: 600;
     letter-spacing: 2px;
-    font-size: 1em;
+    font-size: 4em;
 }
 .linedTitle span:first-child, .linedTitle span:last-child {
     height: 0.25rem;
     opacity: 0;
+    color: hsla(var(--hue), 90%, 30%, 100%);
 }
 .linedTitle span:last-child {
     rotate: 180deg;

@@ -31,7 +31,7 @@ export default function Home () {
             </Hero> */}
 
                 <Hero />
-                <MaxWidthWrapper className={styles.padding}>
+                {/* <MaxWidthWrapper className={styles.padding}>
                 <FilmBanner films={[
 
                     {
@@ -52,8 +52,12 @@ export default function Home () {
 
                 ]}>
                 </FilmBanner>
-            </MaxWidthWrapper>
+            </MaxWidthWrapper> */}
             
+            <Link href={"/prosjekt/dbl"}>
+                <DBL />
+            </Link>
+
             <FadeOnScroll>
                 <Split
                     direction="rtl"
@@ -62,7 +66,7 @@ export default function Home () {
                         src: "https://bamblingen.no/api/v1/files/video?v=20250206-1c40218641027a0a"
                     }}
                     >
-                    <h4>En bred variasjon av produksjoner.</h4>
+                    <h4>EN BRED REKKE MEDIER</h4>
                     <p>I 2023 produserte vi en TikTok for Ung i Trafikken sin sosiale mediekonto gjennom deres TikTok-konkurranse, hvor vi vant prisen for beste film.</p>
                 </Split>
             </FadeOnScroll>
@@ -71,7 +75,7 @@ export default function Home () {
 
             <FadeOnScroll>
                 <BannerSection hue={265}>
-                    <h1>Vårt arbeid</h1>
+                    <h1>VÅRT ARBEID</h1>
                     <p>Vi skaper unike filmproduksjoner, reklamefilmer og musikkvideoer skreddersydd for dine behov.</p>
                 </BannerSection>
             </FadeOnScroll>
@@ -82,12 +86,11 @@ export default function Home () {
                         src: "https://bamblingen.no/api/v1/files/video?v=20250206-0fb468341fa3733f"
                     }}
                 >
-                    <h4>Ikke redd for å provosere!</h4>
+                    <h4>IKKE REDDE FOR Å PROVOSERE!</h4>
                     <p>Vår historie er ikke dekket av roseblader. Vi er kjent for – og stolte av – å utfordre grenser for hva som kan skapes.</p>
                 </SingleColumn>
             </FadeOnScroll>
             <Margin.Block amount={2} ></Margin.Block>
-            <DBL />
         </div>
     );
 }

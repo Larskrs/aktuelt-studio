@@ -1,11 +1,18 @@
 import Cookies from '@/components/layout/Cookies'
 import './globals.css'
-import { Inter } from "next/font/google"
+import { Anton, Antonio, Inter, Staatliches } from "next/font/google"
 import { SessionProvider } from 'next-auth/react'
+import classNames from 'classnames'
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
+  variable: "--font-inter"
+})
+const antonio = Antonio({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: "--font-antonio"
 })
 
 export const metadata = {
@@ -16,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <SessionProvider>
-      <html lang="en" className={inter.className}>
+      <html lang="en" className={classNames(inter.className, antonio.variable)}>
         <body>{children}</body>
         <Cookies policyId={"0.0.1"} />
       </html>

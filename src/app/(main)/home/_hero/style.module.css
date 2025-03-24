@@ -40,6 +40,16 @@
     gap: 0.5rem;
     z-index: 2;
 }
+.bl {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 2;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    font-size: 2rem;
+}
 .logo {
     position: relative;
     object-fit: contain;
