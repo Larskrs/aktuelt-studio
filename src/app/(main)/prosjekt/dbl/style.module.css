@@ -20,7 +20,7 @@
 }
 .title {
     color: hsl(var(--primary-hue), 75%, 90%);;
-    font-size: 12rem;
+    font-size: 8rem;
     margin-top: 25vh;
 }
 .subtitle {
