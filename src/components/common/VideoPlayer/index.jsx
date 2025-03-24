@@ -4,6 +4,7 @@ import Hls from 'hls.js';
 import styles from "./style.module.css"
 import classNames from 'classnames';
 import Progress from '../Progress';
+import Image from 'next/image';
 
 export default function VideoPlayer({ progress=true, clickToFullScreen=true, forceMuted, progressBar, poster, src, className, ...props }) {
     const videoRef = useRef(null)
@@ -11,6 +12,7 @@ export default function VideoPlayer({ progress=true, clickToFullScreen=true, for
     const [currentTime, setCurrentTime] = useState(0)
     const [duration, setDuration] = useState(0)
     const [playing, setPlaying] = useState(false)
+    const [muted, setMuted] = useState(true) // Default muted
     const [isFullscreen, setIsFullscreen] = useState(false)
 
     useEffect(() => {
@@ -50,6 +52,12 @@ export default function VideoPlayer({ progress=true, clickToFullScreen=true, for
             }
         }
     };
+    
+    const handleToggleAudio = () => {
+        const b = !videoRef.current.muted
+        videoRef.current.muted = b
+        setMuted(b)
+    }
 
     useEffect(() => {
         const handleFullscreenChange = () => {
@@ -76,6 +84,7 @@ export default function VideoPlayer({ progress=true, clickToFullScreen=true, for
         const interval = setInterval(() => {
             setCurrentTime(videoRef.current.currentTime)
             setPlaying(!videoRef.current.paused)
+            setMuted(videoRef.current.muted)
         }, 250);       
         return () => clearInterval(interval);
 
@@ -98,12 +107,18 @@ export default function VideoPlayer({ progress=true, clickToFullScreen=true, for
 
     return <div
         ref={containerRef}
-        onClick={() => {openFullScreen()}}
+        // onClick={() => {openFullScreen()}}
         className={classNames(
             className,
             styles.v, playing ? styles.playing : styles.paused,
         )}
         >
+            <div className={styles.audioToggle} onClick={handleToggleAudio}>
+            {   muted
+                ? <Image draggable={false} alt='mute-button' width={32} height={32} src={"/icons/ui/Muted.svg"}/>
+                : <Image draggable={false} alt='mute-button' width={32} height={32} src={"/icons/ui/Unmuted.svg"}/>
+            }
+            </div>
             <video {...props} poster={poster} ref={videoRef} className={isFullscreen ? styles.fullscreen : "" } />;
             {progress && <Progress barClass={styles.progress} containerClass={styles.progressBar} max={duration} value={currentTime} />}
         </div>
