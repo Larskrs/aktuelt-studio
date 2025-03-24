@@ -1,7 +1,5 @@
 .g {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 100%;
     max-height: 50rem;
     width: 100%;
@@ -10,51 +8,43 @@
     padding-bottom: 1rem;
     padding-inline: 1rem;
     align-items: center;
+    position: relative;
 }
 
 .c {
-    height: 40rem;
+    height: 30rem;
     max-height: 90vh;
-}
-
-.rtl .media, .ltr .body {
-    grid-row-start: 1;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-.rtl .body, .ltr .media {
-    grid-row-start: 1;
-    grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 2;
 }
 
 .media {
     width: 100%;
     height: 100%;
-    max-height: 30rem;
+    left: 0px;
+    top: 0px;
+    position: absolute;
 }
 .body {
+    position: absolute;
     width: 100%;
     height: 100%;
-    background-color: transparent !important;
+    background: linear-gradient(transparent, hsla(var(--primary-hue), 25%, 5%, 75%)) !important;
 }
 .body .info {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
-    position: relative;
-    height: 100%;
-
+    position: absolute;
+    height: fit-content;
+    left: 1rem;
+    bottom: 1rem;
+    right: 1rem;
     font-size: 1.25rem;
-    color: hsl(var(--primary-hue), 25%, 90%);
+    z-index: 10;
 }
 
 .card {
     position: relative;
-    border-radius: 0rem;
     overflow: hidden;
     box-shadow: 0rem 1rem 2rem 0rem transparent;
     background: transparent;
@@ -76,14 +66,12 @@
     left: 0px;
     top: 0px;
     scale: 1;
-    border-radius: 0rem;
 }
 .card .video video {
     object-fit: cover;
-    border-radius: 0rem;
 }
 .info {
-    color: hsl(var(--secondary-hue), 75%, 90%);
+    /* color: hsl(var(--primary-hue), 75%, 90%); */
     padding: 1.75rem 2rem;
     position: absolute;
     left: 0px;
@@ -91,18 +79,19 @@
     z-index: 2;
 }
 .info h4 {
+    color: hsl(var(--primary-hue), 75%, 95%);
     font-size: 2.5em;
-    color: hsl(var(--primary-hue), 50%, 90%);
 }
 .info p {
+    color: hsl(var(--primary-hue), 50%, 90%);
     margin-top: 0.5em;
-    color: hsl(var(--primary-hue), 25%, 80%);
+    max-width: 70%;
 }
 .media {
     font-size: 1.5em;
 }
 .media .info {
-    color: hsl(var(--secondary-hue), 75%, 70%);
+    color: hsl(var(--primary-hue), 75%, 70%);
 }
 
 .ltr > .media {
