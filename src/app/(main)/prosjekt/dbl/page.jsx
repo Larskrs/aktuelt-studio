@@ -14,13 +14,13 @@ import VideoPlayer from "@/components/common/VideoPlayer";
 export default function DBL_PAGE () {
     return (
         <div className={styles.c}>
-            <LocalImage className={styles.background} quality={100} width={1920} height={1080} src={"/dbl/DBL_PLAKAT_16.9.jpg"} />
+            {/* <LocalImage className={styles.background} quality={100} width={1920} height={1080} src={"/dbl/DBL_PLAKAT_16.9.jpg"} /> */}
 
             <MaxWidthWrapper className={styles.g}>
 
                 <h1 className={styles.title}>DBL, Fra drøm til skjerm</h1>
 
-                    <Single
+                    {/* <Single
                         direction="rtl"
                         media={{
                             type: "video",
@@ -28,7 +28,7 @@ export default function DBL_PAGE () {
                         }}
                         >
                         
-                    </Single>
+                    </Single> */}
 
                     <Single
                         direction="rtl"

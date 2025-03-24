@@ -12,7 +12,6 @@
     overflow: hidden;
     position: relative;
     background-color: hsl(var(--primary-hue), 75%, 2.5%);
-    box-shadow: 0px 0px 8rem 4rem hsl(var(--primary-hue), 75%, 2.5%);
 }
 .maxHeight video {
     max-height: 80vh;
