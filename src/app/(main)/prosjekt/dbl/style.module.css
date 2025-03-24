@@ -9,7 +9,25 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    overflow: hidden;
     position: relative;
+    background-color: hsl(var(--primary-hue), 75%, 2.5%);
+    box-shadow: 0px 0px 8rem 4rem hsl(var(--primary-hue), 75%, 2.5%);
+}
+.maxHeight video {
+    max-height: 80vh;
+    object-fit: cover;
+}
+.title {
+    color: hsl(var(--primary-hue), 75%, 90%);;
+    font-size: 12rem;
+    margin-top: 25vh;
+}
+.subtitle {
+    color: hsl(var(--primary-hue), 75%, 90%);;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 10vh;
 }
 .background {
     position:   fixed;
@@ -20,7 +38,7 @@
     object-fit: cover;
     overflow: hidden;
     opacity: 0.25;
-    filter: blur(16px);
+    /* filter: blur(16px); */
     /* animation: 2s cubic-bezier(0.075, 0.82, 0.165, 1) img-show; */
 }
 @keyframes img-show {

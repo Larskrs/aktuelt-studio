@@ -4,15 +4,15 @@
     max-height: 50rem;
     width: 100%;
     gap: 1rem;
-    margin-top: 1rem;
     padding-bottom: 1rem;
     padding-inline: 1rem;
     align-items: center;
     position: relative;
-    margin-top: 6rem;
 }
 
 .c {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     height: 30rem;
     max-height: 90vh;
 }
