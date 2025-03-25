@@ -4,10 +4,11 @@
     height: 1em;
     /* outline: 1px solid red; */
     overflow: hidden;
-    width: .75em;
+    width: .45em;
     position: relative;
-    font-size: 3rem;
+    font-size: 1em;
     color: white;
+    font-family: var(--font-antonio);
 }
 .shifter { 
     display: flex;
@@ -18,7 +19,7 @@
     position: relative;
 }
 .shifter span {
-    max-height: 1em;
+    max-height: 1.1em;
     font-size: inherit;
     position: absolute;
     text-align: center;

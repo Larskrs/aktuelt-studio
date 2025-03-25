@@ -42,14 +42,6 @@ export default function DBL_PAGE () {
                     </MaxWidthWrapper>
 
 
-                {/* <FadeOnScroll>
-                    <BannerSection hue={0} image="">
-                        <h1>Kostnadd</h1>
-                        <p>Etter samling av rekvisitter på rundt 2 år, har kostnaddene virkelig økt. Men heldigvis har vi spart mye ved å kjøpe brukt.</p>
-                    </BannerSection>
-                </FadeOnScroll> */}
-
-                <BudgetDisplay amount={2000000} />
 
                     <Single
                         direction="ltr"
@@ -60,7 +52,7 @@ export default function DBL_PAGE () {
                         >
                         <h4>SÅ EKTE SOM MULIG</h4>
                         <p>Slik gjennskaper vi western følelsen med minst mulig CGI.</p>
-                    </Single>
+                    </Single>                        
 
                     <Split
                         direction="rtl"
@@ -104,6 +96,24 @@ export default function DBL_PAGE () {
                         <h4>DE FØRSTE REKVISITTENE</h4>
                         <p>Før vi fikk tak i våpenkopier lagd av sink og ekte skinn på hattene, måtte vi nøye oss med billig plastikk og ull fra lekebutikken.</p>
                 </Split>
+                <Single
+                        direction="ltr"
+                        media={{
+                            type: "video",
+                            src: "https://bamblingen.no/api/v1/files/video?v=20250325-61b7d347b619de29"
+                        }}
+                        >
+                        <h4>SE FØRSTE UTKAST</h4>
+                        {/* <p>Slik gjennskaper vi western følelsen med minst mulig CGI.</p> */}
+                    </Single> 
+
+                <LinedTitle title="OPPSUMMERING" hue={350} className={styles.subtitle}></LinedTitle>
+
+                <FadeOnScroll>
+                    <BudgetDisplay amount={20000} />
+                </FadeOnScroll>
+
+
             </div>
         </div>
     );

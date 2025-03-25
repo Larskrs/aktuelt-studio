@@ -5,6 +5,10 @@
     background-color: hsl(var(--primary-hue), 75%, 2.5%);
     overflow: auto;
     z-index: 1;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
 }
 .g {
     display: flex;
