@@ -107,7 +107,7 @@ export default function DBL_PAGE () {
                         {/* <p>Slik gjennskaper vi western følelsen med minst mulig CGI.</p> */}
                     </Single> 
 
-                <LinedTitle title="OPPSUMMERING" hue={350} className={styles.subtitle}></LinedTitle>
+                <LinedTitle title="OPPSUMMERT" hue={350} className={styles.subtitle}></LinedTitle>
 
                 <FadeOnScroll>
                     <BudgetDisplay amount={20000} />
