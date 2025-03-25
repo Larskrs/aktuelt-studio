@@ -7,11 +7,12 @@
     width: .75em;
     position: relative;
     font-size: 3rem;
+    color: white;
 }
 .shifter { 
     display: flex;
     flex-direction: column-reverse;
-    transition: 250ms var(--curve-1);
+    transition: 250ms var(--curve-snap);
     /* overflow: hidden; */
     font-size: inherit;
     position: relative;

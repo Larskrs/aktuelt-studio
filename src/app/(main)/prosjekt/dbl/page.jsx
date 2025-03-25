@@ -13,6 +13,7 @@ import VideoPlayer from "@/components/common/VideoPlayer";
 import LinedTitle from "@/components/common/LinedTitle";
 import Quote from "@/components/common/Quote";
 import Hero from "../../home/_hero";
+import BudgetDisplay from "./_budget";
 
 export default function DBL_PAGE () {
     return (
@@ -47,6 +48,8 @@ export default function DBL_PAGE () {
                         <p>Etter samling av rekvisitter på rundt 2 år, har kostnaddene virkelig økt. Men heldigvis har vi spart mye ved å kjøpe brukt.</p>
                     </BannerSection>
                 </FadeOnScroll> */}
+
+                <BudgetDisplay amount={2000000} />
 
                     <Single
                         direction="ltr"

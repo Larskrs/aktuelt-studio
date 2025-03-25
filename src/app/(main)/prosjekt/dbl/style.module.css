@@ -4,6 +4,7 @@
     min-height: 100dvh;
     background-color: hsl(var(--primary-hue), 75%, 2.5%);
     overflow: auto;
+    z-index: 1;
 }
 .g {
     display: flex;
@@ -21,12 +22,14 @@
     color: hsl(355, 100%, 40%);;
     font-size: 8rem;
     margin-top: 25vh;
+    z-index: 10;
 }
 .subtitle {
     color: hsl(var(--primary-hue), 75%, 90%);;
     font-size: 6rem;
     text-align: center;
     margin-top: 10vh;
+    z-index: 10;
 }
 .background {
     position:   fixed;
