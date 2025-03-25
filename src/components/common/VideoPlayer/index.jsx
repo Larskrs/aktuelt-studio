@@ -43,9 +43,9 @@ export default function VideoPlayer({ progress=true, clickToFullScreen=true, for
         if (videoRef.current) {
             if (videoRef.current.requestFullscreen) {
                 videoRef.current.requestFullscreen();
-            } else if (videoRef.current.webkitRequestFullscreen) { 
+            } else if (videoRef.current.webkitEnterFullScreen) { 
                 // Safari
-                videoRef.current.webkitRequestFullscreen();
+                videoRef.current.webkitEnterFullScreen();
             } else if (videoRef.current.msRequestFullscreen) { 
                 // IE/Edge
                 videoRef.current.msRequestFullscreen();
