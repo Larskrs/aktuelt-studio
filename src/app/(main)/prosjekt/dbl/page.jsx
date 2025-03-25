@@ -105,7 +105,7 @@ export default function DBL_PAGE () {
                         >
                         <h4>SE FØRSTE UTKAST</h4>
                         {/* <p>Slik gjennskaper vi western følelsen med minst mulig CGI.</p> */}
-                    </Single> 
+                </Single> 
 
                 <LinedTitle title="OPPSUMMERT" hue={350} className={styles.subtitle}></LinedTitle>
 

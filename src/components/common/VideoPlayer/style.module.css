@@ -25,11 +25,16 @@
     z-index: 10;
     border-radius: 0px !important;
 }
-
-.audioToggle {
+.toolbar {
     position: absolute;
     right: 0.5rem;
     bottom: 0.5rem;
+
+    display: flex;
+    gap: 0rem;
+}
+.audioToggle {
+    position: relative;
     height: 3rem;
     width: 3rem;
     border-radius: 1.5rem;

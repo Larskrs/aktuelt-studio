@@ -4,7 +4,7 @@
     background-color: hsl(var(--primary-hue), 75%, 2.5%);
     color: hsl(var(--primary-hue), 50%, 90%);
     padding-bottom: 2rem;
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 .c:after {
     position: fixed;
@@ -28,7 +28,7 @@
     object-fit: cover;
     position: absolute;
     z-index: 1;
-    opacity: 1;
+    opacity: 0.75;
     filter: blur(10px);
     scale: 1.1;
     object-position: right;

@@ -29,15 +29,15 @@ export default function VideoPlayer({ progress=true, clickToFullScreen=true, for
                 rootMargin: "0px",
                 threshold: 0.5, 
             } // Adjust threshold as needed
-        );
+        )
     
         const videoElement = videoRef.current;
         if (videoElement) observer.observe(videoElement);
     
         return () => {
             if (videoElement) observer.unobserve(videoElement);
-        };
-    }, []);
+        }
+    }, [])
 
     const openFullScreen = () => {
         if (videoRef.current) {
@@ -112,14 +112,21 @@ export default function VideoPlayer({ progress=true, clickToFullScreen=true, for
             className,
             styles.v, playing ? styles.playing : styles.paused,
         )}
-        >
-            <div className={styles.audioToggle} onClick={handleToggleAudio}>
-            {   muted
-                ? <Image draggable={false} alt='mute-button' width={32} height={32} src={"/icons/ui/Muted.svg"}/>
-                : <Image draggable={false} alt='mute-button' width={32} height={32} src={"/icons/ui/Unmuted.svg"}/>
-            }
+        >   
+            <div className={styles.toolbar}>
+                {/* // MUTE */}
+                <div className={styles.audioToggle} onClick={handleToggleAudio}>
+                {   muted
+                    ? <Image draggable={false} alt='mute-button' width={32} height={32} src={"/icons/ui/Muted.svg"}/>
+                    : <Image draggable={false} alt='mute-button' width={32} height={32} src={"/icons/ui/Unmuted.svg"}/>
+                }
+                </div>
+                {/* // FULLSCREEN */}
+                <div className={styles.audioToggle} onClick={openFullScreen}>
+                    <Image draggable={false} alt='mute-button' width={32} height={32} src={"/icons/ui/Fullscreen.svg"}/>
+                </div>
             </div>
-            <video {...props} poster={poster} ref={videoRef} className={isFullscreen ? styles.fullscreen : "" } />;
+            <video {...props} poster={poster} ref={videoRef} className={isFullscreen ? styles.fullscreen : "" } />
             {progress && <Progress barClass={styles.progress} containerClass={styles.progressBar} max={duration} value={currentTime} />}
         </div>
 }
