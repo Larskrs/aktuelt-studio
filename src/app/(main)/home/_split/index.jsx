@@ -17,7 +17,7 @@ export default function ProjectsBento ({
             <MaxWidthWrapper className={classNames(styles.g, styles[direction])}>
                 <div className={classNames(styles.media, styles.card)}>
                     {/* <Image src={"/"} /> */}
-                        {media.type == "image" && <Image src={"/dbl/DBL_PLAKAT_NARROW.jpg"} width={400} height={600} />}
+                        {media.type == "image" && <Image alt={"media"} src={"/dbl/DBL_PLAKAT_NARROW.jpg"} width={400} height={600} />}
                         {media.type == "video" && <VideoPlayer progress={false} loop controls={false} autoPlay muted playsInline className={styles.video} src={media.src} />}
                 </div>
                 <div className={classNames(styles.body)}>

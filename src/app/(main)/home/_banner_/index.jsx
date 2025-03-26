@@ -13,7 +13,7 @@ export default function LinkCards ({children, hue=60, image="/decor/camera_decor
                     <div className={styles.body}>
                         {children}
                     </div>
-                        {image && <Image className={styles.image} width={540} height={360} src={"/decor/camera_decor.svg"} />}
+                        {image && <Image alt="image-decor" className={styles.image} width={540} height={360} src={"/decor/camera_decor.svg"} />}
                 </div>
             </MaxWidthWrapper>
     );
