@@ -9,7 +9,7 @@ import UserAvatar from "@/components/common/Authentication/UserAvatar"
 export default function Navigation () {
 
     const links = [
-        // { href: "/nyheter", display: "Nyheter"},
+        { href: "/prosjekt/dbl", display: "DBL"},
         // { href: "/radio", display: "Radio"},
         // { href: "/ai-artikkel", display: "AI"},
         // { href: "/meninger", display: "Meninger"},
@@ -22,15 +22,15 @@ export default function Navigation () {
 
     return (
         <nav className={styles.nav}>
-                <Link href={"/"} className={styles.logo}>
-                    <Image src={"/branding/logo/aktueltstudio.png"} alt="bambl2ngen logo" quality={50} width={64*2.5} height={64} />
-                </Link>
                 <div className={styles.links}>
                         {links.map(link =>
                                 <Link className={pathname === link.href ? styles.active : styles.inactive} key={link.href} href={link.href}>{link.display}</Link>
                             )}
                     {/* <Link href={"/dsib"}>Det skjer i Bamble</Link> */}
                 </div>
+                <Link href={"/"} className={styles.logo}>
+                    <Image src={"/branding/logo/aktueltstudio.png"} alt="bambl2ngen logo" quality={100} width={128*2.5} height={128} />
+                </Link>
                 <UserAvatar ></UserAvatar> 
 
             </nav>

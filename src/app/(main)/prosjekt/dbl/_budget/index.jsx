@@ -57,7 +57,7 @@ export default function Budget ({amount}) {
   
     return (
       <MaxWidthWrapper className={styles.limiter}>
-          <h1>Kostnadd</h1>
+          {/* <h1>Kostnadd</h1> */}
         <div className={styles.c} ref={ref}>
           <span className={styles.number}>
             {<AnimatedNumber duration={2000} target={visible ? amount : 0} />}

@@ -1,10 +1,16 @@
 .nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    background: linear-gradient(90deg, var(--background-950), var(--background-925));
     align-items: center;
     font-size: 1.25rem;
     padding: .25em 1em;
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    color: white;
 }
 .nav > *:last-child {
     margin-left: auto;
@@ -33,7 +39,7 @@
     vertical-align: middle;
 }
 .nav .links {
-    font-size: 1rem;
+    font-size: 1.125rem;
     display: flex;
     gap: 16px;
     align-items: center;
@@ -48,10 +54,16 @@
     color: var(--white-900);
 }
 
-@media only screen and (max-width: 700px) {
-
-    .nav h3 {
-        display: none;
+@media screen and (max-width: 992px) {
+    
+    .links {
+        display: none !important;
+    }
+    .nav {
+        grid-template-columns: 1fr 1fr;
+    }
+    .logo {
+        align-items: flex-start;
     }
 
 }

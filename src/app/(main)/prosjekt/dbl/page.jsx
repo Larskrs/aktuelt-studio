@@ -38,7 +38,7 @@ export default function DBL_PAGE () {
                         
                     </Single> */}
 
-                        <Quote hue={350} title="I 2023, starten av VGS, og før Aktuelt Studio i det heletatt var en ide, begynte produksjonen av DBL"></Quote>
+                        <Quote hue={350} title="I 2023, starten av VGS, og før Aktuelt Studio i det hele tatt var en idé, begynte produksjonen av DBL."></Quote>
                     </MaxWidthWrapper>
 
 
@@ -51,7 +51,7 @@ export default function DBL_PAGE () {
                         }}
                         >
                         <h4>SÅ EKTE SOM MULIG</h4>
-                        <p>Slik gjennskaper vi western følelsen med minst mulig CGI.</p>
+                        <p>Slik gjenskaper vi western følelsen med minst mulig CGI.</p>
                     </Single>                        
 
                     <Split
@@ -62,7 +62,7 @@ export default function DBL_PAGE () {
                         }}
                         >
                         <h4>EN ARTIG PRODUKSJON</h4>
-                        <p>Til tross for den hardbeinte arbeidssprosessen, så har vi virkelig hatt det utrolig morro. </p>
+                        <p>Til tross for den hardbeinte arbeidsprosessen, så har vi virkelig hatt det utrolig moro. </p>
                     </Split>
 
                     <Split
@@ -73,7 +73,7 @@ export default function DBL_PAGE () {
                         }}
                         >
                         <h4>EN LANG VEI TIL SKJERMEN</h4>
-                        <p>Selv om filmen bare er 15 min, har vi faktisk 500 GB med opptak og 9 forskjellige filmsteder.</p>
+                        <p>Selv om filmen bare er 15 minutter, har vi faktisk 500 GB med opptak og 9 forskjellige filmsteder.</p>
                     </Split>
 
                         <LinedTitle title="FØRSTE TAGNING" hue={350} className={styles.subtitle}></LinedTitle>
@@ -94,7 +94,7 @@ export default function DBL_PAGE () {
                     }}
                     >
                         <h4>DE FØRSTE REKVISITTENE</h4>
-                        <p>Før vi fikk tak i våpenkopier lagd av sink og ekte skinn på hattene, måtte vi nøye oss med billig plastikk og ull fra lekebutikken.</p>
+                        <p>Før vi fikk tak i våpenkopier laget av sink og hatter med ekte skinn, måtte vi nøye oss med billig plastikk og ull fra lekebutikken.</p>
                 </Split>
                 <Single
                         direction="ltr"
@@ -107,7 +107,10 @@ export default function DBL_PAGE () {
                         {/* <p>Slik gjennskaper vi western følelsen med minst mulig CGI.</p> */}
                 </Single> 
 
-                <LinedTitle title="OPPSUMMERT" hue={350} className={styles.subtitle}></LinedTitle>
+
+
+
+                <LinedTitle title="KOSTNAD" hue={350} className={styles.subtitle}></LinedTitle>
 
                 <FadeOnScroll>
                     <BudgetDisplay amount={20000} />

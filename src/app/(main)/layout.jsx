@@ -4,7 +4,7 @@ export default function Layout ({children}) {
 
 
     return <div>
-        {/* <Navigation /> */}
+        <Navigation />
         <main>
             {children}
         </main>
