@@ -76,12 +76,11 @@
     content: "";
     position: absolute;
     left: 0px;
-    top: 0px;
     bottom: 0px;
     right: 0px;
-    height: 100%;
+    height: 50%;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     background: linear-gradient(transparent, hsla(var(--primary-hue), 25%, 5%, 75%)) !important;
 }
 .info {

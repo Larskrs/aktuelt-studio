@@ -63,7 +63,6 @@ export default function VideoPlayer({ progress=true, clickToFullScreen=true, for
         const handleFullscreenChange = () => {
             setIsFullscreen(document.fullscreenElement !== null);
             videoRef.current.play()
-            videoRef.current.muted = !isFullscreen
         };
     
         document.addEventListener("fullscreenchange", handleFullscreenChange);
