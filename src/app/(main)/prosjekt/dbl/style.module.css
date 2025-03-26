@@ -25,13 +25,13 @@
     object-fit: cover;
 }
 .title {
-    color: hsl(355, 100%, 40%);;
+    color: hsl(355, 100%, 50%);;
     font-size: 8rem;
     margin-top: 25vh;
     z-index: 10;
 }
 .subtitle {
-    color: hsl(var(--primary-hue), 75%, 90%);;
+    color: hsl(var(--primary-hue), 100%, 60%);;
     font-size: 6rem;
     text-align: center;
     margin-top: 10vh;

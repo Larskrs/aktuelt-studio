@@ -113,9 +113,8 @@ export default function DBL_PAGE () {
                 <LinedTitle title="KOSTNAD" hue={350} className={styles.subtitle}></LinedTitle>
 
                 <FadeOnScroll>
-                    <BudgetDisplay amount={20000} />
+                    <BudgetDisplay amount={26000} />
                 </FadeOnScroll>
-
 
             </div>
         </div>

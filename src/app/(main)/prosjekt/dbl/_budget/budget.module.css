@@ -9,7 +9,7 @@
     gap: 1rem;
     color: hsl(0, 100%, 80%);
     font-size: 1.25em;
-
+    transition: all 500ms var(--curve-snap);
     margin-inline: auto;
 }
 

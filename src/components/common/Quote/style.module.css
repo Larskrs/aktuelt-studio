@@ -6,6 +6,6 @@
     margin-bottom: 0.5em;
     font-size: 3rem;
     font-family: var(--font-antonio);
-    color: hsla(var(--hue), 90%, 30%, 100%);
+    color: hsla(var(--hue), 100%, 40%, 100%);
     padding: 1rem;
 }
