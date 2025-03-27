@@ -14,7 +14,7 @@ import LinkCards from "./_link_cards";
 import BannerSection from "./_banner_"
 import Margin from "@/components/common/Margin";
 import ProjectsBento from "./_projects_bento";
-import DBL from "./dbl";
+import DBL from "./_dbl";
 import Hero from "./_hero";
 import Split from "./_split"
 import FadeOnScroll from "@/components/wrappers/FadeOnScroll";
@@ -54,13 +54,11 @@ export default function Home () {
                 </FilmBanner>
             </MaxWidthWrapper> */}
             
-            <Link href={"/prosjekt/dbl"}>
-                <DBL />
-            </Link>
+            <DBL />
 
             <FadeOnScroll>
                 <Split
-                    direction="rtl"
+                    direction="ltr"
                     media={{
                         type: "video",
                         src: "https://bamblingen.no/api/v1/files/video?v=20250206-1c40218641027a0a"

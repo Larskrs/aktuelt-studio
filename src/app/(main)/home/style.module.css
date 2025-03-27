@@ -33,34 +33,6 @@
     scale: 1.1;
     object-position: right;
 }
-
-.titleImage {
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    max-height: 14rem;
-    height: auto;
-    z-index: 1;
-    right: 0px;
-    border-radius: 0px;
-    cursor: pointer;
-    margin-bottom: 2em;
-}
-.hero h2 {
-    margin-bottom: 0.5em;
-}
-.hero p {
-    color: hsl(var(--primary-hue), 10%, 90%);
-    font-size: 1.2em;
-    
-    line-height: 1.4em;
-    margin-bottom: 1em;
-    max-width: 25em;
-}
-.hero p a {
-    border-bottom: 1px solid var(--text-200);
-    margin-left: 1rem;
-}
 .padding {
     padding: 1rem !important;
 }

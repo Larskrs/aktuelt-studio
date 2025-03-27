@@ -1,0 +1,125 @@
+.c {
+    display: flex;
+    flex-direction: column;
+    max-height: 50rem;
+    width: 100%;
+    gap: 1rem;
+    margin-block: 4rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.c > h1 {
+    font-size: 3em;
+    color: hsl(50, 100%, 50%);;
+}
+.g {
+    display: grid;
+    gap: 1rem;
+    align-items: flex-start;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: hsl(var(--primary-hue), 25%, 5%); */
+}
+
+/* BODY */
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    text-align: right;
+    padding: 2rem;
+    padding-block: 2rem;
+    gap: 1rem;
+}
+.body h4 {
+    font-size: 2.5em;
+    color: hsl(var(--primary-hue), 50%, 90%);
+    width: 100%;
+}
+.body p {
+    margin-top: 0.5em;
+    line-height: 1.25em;
+    font-size: 1.25em;
+    color: hsl(var(--primary-hue), 25%, 80%);
+    width: 100%;
+    
+}
+.callToAction {
+    padding: 1rem;
+    background: hsl(var(--primary-hue), 50% 50%);
+    font-size: 1.25em;
+    background-color: hsl(var(--primary-hue), 25%, 5%);
+    border: 2px solid hsl(var(--primary-hue), 25%, 5%);
+    transition: all 125ms var(--curve-snap);
+    border-radius: 0.25rem;
+}
+.callToAction:hover {
+    border: 2px solid hsl(var(--primary-hue), 10%, 50%);
+}
+
+/* POSTER IMAGE */
+
+
+.image {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 2px solid hsl(51, 20%, 20%);
+    animation: nominee 1s ease-in-out infinite;
+}
+.poster {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    inset: 0px;
+}
+
+@keyframes nominee {
+    0% {
+        border: 2px solid hsl(50, 50%, 25%);
+    }
+    50% {
+        border: 2px solid hsl(50, 100%, 50%);
+    }
+    100% {
+        border: 2px solid hsl(50, 50%, 25%);
+    }
+} 
+.nomination {
+    position: absolute;
+    bottom: 1rem;
+    width: 50%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 700px) {
+    .g {
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding-bottom: 0rem;
+    }
+    .body {
+        padding-top: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+    .image {
+        height: 16rem;
+    }
+}

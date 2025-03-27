@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: .25em 1em;
     z-index: 100;
     position: fixed;

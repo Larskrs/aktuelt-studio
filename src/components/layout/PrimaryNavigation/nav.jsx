@@ -10,12 +10,6 @@ export default function Navigation () {
 
     const links = [
         { href: "/prosjekt/dbl", display: "DBL"},
-        // { href: "/radio", display: "Radio"},
-        // { href: "/ai-artikkel", display: "AI"},
-        // { href: "/meninger", display: "Meninger"},
-        // { href: "/satire", display: "Satire"},
-        // { href: "/tips", display: "Tips oss"},
-        // { href: "/calendar", display: "Kalender"},
     ]
 
     const pathname = usePathname()
@@ -29,7 +23,7 @@ export default function Navigation () {
                     {/* <Link href={"/dsib"}>Det skjer i Bamble</Link> */}
                 </div>
                 <Link href={"/"} className={styles.logo}>
-                    <Image src={"/branding/logo/aktueltstudio.png"} alt="bambl2ngen logo" quality={100} width={128*2.5} height={128} />
+                    <Image src={"/branding/logo/aktueltstudio.png"} alt="aktuelt logo" quality={100} width={128*2.5} height={128} />
                 </Link>
                 <UserAvatar ></UserAvatar> 
 

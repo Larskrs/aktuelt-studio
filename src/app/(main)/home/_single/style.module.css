@@ -58,6 +58,8 @@
     position: absolute;
     left: 0px;
     top: 0px;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 .card .video {
     width: 100%;
@@ -67,10 +69,14 @@
     left: 0px;
     top: 0px;
     scale: 1;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 .card .video video {
     object-fit: cover;
     position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 .card .video::after {
     content: "";
