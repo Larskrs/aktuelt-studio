@@ -8,7 +8,7 @@
     align-items: center;
     gap: 1rem;
     color: hsl(0, 100%, 80%);
-    font-size: 1.25em;
+    font-size: 1.25rem;
     transition: all 500ms var(--curve-snap);
     margin-inline: auto;
 }
@@ -33,9 +33,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1em;
 }
 .number h3 {
-    font-size: 1.5em;
+    font-size: 2rem;
     margin-left: 0.25em;
 }

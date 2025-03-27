@@ -1,8 +1,9 @@
 .digits {
     display: flex;
     flex-direction: row;
+    font-size: 3rem;
 }
 .space {
-    font-size: 3.125em;
+    font-size: 1em;
     margin-inline: 0.125em;
 }
