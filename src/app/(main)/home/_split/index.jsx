@@ -37,14 +37,14 @@ export function CardRenderer ({type = "html", content}) {
 
 export function ImageRenderer ({src}) {
     return (
-        <div className={classNames(styles.media, styles.card)}>
-            <Image alt={"media"} src={src} width={400} height={600} />
+        <div className={classNames(styles.media)}>
+            <Image className={styles.image} alt={"media"} src={src} width={400} height={600} />
         </div>
     )
 }
 export function VideoRenderer ({src}) {
     return (
-        <div className={classNames(styles.media, styles.card)}>
+        <div className={classNames(styles.media)}>
             <VideoPlayer progress={false} loop controls={false} autoPlay muted playsInline className={styles.video} src={src} />
         </div>
     )

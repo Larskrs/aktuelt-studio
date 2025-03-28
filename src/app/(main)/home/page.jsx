@@ -62,14 +62,14 @@ export default function Home () {
                         type: "video",
                         content: "https://bamblingen.no/api/v1/files/video?v=20250206-1c40218641027a0a"
                     },
-                        {
-                            type: "html",
-                            content: <>
-                                <h4>EN BRED REKKE MEDIER</h4>
-                                <p>I 2023 produserte vi en TikTok for Ung i Trafikken sin sosiale mediekonto gjennom deres TikTok-konkurranse, hvor vi vant prisen for beste film.</p>
-                                </>
-                        },
-                    ]} />
+                    {
+                        type: "html",
+                        content: <>
+                            <h4>EN BRED REKKE MEDIER</h4>
+                            <p>I 2023 produserte vi en TikTok for Ung i Trafikken sin sosiale mediekonto gjennom deres TikTok-konkurranse, hvor vi vant prisen for beste film.</p>
+                            </>
+                    },
+                ]} />
             </FadeOnScroll>
 
             

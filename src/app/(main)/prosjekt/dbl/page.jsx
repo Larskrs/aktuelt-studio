@@ -79,13 +79,14 @@ export default function DBL_PAGE () {
                     ]} />
                     
                     <Split media={[
-                        {
-                            type: "html",
-                            content: <>
-                                    <h4>EN LANG VEI TIL SKJERMEN</h4>
-                                    <p>Selv om filmen bare er 15 minutter, har vi faktisk 500 GB med opptak og 9 forskjellige filmsteder.</p>
-                                </>
-                        },
+                        // {
+
+                        //     type: "html",
+                        //     content: <>
+                        //             <h4>EN LANG VEI TIL SKJERMEN</h4>
+                        //             <p>Selv om filmen bare er 15 minutter, har vi faktisk 500 GB med opptak og 9 forskjellige filmsteder.</p>
+                        //         </>
+                        // },
                         {
                             type: "video",
                             content: "https://bamblingen.no/api/v1/files/video?v=20250206-dca1812efa4ff107"
@@ -97,21 +98,15 @@ export default function DBL_PAGE () {
                 <Split
                     media={[
                         {
-                            type: "video",
-                            content: "https://bamblingen.no/api/v1/files/video?v=20250324-98fdc0ec03eac1ee"
-                        } 
-                    ]}
-                    >
-                </Split>
-                <Split
-                    media={[
-                        {
-                            type: "video",
-                            content: "https://bamblingen.no/api/v1/files/video?v=20250324-77df8fd9946d5fd7"
+                            type: "html",
+                            content: <>
+                                <h4>DE FØRSTE REKVISITTENE</h4>
+                                <p>Før vi fikk tak i våpenkopier laget av sink og hatter med ekte skinn, måtte vi nøye oss med billig plastikk og ull fra lekebutikken.</p>
+                            </>
                         },
                         {
                             type: "video",
-                            content: "https://bamblingen.no/api/v1/files/video?v=20250324-0f1d4d14dd4c1b51"
+                            content: "https://bamblingen.no/api/v1/files/video?v=20250324-d9b132ac43991af3"
                         },
                     ]}
                     >

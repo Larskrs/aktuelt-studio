@@ -1,141 +1,144 @@
-.g {
+.c {
     display: flex;
-    flex-direction: row;
-    height: 100%;
+    flex-direction: column;
     max-height: 50rem;
     width: 100%;
     gap: 1rem;
-    margin-top: 1rem;
-    padding-bottom: 1rem;
-    padding-inline: 1rem;
-    align-items: center;
-}
-
-.c {
-    max-height: 90vh;
-}
-
-.rtl .media, .ltr .body {
-    grid-row-start: 1;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    text-align: left;
-}
-.rtl .body, .ltr .media {
-    grid-row-start: 1;
-    grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    text-align: right;
-}
-
-.media {
-    width: 100%;
-    height: 100%;
-    max-height: 30rem;
-    min-height: 20rem;
-}
-.body {
-    width: 100%;
-    height: auto;
-    background-color: transparent !important;
-    padding-block: 2rem;
-}
-.body .info {
-    display: flex;
+    margin-top: 4rem;
+    padding: 1rem;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     position: relative;
-    font-size: 1.25rem;
-    color: hsl(var(--primary-hue), 25%, 90%);
+}
+.c > h1 {
+    font-size: 3em;
+    color: hsl(50, 100%, 50%);;
+}
+.g {
+    display: grid;
+    gap: 2rem;
+    align-items: flex-start;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: hsl(var(--primary-hue), 25%, 5%); */
 }
 
-.card {
-    position: relative;
-    border-radius: 0rem;
-    overflow: hidden;
-    box-shadow: 0rem 1rem 2rem 0rem transparent;
-    background: transparent;
-    transition: all 250ms var(--curve-snap);
-}
-.card img {
+/* BODY */
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    position: absolute;
-    left: 0px;
-    top: 0px;
+    min-height: 100%;
+    text-align: right;
+    padding: 2rem;
+    padding-right: 0px;
+    /* padding-block: 4rem; */
+    gap: 2rem;
 }
-.card .video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    scale: 1;
-    border-radius: 0.5rem;
-    overflow: hidden;
-}
-.card .video video {
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
-.info {
-    color: hsl(var(--secondary-hue), 75%, 90%);
-    padding: 1.75rem 2rem;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    z-index: 2;
-}
-.info h4 {
+.body h4 {
     font-size: 2.5em;
     color: hsl(var(--primary-hue), 50%, 90%);
     width: 100%;
 }
-.info p {
+.body p {
     margin-top: 0.5em;
     line-height: 1.25em;
+    font-size: 1.25em;
     color: hsl(var(--primary-hue), 25%, 80%);
     width: 100%;
+    
 }
-.media {
-    font-size: 1.5em;
+.callToAction {
+    padding: 1rem;
+    background: hsl(var(--primary-hue), 50% 50%);
+    font-size: 1.25em;
+    background-color: hsl(var(--primary-hue), 25%, 10%);
+    border: 2px solid hsl(var(--primary-hue), 25%, 15%);
+    transition: all 125ms var(--curve-snap);
+    border-radius: 0.25rem;
 }
-.media .info {
-    color: hsl(var(--secondary-hue), 75%, 70%);
+.callToAction:hover {
+    border: 2px solid hsl(var(--primary-hue), 10%, 50%);
 }
 
-.ltr > .media {
-    
+/* POSTER IMAGE */
+
+
+.media {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    min-height: 20rem;
+    width: 100%;
+    max-height: 30rem;
+}
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    inset: 0px;
+}
+.video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover !important;
+    object-position: center;
+    position: absolute;
+    inset: 0px;
+}
+.nomination {
+    position: absolute;
+    bottom: 1rem;
+    width: 50%; 
+    height: auto;
+}
+
+.body:first-child {
+    text-align: right;
+    padding-right: 0px;
+}
+.body:last-child {
+    text-align: left;
+    padding-left: 0px;
 }
 
 
 @media screen and (max-width: 700px) {
     .g {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
         height: fit-content;
+        padding-bottom: 0rem;
+        gap: 0px;
     }
-    .c {
-        height: fit-content;
-        max-height: unset;
-    }
-    .info h4 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-    .info p {
-        text-align: center;
-    }
-    .card {
-        max-height: 50vh;
+    .body {
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+        align-items: center !important;
+        text-align: center !important;
     }
     .media {
-        height: 50rem;
-        max-height: 75vh;
+        margin: 0px;
+    }
+    .body:first-child {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .image {
+        height: 16rem;
     }
 }
