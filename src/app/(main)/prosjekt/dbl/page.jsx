@@ -44,7 +44,6 @@ export default function DBL_PAGE () {
 
 
                     <Single
-                        direction="ltr"
                         media={{
                             type: "video",
                             src: "https://bamblingen.no/api/v1/files/video?v=20250324-a066fbe1d5421912"
@@ -54,7 +53,7 @@ export default function DBL_PAGE () {
                         <p>Slik gjenskaper vi western følelsen med minst mulig CGI.</p>
                     </Single>                        
 
-                    <Split
+                    {/* <Split
                         direction="rtl"
                         media={{
                             type: "video",
@@ -63,38 +62,75 @@ export default function DBL_PAGE () {
                         >
                         <h4>EN ARTIG PRODUKSJON</h4>
                         <p>Til tross for den hardbeinte arbeidsprosessen, så har vi virkelig hatt det utrolig moro. </p>
-                    </Split>
+                    </Split> */}
 
-                    <Split
-                        direction="ltr"
-                        media={{
+                    <Split media={[
+                        {
                             type: "video",
-                            src: "https://bamblingen.no/api/v1/files/video?v=20250206-dca1812efa4ff107"
-                        }}
-                        >
-                        <h4>EN LANG VEI TIL SKJERMEN</h4>
-                        <p>Selv om filmen bare er 15 minutter, har vi faktisk 500 GB med opptak og 9 forskjellige filmsteder.</p>
-                    </Split>
+                            content: "https://bamblingen.no/api/v1/files/video?v=20250206-fe2e9d025bc95da7"
+                        },
+                        {
+                            type: "html",
+                            content: <>
+                                    <h4>EN ARTIG PRODUKSJON</h4>
+                                    <p>Til tross for den hardbeinte arbeidsprosessen, så har vi virkelig hatt det utrolig moro. </p>
+                                </>
+                        },
+                    ]} />
+                    
+                    <Split media={[
+                        {
+                            type: "html",
+                            content: <>
+                                    <h4>EN LANG VEI TIL SKJERMEN</h4>
+                                    <p>Selv om filmen bare er 15 minutter, har vi faktisk 500 GB med opptak og 9 forskjellige filmsteder.</p>
+                                </>
+                        },
+                        {
+                            type: "video",
+                            content: "https://bamblingen.no/api/v1/files/video?v=20250206-dca1812efa4ff107"
+                        }
+                    ]} />
 
-                        <LinedTitle title="FØRSTE TAGNING" hue={350} className={styles.subtitle}></LinedTitle>
+                    <LinedTitle title="FØRSTE TAGNING" hue={350} className={styles.subtitle}></LinedTitle>
 
                 <Split
-                    direction="rtl"
-                    media={{
-                        type: "video",
-                        src: "https://bamblingen.no/api/v1/files/video?v=20250324-77df8fd9946d5fd7"
-                    }}
+                    media={[
+                        {
+                            type: "video",
+                            content: "https://bamblingen.no/api/v1/files/video?v=20250324-98fdc0ec03eac1ee"
+                        } 
+                    ]}
                     >
                 </Split>
                 <Split
-                    direction="ltr"
-                    media={{
-                        type: "video",
-                        src: "https://bamblingen.no/api/v1/files/video?v=20250324-d9b132ac43991af3"
-                    }}
+                    media={[
+                        {
+                            type: "video",
+                            content: "https://bamblingen.no/api/v1/files/video?v=20250324-77df8fd9946d5fd7"
+                        },
+                        {
+                            type: "video",
+                            content: "https://bamblingen.no/api/v1/files/video?v=20250324-0f1d4d14dd4c1b51"
+                        },
+                    ]}
                     >
-                        <h4>DE FØRSTE REKVISITTENE</h4>
-                        <p>Før vi fikk tak i våpenkopier laget av sink og hatter med ekte skinn, måtte vi nøye oss med billig plastikk og ull fra lekebutikken.</p>
+                </Split>
+                <Split
+                    media={[
+                        {
+                            type: "video",
+                            content: "https://bamblingen.no/api/v1/files/video?v=20250324-d9b132ac43991af3"
+                        },
+                        {
+                            type: "html",
+                            content: <>
+                                <h4>DE FØRSTE REKVISITTENE</h4>
+                                <p>Før vi fikk tak i våpenkopier laget av sink og hatter med ekte skinn, måtte vi nøye oss med billig plastikk og ull fra lekebutikken.</p>
+                            </>
+                        }
+                    ]}
+                    >
                 </Split>
                 <Single
                         direction="ltr"
@@ -104,7 +140,6 @@ export default function DBL_PAGE () {
                         }}
                         >
                         <h4>SE FØRSTE UTKAST</h4>
-                        {/* <p>Slik gjennskaper vi western følelsen med minst mulig CGI.</p> */}
                 </Single> 
 
 
