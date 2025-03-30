@@ -10,7 +10,6 @@
     color: hsl(355, 100%, 80%);
     font-size: 1.25rem;
     transition: all 500ms var(--curve-snap);
-    margin-inline: auto;
 }
 
 .limiter {

@@ -9,13 +9,14 @@ import VideoPlayer from "@/components/common/VideoPlayer";
 
 export default function SplitElement ({
     media=[],
+    height="100%"
 }) {
     return (
         <div className={styles.c}>
             <MaxWidthWrapper className={classNames(styles.g)}>
                 {media.map((m, i) => {
                     return (
-                        <CardRenderer key={i} {...m} />
+                        <CardRenderer height={height} key={i} {...m} />
                     )
                 })}
             </MaxWidthWrapper>
@@ -23,36 +24,36 @@ export default function SplitElement ({
     );
 }
 
-export function CardRenderer ({type = "html", content}) {
+export function CardRenderer ({type = "html", content, height}) {
     if (type === "image") {
-        return <ImageRenderer src={content} />
+        return <ImageRenderer height={height} src={content} />
     }
     if (type === "video") {
-        return <VideoRenderer src={content} />
+        return <VideoRenderer height={height} src={content} />
     }
     
     return <BodyRenderer>{content}</BodyRenderer>
     
 }
 
-export function ImageRenderer ({src}) {
+export function ImageRenderer ({src, height}) {
     return (
-        <div className={classNames(styles.media)}>
+        <div className={classNames(styles.media)} style={{height: height}}>
             <Image className={styles.image} alt={"media"} src={src} width={400} height={600} />
         </div>
     )
 }
-export function VideoRenderer ({src}) {
+export function VideoRenderer ({src, height}) {
     return (
-        <div className={classNames(styles.media)}>
+        <div className={classNames(styles.media)} style={{height: height}}>
             <VideoPlayer progress={false} loop controls={false} autoPlay muted playsInline className={styles.video} src={src} />
         </div>
     )
 }
 
-export function BodyRenderer ({children}) {
+export function BodyRenderer ({children, height}) {
     return (
-        <div className={classNames(styles.body)}>
+        <div className={classNames(styles.body)} style={{height: height}}>
             <div className={styles.info}>
                 {children}
             </div>

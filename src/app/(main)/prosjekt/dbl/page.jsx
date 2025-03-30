@@ -53,16 +53,6 @@ export default function DBL_PAGE () {
                         <p>Slik gjenskaper vi western følelsen med minst mulig CGI.</p>
                     </Single>                        
 
-                    {/* <Split
-                        direction="rtl"
-                        media={{
-                            type: "video",
-                            src: "https://bamblingen.no/api/v1/files/video?v=20250206-fe2e9d025bc95da7"
-                        }}
-                        >
-                        <h4>EN ARTIG PRODUKSJON</h4>
-                        <p>Til tross for den hardbeinte arbeidsprosessen, så har vi virkelig hatt det utrolig moro. </p>
-                    </Split> */}
 
                     <Split media={[
                         {
@@ -79,14 +69,14 @@ export default function DBL_PAGE () {
                     ]} />
                     
                     <Split media={[
-                        // {
+                        {
 
-                        //     type: "html",
-                        //     content: <>
-                        //             <h4>EN LANG VEI TIL SKJERMEN</h4>
-                        //             <p>Selv om filmen bare er 15 minutter, har vi faktisk 500 GB med opptak og 9 forskjellige filmsteder.</p>
-                        //         </>
-                        // },
+                            type: "html",
+                            content: <>
+                                    <h4>EN LANG VEI TIL SKJERMEN</h4>
+                                    <p>Selv om filmen bare er 15 minutter, har vi faktisk 500 GB med opptak og 9 forskjellige filmsteder.</p>
+                                </>
+                        },
                         {
                             type: "video",
                             content: "https://bamblingen.no/api/v1/files/video?v=20250206-dca1812efa4ff107"
@@ -137,14 +127,42 @@ export default function DBL_PAGE () {
                         <h4>SE FØRSTE UTKAST</h4>
                 </Single> 
 
+                <LinedTitle title="FILMINGEN" hue={350} className={styles.subtitle}></LinedTitle>                    
 
+                <Split
+                    height={"30rem"}
+                    media={[
+                        {
+                            type: "video",
+                            content: "https://bamblingen.no/api/v1/files/video?v=20250330-d17ade7157d736d6"
+                        },
+                        {
+                            type: "html",
+                            content: <>
+                                <h4>PRAKTISK EFFEKT</h4>
+                                <p>Mot slutten av filmen bruker vi en vannslange koblet til en kompressor med falskt tekstilblod. Den avkuttede slangetuppen sørger for en aggressiv spruteffekt.</p>
+                            </>
+                        }
+                    ]}
+                    >
+                </Split>
 
-
-                <LinedTitle title="KOSTNAD" hue={350} className={styles.subtitle}></LinedTitle>
-
-                <FadeOnScroll>
-                    <BudgetDisplay amount={26000} />
-                </FadeOnScroll>
+                <Split media={[
+                    {
+                        type: "html",
+                        content: <>
+                                    <h1 title="KOSTNAD" className={styles.budgetTitle}>KOSTNAD</h1>
+                                    <BudgetDisplay amount={26000} />
+                                </>
+                        },
+                    {
+                        type: "html",
+                        content: <>
+                                    <h1 title="KOSTNAD" className={styles.budgetTitle}>INNTEKTER</h1>
+                                    <BudgetDisplay amount={0} />
+                            </>
+                    },
+                    ]} />
 
             </div>
         </div>

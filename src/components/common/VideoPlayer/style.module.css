@@ -1,8 +1,17 @@
+.fullscreen video {
+    object-fit: contain !important;
+}
+
 .v {
     position: relative;
     height: 100%;
     width: 100%;
     transition: all 500ms linear;
+}
+
+:not(:root):fullscreen {
+    object-fit: contain;
+    background-color: hsl(var(--primary-hue), 50%, 2.5%);
 }
 .v video {
     height: 100%;
@@ -12,7 +21,6 @@
 .fullscreen {
     width: 100vw !important;
     height: 100vh !important;
-    object-fit: contain !important;
 }
 .progressBar {
     width: 100%;
@@ -60,4 +68,8 @@
     opacity: 0.25;
     border-radius: 1.5rem;
     background-color: hsl(var(--primary-hue), 25%, 5%) !important;
+}
+
+.fullscreen video {
+    object-fit: contain !important;
 }

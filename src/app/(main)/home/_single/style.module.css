@@ -28,6 +28,7 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
+    
 }
 .body .info {
     display: flex;
@@ -86,7 +87,7 @@
     height: 50%;
     width: 100%;
     z-index: 2;
-    background: linear-gradient(transparent, hsla(var(--primary-hue), 25%, 5%, 75%)) !important;
+    background: linear-gradient(0deg, hsla(var(--primary-hue), 10%, 5%), hsla(var(--primary-hue), 10%, 5%, 75%), hsla(var(--primary-hue), 10%, 5%, 0%));
 }
 .info {
     /* color: hsl(var(--primary-hue), 75%, 90%); */

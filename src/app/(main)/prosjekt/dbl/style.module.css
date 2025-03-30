@@ -25,7 +25,7 @@
     object-fit: cover;
 }
 .title {
-    color: hsl(355, 100%, 50%);;
+    color: hsl(350, 100%, 50%);;
     font-size: 8rem;
     margin-top: 10vw;
     z-index: 10;
@@ -34,7 +34,14 @@
     color: hsl(var(--primary-hue), 100%, 60%);;
     font-size: 6rem;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 8rem;
+    z-index: 10;
+}
+.budgetTitle {
+    color: hsl(350, 100%, 40%, 100%);
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
     z-index: 10;
 }
 .background {
