@@ -18,12 +18,12 @@ export default function DBL ({}) {
             <div className={styles.g}>
                 <div className={styles.body}>
                     {/* <p>Året er 1886. En ung mann drømte om et bedre liv og lot seg lokke av løftene om den amerikanske drømmen. Med bare hunden sin som følgesvenn forlot han Norge og satte kurs mot USA. Men det skulle ikke ta lang tid før han innså at den amerikanske drømmen ikke var så idyllisk som han hadde forestilt seg.</p> */}
-                    <p><b>Året er 1886</b>. En ung mann drømte om et bedre liv og lot seg lokke av løftene om den amerikanske drømmen. Med bare hunden sin som følgesvenn forlot han Norge og satte kurs mot USA. Men det skulle ikke...
+                    <p><b>Året er 1886</b>. En ung norsk immigrant som søker den amerikanske drømmen, blir dratt inn i en større konflikt for hevn...
                         {/* <span><Link href={"/prosjekt/dbl"}>les mer</Link></span> */}
                     </p>
                     <Link href={"/prosjekt/dbl"} className={styles.callToAction}>
                         {/* <Link href={"/prosjekt/dbl"} className={classNames(styles.btn, styles.upcoming)}>Se Film</Link> */}
-                        <span>Les om produksjonen</span>
+                        Les om filmen
                     </Link>
                 </div>
                 <Link href={"/prosjekt/dbl"} className={styles.image}>

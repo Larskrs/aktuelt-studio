@@ -1,5 +1,5 @@
 .c {
-    background: hsl(0, 75%, 25%);
+    background: hsl(355, 75%, 25%);
     z-index: 2;
     padding: 1.5rem 4rem;
 
@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    color: hsl(0, 100%, 80%);
+    color: hsl(355, 100%, 80%);
     font-size: 1.25rem;
     transition: all 500ms var(--curve-snap);
     margin-inline: auto;
@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    color: hsl(0, 75%, 25%);
+    color: hsl(355, 75%, 25%);
 }
 .c h1 {
     font-size: 1.5em;
@@ -27,7 +27,7 @@
 }
 .counter {
     font-size: 4rem;
-    color: hsl(0, 100%, 80%);
+    color: hsl(355, 100%, 80%);
 }
 .number {
     display: flex;

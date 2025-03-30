@@ -36,8 +36,8 @@
     text-align: right;
     padding: 2rem;
     padding-right: 0px;
-    padding-block: 2rem;
-    gap: 2rem;
+    padding-block: 4rem;
+    gap: 1rem;
 }
 .body h4 {
     font-size: 2.5em;
@@ -53,16 +53,19 @@
     
 }
 .callToAction {
-    padding: 1rem;
-    background: hsl(var(--primary-hue), 50% 50%);
-    font-size: 1.25em;
-    background-color: hsl(var(--primary-hue), 25%, 10%);
-    border: 2px solid hsl(var(--primary-hue), 25%, 15%);
-    transition: all 125ms var(--curve-snap);
-    border-radius: 0.25rem;
+    padding: 0.5rem 3rem;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: hsl(50, 100%, 50%);;
+    border: 2px solid hsl(50, 100%, 50%);
+    color: hsl(50, 100%, 10%);
+    transition: all 50ms var(--curve-snap);
+    border-radius: 2rem;
 }
 .callToAction:hover {
-    border: 2px solid hsl(var(--primary-hue), 10%, 50%);
+    color: hsl(50, 100%, 50%);
+    background-color: transparent;
+    border: 2px solid hsl(50, 100%, 50%);
 }
 
 /* POSTER IMAGE */
@@ -91,13 +94,13 @@
 
 @keyframes nominee {
     0% {
-        border: 2px solid hsl(50, 50%, 25%);
+        border: 2px solid hsl(50, 100%, 15%);
     }
     50% {
         border: 2px solid hsl(50, 100%, 50%);
     }
     100% {
-        border: 2px solid hsl(50, 50%, 25%);
+        border: 2px solid hsl(50, 100%, 15%);
     }
 } 
 .nomination {
