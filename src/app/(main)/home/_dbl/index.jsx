@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "./dbl.module.css"
 import MaxWidthWrapper from "@/components/wrappers/MaxWidthWrapper";
+import classNames from "classnames";
 
 export default function DBL ({}) {
     // TODO
@@ -13,10 +14,10 @@ export default function DBL ({}) {
     return (
         <MaxWidthWrapper className={styles.c}>
 
-            <h1>Nominert</h1>
 
             <div className={styles.g}>
                 <div className={styles.body}>
+                    <h1>Nominert</h1>
                     {/* <p>Året er 1886. En ung mann drømte om et bedre liv og lot seg lokke av løftene om den amerikanske drømmen. Med bare hunden sin som følgesvenn forlot han Norge og satte kurs mot USA. Men det skulle ikke ta lang tid før han innså at den amerikanske drømmen ikke var så idyllisk som han hadde forestilt seg.</p> */}
                     <p><b>Året er 1886</b>. En ung norsk immigrant som søker den amerikanske drømmen, blir dratt inn i en større konflikt for hevn...
                         {/* <span><Link href={"/prosjekt/dbl"}>les mer</Link></span> */}
@@ -27,7 +28,8 @@ export default function DBL ({}) {
                     </Link>
                 </div>
                 <Link href={"/prosjekt/dbl"} className={styles.image}>
-                    <LocalImage alt="poster" className={styles.poster} src={"/dbl/DBL_PLAKAT_16.9.jpg"} width={600} height={600} />
+                    <LocalImage alt="poster" className={classNames(styles.poster, styles.mobile)} src={"/dbl/DBL_PLAKAT_NARROW.jpg"} width={300} height={700} />
+                    <LocalImage alt="poster" className={classNames(styles.poster, styles.desktop)} src={"/dbl/DBL_PLAKAT_16.9.jpg"} width={600} height={600} />
                     <LocalImage alt="nomination" className={styles.nomination} src={"/icons/ui/Amandus_Fiction_Nomination.svg"} width={200} height={60} />
                 </Link>
             </div>

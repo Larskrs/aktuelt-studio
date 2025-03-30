@@ -27,7 +27,7 @@
 .title {
     color: hsl(355, 100%, 50%);;
     font-size: 8rem;
-    margin-top: 25vh;
+    margin-top: 10vw;
     z-index: 10;
 }
 .subtitle {
