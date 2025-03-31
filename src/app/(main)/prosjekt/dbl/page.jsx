@@ -74,7 +74,7 @@ export default function DBL_PAGE () {
                             type: "html",
                             content: <>
                                     <h4>EN LANG VEI TIL SKJERMEN</h4>
-                                    <p>Selv om filmen bare er 15 minutter, har vi faktisk 500 GB med opptak og 9 forskjellige filmsteder.</p>
+                                    <p>Selv om filmen bare er rundt 15 minutter, har vi faktisk 500 GB med opptak og 9 forskjellige filmsteder.</p>
                                 </>
                         },
                         {
