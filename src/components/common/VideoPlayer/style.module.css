@@ -9,7 +9,7 @@
     transition: all 500ms linear;
 }
 
-:not(:root):fullscreen {
+.v:fullscreen {
     object-fit: contain;
     background-color: hsl(var(--primary-hue), 50%, 2.5%);
 }
