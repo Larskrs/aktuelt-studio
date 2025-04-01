@@ -15,27 +15,29 @@ export default function Hero ({}) {
     })
 
     useEffect(() => {
-        const onScroll = e => {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            setProgress(scrolled);
+        const onScroll = () => {
+          if (!ref.current) return;
+      
+          const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          const imageHeight = ref.current.offsetHeight;
+          const scrolled = (winScroll / imageHeight) * 100;
           
-        //   setScrollTop(e.target.documentElement.scrollTop > scrollTop);
+          setProgress(scrolled);
         };
+      
         window.addEventListener("scroll", onScroll);
-    
+      
         return () => window.removeEventListener("scroll", onScroll);
-      }, [scrollTop]);
+      }, [ref]);
 
     return (
         <div className={styles.c} ref={ref}>
             <div className={styles.hero}>
-                <div className={styles.topDrawer} style={{height:    `${progress}%`}}></div>
-                <div className={styles.bottomDrawer} style={{height: `${progress}%`}}></div>
+                <div className={styles.topDrawer} style={{height:    `${progress/1.75}%`}}></div>
+                <div className={styles.bottomDrawer} style={{height: `${progress/1.75}%`}}></div>
 
-                <VideoPlayer style={{scale: ((progress*1.25/100)+1)}} progress={false} progressBar loop controls={false} autoPlay muted playsInline className={styles.video} src={"https://bamblingen.no/api/v1/files/video?v=20250312-4089807053b3bf43"} />
-                <div className={styles.center} style={{scale: `${(progress+100)+1}%`}}>
+                <VideoPlayer progress={false} progressBar loop controls={false} autoPlay muted playsInline className={styles.video} src={"https://bamblingen.no/api/v1/files/video?v=20250312-4089807053b3bf43"} />
+                <div className={styles.center} >
                     <Image alt="aktuelt-studio-logo" className={styles.logo} src={"/branding/logo/aktueltstudio.png"} width={720} height={256} />
                 </div>
             </div>
