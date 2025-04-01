@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 export default function Hero ({}) {
-
+    
     return (
         <div className={styles.c}>
             <div className={styles.hero}>

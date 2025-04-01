@@ -3,8 +3,13 @@
     flex-direction: column;
     background-color: hsl(var(--primary-hue), 75%, 2.5%);
     color: hsl(var(--primary-hue), 50%, 90%);
-    padding-bottom: 2rem;
     /* gap: 2rem; */
+}
+.body {
+    background-color: hsl(var(--primary-hue), 50%, 2.5%);
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
 }
 .c:after {
     position: fixed;

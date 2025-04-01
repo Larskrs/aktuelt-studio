@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import Progress from '../Progress';
 import Image from 'next/image';
 
-export default function VideoPlayer({ progress=true, clickToFullScreen=true, forceMuted, progressBar, poster, src, className, ...props }) {
+export default function VideoPlayer({style, progress=true, clickToFullScreen=true, forceMuted, progressBar, poster, src, className, ...props }) {
     const videoRef = useRef(null)
     const containerRef = useRef(null)
     const [currentTime, setCurrentTime] = useState(0)
@@ -14,6 +14,26 @@ export default function VideoPlayer({ progress=true, clickToFullScreen=true, for
     const [playing, setPlaying] = useState(false)
     const [muted, setMuted] = useState(true) // Default muted
     const [isFullscreen, setIsFullscreen] = useState(false)
+    const [isLoaded, setIsLoaded] = useState(false)
+
+    const LoadVideo = (src) => {
+
+        if (isLoaded) { return; }
+
+        if (videoRef.current) {
+            setIsLoaded(true)
+            if (videoRef.current.canPlayType('application/vnd.apple.mpegurl')) {
+                // Safari støtter HLS direkte
+                videoRef.current.src = src;
+            } else if (Hls.isSupported()) {
+                // For andre nettlesere, bruk hls.js
+                const hls = new Hls();
+                hls.loadSource(src);
+                hls.attachMedia(videoRef.current);
+
+            }
+        }
+    }
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -90,19 +110,8 @@ export default function VideoPlayer({ progress=true, clickToFullScreen=true, for
     }, [videoRef, currentTime, duration])
 
     useEffect(() => {
-        if (videoRef.current) {
-            if (videoRef.current.canPlayType('application/vnd.apple.mpegurl')) {
-                // Safari støtter HLS direkte
-                videoRef.current.src = src;
-            } else if (Hls.isSupported()) {
-                // For andre nettlesere, bruk hls.js
-                const hls = new Hls();
-                hls.loadSource(src);
-                hls.attachMedia(videoRef.current);
-
-            }
-        }
-    }, [src]);
+        LoadVideo(src)
+    }, [src])
 
     return <div
         ref={containerRef}
@@ -125,7 +134,7 @@ export default function VideoPlayer({ progress=true, clickToFullScreen=true, for
                     <Image draggable={false} alt='mute-button' width={32} height={32} src={"/icons/ui/Fullscreen.svg"}/>
                 </div>
             </div>
-            <video {...props} poster={poster} ref={videoRef} className={isFullscreen ? styles.fullscreen : "" } />
+            <video style={style} {...props} poster={poster} ref={videoRef} className={isFullscreen ? styles.fullscreen : "" } />
             {progress && <Progress barClass={styles.progress} containerClass={styles.progressBar} max={duration} value={currentTime} />}
         </div>
 }

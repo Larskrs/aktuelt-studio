@@ -9,6 +9,7 @@ import UserAvatar from "@/components/common/Authentication/UserAvatar"
 export default function Navigation () {
 
     const links = [
+        { href: "/", display: "Hjem"},
         { href: "/prosjekt/dbl", display: "DBL"},
     ]
 
@@ -22,10 +23,10 @@ export default function Navigation () {
                             )}
                     {/* <Link href={"/dsib"}>Det skjer i Bamble</Link> */}
                 </div>
-                <Link href={"/"} className={styles.logo}>
+                {/* <Link href={"/"} className={styles.logo}>
                     <Image src={"/branding/logo/aktueltstudio.png"} alt="aktuelt logo" quality={100} width={128*2.5} height={128} />
-                </Link>
-                <UserAvatar ></UserAvatar> 
+                </Link> */}
+                <Link className={styles.login} href={"/contact"}>Kontakt oss</Link>
 
             </nav>
     );

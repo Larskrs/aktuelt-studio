@@ -14,8 +14,5 @@ export default function Dashboard() {
     </div>
     
   }
- 
-  return <div className={styles.c}>
-    <Link href={"/api/auth/signin"}>Logg inn</Link>
-  </div>
+  return false
 }

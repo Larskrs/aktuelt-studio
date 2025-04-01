@@ -16,6 +16,7 @@ import Margin from "@/components/common/Margin";
 import ProjectsBento from "./_projects_bento";
 import DBL from "./_dbl";
 import Hero from "./_hero";
+import Intro from "./_intro";
 import Split from "./_split"
 import FadeOnScroll from "@/components/wrappers/FadeOnScroll";
 import SingleColumn from "./_single";
@@ -30,7 +31,11 @@ export default function Home () {
                     <TypingEffect typeStyle={{color: "var(--primary-500)"}} textStyle={{fontSize: "var(--fontSize-xxl)"}} prefix="Det finnes alltid en bedre måte å skape " prompts={["film", "tv", "reklamefilm", "musikkvideo"]} />
             </Hero> */}
 
-                <Hero />
+                <Intro />
+
+                <div className={styles.body}>
+
+
                 {/* <MaxWidthWrapper className={styles.padding}>
                 <FilmBanner films={[
 
@@ -86,12 +91,13 @@ export default function Home () {
                         type: "video",
                         src: "https://bamblingen.no/api/v1/files/video?v=20250206-0fb468341fa3733f"
                     }}
-                >
+                    >
                     <h4>IKKE REDDE FOR Å PROVOSERE!</h4>
                     <p>Vår historie er ikke dekket av roseblader. Vi er kjent for – og stolte av – å utfordre grenser for hva som kan skapes.</p>
                 </SingleColumn>
             </FadeOnScroll>
             <Margin.Block amount={2} ></Margin.Block>
+            </div>
         </div>
     );
 }
