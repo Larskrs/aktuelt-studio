@@ -33,8 +33,8 @@ export async function POST(req) {
               countryCode: data.countryCode,
               regionName: data.regionName,
               city: data.city,
-              lat: data.lat,
-              lon: data.lon,
+              lat: data.lat + "",
+              lon: data.lon + "",
               timezone: data.timezone ?? "Unknown", // or make it optional in schema
               ip: clientIp
             }
