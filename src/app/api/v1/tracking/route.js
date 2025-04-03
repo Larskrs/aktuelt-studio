@@ -51,6 +51,7 @@ export async function POST(req) {
 export async function GET() {
 
     const dbData = await db.visitor.findMany()
+    const data = dbData
 
-    return NextResponse.json({ success: true, dbData})
+    return NextResponse.json({ success: true, data: data})
 }
