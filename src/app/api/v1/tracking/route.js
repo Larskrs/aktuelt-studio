@@ -38,7 +38,7 @@ export async function POST(req) {
         }
     })
     
-    return NextResponse.json({ success: true, clientIp, location: `${data.country}, ${data.city}` })
+    return NextResponse.json({ success: true, clientIp, dbData, location: `${data.country}, ${data.city}` })
 
 }
 
