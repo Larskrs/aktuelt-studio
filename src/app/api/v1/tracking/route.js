@@ -21,7 +21,7 @@ export async function POST(req) {
     const data = await response.json();
 
     // TODO: Lagre data i en database
-    logger.info('Besøk fra:', data.country_name, data.city);
+    logger.info('Besøk fra:', `${data.country_name}, ${data.city}`);
     
     return NextResponse.json({ success: true, clientIp, location: `${data.country_name}, ${data.city}` })
 
