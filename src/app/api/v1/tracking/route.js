@@ -29,7 +29,7 @@ export async function POST(req) {
         
         const dbData = await db.visitor.create({
         data: {
-            countryName: data.countryName,
+            countryName: data.country,
             countryCode: data.countryCode,
             regionName: data.regionName,
             city: data.city,
