@@ -28,17 +28,17 @@ export async function POST(req) {
         logger.info('Besøk fra:', `${data.countryName}, ${data.city}`);
         
         const dbData = await db.visitor.create({
-        data: {
-            ip: clientIp,
-            countryName: data.country,
-            countryCode: data.countryCode,
-            regionName: data.regionName,
-            city: data.city,
-            lat: data.lat,
-            lon: data.lon,
-            timezone: data.timeZone
-        }
-    })
+            data: {
+              countryName: data.country,
+              countryCode: data.countryCode,
+              regionName: data.regionName,
+              city: data.city,
+              lat: data.lat,
+              lon: data.lon,
+              timezone: data.timezone ?? "Unknown", // or make it optional in schema
+              ip: clientIp
+            }
+          });
     
     return NextResponse.json({ success: true, clientIp, dbData, location: `${data.country}, ${data.city}` })
     } catch (err) {
