@@ -42,7 +42,8 @@ export async function POST(req) {
     
     return NextResponse.json({ success: true, clientIp, dbData, location: `${data.country}, ${data.city}` })
     } catch (err) {
-        return NextResponse.json({ success: false, error: err.message})
+        logger.error({message: err.message})
+        return NextResponse.json({ success: false})
     }
 
 }
