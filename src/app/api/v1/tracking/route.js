@@ -7,13 +7,17 @@ export async function POST(req) {
     const forwardedFor = req.headers.get('x-forwarded-for');
     // Hvis headeren finnes, ta første IP (første element før evt. komma).
     // Hvis den ikke finnes, fall tilbake til X-Real-IP eller '127.0.0.1'
-    const clientIp = forwardedFor 
+    var clientIp = forwardedFor 
       ? forwardedFor.split(',')[0].trim()
       : (req.headers.get('x-real-ip') ?? '127.0.0.1');
 
+    if (!clientIp || clientIp === "::1") {
+        clientIp = "127.0.0.1"
+    }
+
     logger.info({message: "IP: " + clientIp})
 
-    const response = await fetch(`https://ipapi.co/${ip}/json/`);
+    const response = await fetch(`https://ipapi.co/${clientIp}/json/`);
     const data = await response.json();
 
     // TODO: Lagre data i en database
