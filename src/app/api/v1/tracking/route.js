@@ -12,7 +12,13 @@ export async function POST(req) {
       : (req.headers.get('x-real-ip') ?? '127.0.0.1');
 
     logger.info({message: "IP: " + clientIp})
+
+    const response = await fetch(`https://ipapi.co/${ip}/json/`);
+    const data = await response.json();
+
+    // TODO: Lagre data i en database
+    logger.info('Besøk fra:', data.country_name, data.city);
     
-    return NextResponse.json({ success: true, clientIp })
+    return NextResponse.json({ success: true, clientIp, location: `${data.country_name}, ${data.city}` })
 
 }
