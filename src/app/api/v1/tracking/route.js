@@ -17,12 +17,14 @@ export async function POST(req) {
 
     logger.info({message: "IP: " + clientIp})
 
-    const response = await fetch(`https://ipapi.co/${clientIp}/json/`);
+    const response = await fetch(`http://ip-api.com/json/${clientIp}`);
     const data = await response.json();
+
+    logger.info({message: JSON.stringify(data)})
 
     // TODO: Lagre data i en database
     logger.info('Besøk fra:', `${data.country_name}, ${data.city}`);
     
-    return NextResponse.json({ success: true, clientIp, location: `${data.country_name}, ${data.city}` })
+    return NextResponse.json({ success: true, clientIp, location: `${data.country}, ${data.city}` })
 
 }
