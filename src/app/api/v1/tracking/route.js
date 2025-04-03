@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import logger from '../../../../../logger.mjs';
+import { db } from '@/lib/db';
 
 export async function POST(req) {
 
@@ -12,7 +13,7 @@ export async function POST(req) {
       : (req.headers.get('x-real-ip') ?? '127.0.0.1');
 
     if (!clientIp || clientIp === "::1") {
-        clientIp = "127.0.0.1"
+        clientIp = "8.8.8.8"
     }
 
     logger.info({message: "IP: " + clientIp})
@@ -23,8 +24,27 @@ export async function POST(req) {
     logger.info({message: JSON.stringify(data)})
 
     // TODO: Lagre data i en database
-    logger.info('Besøk fra:', `${data.country_name}, ${data.city}`);
+    logger.info('Besøk fra:', `${data.countryName}, ${data.city}`);
+
+    const dbData = await db.visitor.create({
+        data: {
+            countryName: data.countryName,
+            countryCode: data.countryCode,
+            regionName: data.regionName,
+            city: data.city,
+            lat: data.lat,
+            lon: data.lon,
+            timezone: data.timeZone
+        }
+    })
     
     return NextResponse.json({ success: true, clientIp, location: `${data.country}, ${data.city}` })
 
+}
+
+export async function GET() {
+
+    const dbData = await db.visitor.findMany()
+
+    return NextResponse.json({ success: true, dbData})
 }

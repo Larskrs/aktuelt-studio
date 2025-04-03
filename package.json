@@ -13,6 +13,7 @@
   "dependencies": {
     "@auth/prisma-adapter": "^2.8.0",
     "@prisma/client": "^6.5.0",
+    "@types/node": "^22.14.0",
     "classnames": "^2.5.1",
     "dotenv": "^16.4.7",
     "eslint": "9.19.0",

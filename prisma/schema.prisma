@@ -211,3 +211,15 @@ model File {
 
   createdAt       DateTime          @default(now())
 }
+
+model Visitor {
+    ip              String            @id @unique // IP
+
+    countryName     String
+    countryCode     String
+    regionName      String
+    city            String
+    lat             String
+    lon             String  
+    timezone        String
+}
