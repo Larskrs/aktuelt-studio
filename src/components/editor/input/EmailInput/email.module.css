@@ -1,0 +1,25 @@
+.i {
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    font-size: inherit;
+    background-color: hsl(var(--primary-hue), 25%, 10%);
+    border: 2px solid hsl(var(--primary-hue), 25%, 25%);
+    color: hsl(var(--primary-hue), 10%, 50%);;
+}
+.i:focus {
+    border: 2px solid hsl(var(--primary-hue), 50%, 50%);
+    color: hsl(var(--primary-hue), 40%, 80%);
+    outline: none;
+}
+
+.c {
+    display: flex;
+    flex-direction: column;
+}
+.error {
+    color:  hsl(0, 75%, 50%);
+    margin-top: 0.125em;
+}
+.error.i {
+    border: 2px solid hsl(0, 75%, 50%);
+}

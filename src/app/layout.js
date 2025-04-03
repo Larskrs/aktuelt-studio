@@ -3,6 +3,7 @@ import './globals.css'
 import { Anton, Antonio, Inter, Staatliches } from "next/font/google"
 import { SessionProvider } from 'next-auth/react'
 import classNames from 'classnames'
+import TrackVisit from '@/components/common/TrackIP'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -26,6 +27,8 @@ export default function RootLayout({ children }) {
       <html lang="en" className={classNames(inter.className, antonio.variable)}>
         <body>{children}</body>
         <Cookies policyId={"0.0.1"} />
+
+        <TrackVisit />
       </html>
     </SessionProvider>
   )
