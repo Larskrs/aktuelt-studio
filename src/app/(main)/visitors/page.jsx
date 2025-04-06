@@ -1,5 +1,8 @@
 "use client"
-import PageViewMap from "@/components/statistics/PageViewMap"
+const PageViewMap = dynamic(() => import('@/components/statistics/PageViewMap'), {
+    ssr: false
+});
+import dynamic from "next/dynamic";
 import Image from "next/image"
 import { useEffect, useState } from "react"
 
@@ -22,8 +25,8 @@ export default function Visitors ({}) {
             }
         }
 
-        if (data != []) {
-            fetchVisitors()
+        if (data.length === 0) {
+            fetchVisitors();
         }
     }, [])
 
