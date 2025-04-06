@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import Image from "next/image"
 import { useEffect, useState } from "react"
-import { TimeAgo } from "@/lib/timeLib";
+import { formatRelativeDate, TimeAgo } from "@/lib/timeLib";
 
 const PageViewMap = dynamic(() => import('@/components/statistics/PageViewMap'), {
     ssr: false
@@ -91,7 +91,7 @@ export default function Visitors () {
                                     background: "hsl(var(--primary-hue), 25%, 7.5%)",
                                     borderRadius: "0.5em",
                                 }}>{e.regionName}, {e.city}</span>
-                                <span>{TimeAgo(new Date(e.lastVisit))}</span>
+                                <span>{formatRelativeDate(new Date(e.lastVisit))}</span>
                             </div>
                         ))}
                     </div>
