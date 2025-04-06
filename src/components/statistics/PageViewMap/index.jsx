@@ -55,8 +55,8 @@ const DynamicMap = ({ locations }) => {
           style={{ height: '500px', width: '100%' }}
         >
           <TileLayer
-            url="https://tiles.stadiamaps.com/tiles/alidade_dark/{z}/{x}/{y}{r}.png"
-            attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+            url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+            attribution='&copy; OpenStreetMap contributors'
           />
           {locations.map((loc, idx) => (
             <Marker key={idx} position={[loc.lat, loc.lng]} icon={icon} />
