@@ -1,0 +1,64 @@
+/* Visitors.module.css */
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 32px;
+        margin-top: 64px;
+    }
+
+    .countryGroup {
+        color: white;
+    }
+
+    .countryHeader {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        background: hsl(155, 50.00%, 14.90%);
+        padding: 0.5em;
+        border-radius: 0.5em;
+        width: fit-content;
+        cursor: pointer;
+    }
+    .countryHeader:hover {
+        outline: 2px solid white;
+    }
+
+    .flag {
+        border-radius: 0.25em;
+        object-fit: cover;
+    }
+
+    .visitorCount {
+        width: 1.5em;
+        height: 1.5em;
+        background: hsl(155, 50%, 25%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    .visitorList {
+        padding-left: 2em;
+        margin-top: 0.5em;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25em;
+    }
+
+    .visitorItem {
+        width: fit-content;
+        gap: 1em;
+        display: flex;
+        align-items: center;
+    }
+
+    .regionCity {
+        padding: 0.5em 1em;
+        background: hsl(var(--primary-hue), 25%, 7.5%);
+        border-radius: 0.5em;
+    }
