@@ -222,4 +222,5 @@ model Visitor {
     lat             String
     lon             String  
     timezone        String
+    lastVisit       DateTime          @default(now())
 }

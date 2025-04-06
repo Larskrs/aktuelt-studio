@@ -27,18 +27,24 @@ export async function POST(req) {
         // TODO: Lagre data i en database
         logger.info('Besøk fra:', `${data.countryName}, ${data.city}`);
         
-        const dbData = await db.visitor.create({
-            data: {
-              countryName: data.country,
-              countryCode: data.countryCode,
-              regionName: data.regionName,
-              city: data.city,
-              lat: data.lat + "",
-              lon: data.lon + "",
-              timezone: data.timezone ?? "Unknown", // or make it optional in schema
-              ip: clientIp
+        const dbData = await db.visitor.upsert({
+            where: {
+                ip: clientIp
+            },
+            update: {
+                lastVisit: new Date()
+            },
+            create: {
+                ip: clientIp,
+                countryName: data.country,
+                countryCode: data.countryCode,
+                regionName: data.regionName,
+                city: data.city,
+                lat: data.lat + "",
+                lon: data.lon + "",
+                timezone: data.timezone ?? "Unknown", // or make it optional in schema
             }
-          });
+        });
     
     return NextResponse.json({ success: true, clientIp, dbData, location: `${data.country}, ${data.city}` })
     } catch (err) {
