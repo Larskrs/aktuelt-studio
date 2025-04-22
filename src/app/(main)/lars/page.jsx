@@ -27,7 +27,7 @@ export default function Home () {
         <div className={styles.c}>
             <Hero
                 alignment={"left"}
-                background={<video alt="backdrop" autoPlay muted playsInline loop className={styles.backdrop} src={"https://bamblingen.no/api/v1/files?fileId=20250422-4cdea0b2888991c1"} width={1920} height={1080} />}
+                background={<video alt="backdrop" autoPlay muted playsInline loop className={styles.backdrop} src={"/lars/profil.png"} width={1920} height={1080} />}
             >
                     
             </Hero>
