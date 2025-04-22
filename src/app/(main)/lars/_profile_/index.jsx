@@ -8,7 +8,7 @@ export default function Profile () {
         <div className={styles.c}>
             <MaxWidthWrapper className={styles.g}>
                 <div className={styles.image}>
-                    <Image alt="avatar" width={600} height={600} src={"https://bamblingen.no/api/v1/files?fileId=20250422-822a5c222136c200"} />
+                    <Image alt="avatar" width={600} height={600} src={"/lars/profil.png"} />
                 </div>
                 {/* <h1>Lars Kristian Småge Syvertsen</h1> */}
                 <div className={styles.body}>
