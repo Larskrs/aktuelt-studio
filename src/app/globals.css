@@ -280,6 +280,7 @@
 
 :root {
 font-size: 16px;
+font-family: var(--font-inter) !important;
 }
 html, body {
 overscroll-behavior-x: none;

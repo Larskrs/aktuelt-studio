@@ -1,0 +1,146 @@
+.g {
+    display: grid;
+    height: 100%;
+    max-height: 50rem;
+    width: 100%;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    padding-inline: 1rem;
+    margin-top: 4rem;
+    align-items: center;
+    position: relative;
+}
+
+.c {
+    height: 30rem;
+    max-height: 90vh;
+}
+
+.media {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+.body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    
+}
+.body .info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    height: fit-content;
+    left: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.25rem;
+    z-index: 10;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0rem 1rem 2rem 0rem transparent;
+    background: transparent;
+    transition: all 250ms var(--curve-snap);
+}
+.card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.card .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    scale: 1;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.card .video video {
+    object-fit: cover;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.card .video::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    height: 50%;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(0deg, hsla(var(--primary-hue), 10%, 5%), hsla(var(--primary-hue), 10%, 5%, 75%), hsla(var(--primary-hue), 10%, 5%, 0%));
+}
+.info {
+    /* color: hsl(var(--primary-hue), 75%, 90%); */
+    padding: 1.75rem 2rem;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 2;
+}
+.info h4 {
+    color: hsl(var(--primary-hue), 75%, 95%);
+    font-size: 2.5em;
+}
+.info p {
+    color: hsl(var(--primary-hue), 50%, 90%);
+    margin-top: 0.5em;
+    line-height: 1.25em;
+    max-width: 70%;
+}
+.media {
+    font-size: 1.5em;
+}
+.media .info {
+    color: hsl(var(--primary-hue), 75%, 70%);
+}
+
+.ltr > .media {
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    .g {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .c {
+        height: fit-content;
+        max-height: unset;
+    }
+    .info h4 {
+        font-size: 2.5rem;
+    }
+    .card {
+        max-height: 50vh;
+    }
+    .media {
+        height: 50rem;
+        max-height: 75vh;
+        position: relative;
+    }
+    .body, .body {
+        position: relative;
+    }
+}

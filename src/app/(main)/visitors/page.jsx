@@ -41,7 +41,7 @@ export default function Visitors() {
     }, {});
 
     return (
-        <div className={styles.container}>
+        <div className={styles.c}>
             <PageViewMap locations={data.map((e) => ({ lat: e.lat, lng: e.lon }))} />
 
             {Object.entries(groupedData).map(([countryName, visitors]) => (

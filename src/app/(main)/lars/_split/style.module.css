@@ -1,0 +1,146 @@
+.c {
+    display: flex;
+    flex-direction: column;
+    max-height: 70rem;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 4rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.c > h1 {
+    font-size: 3em;
+    color: hsl(50, 100%, 50%);;
+}
+.g {
+    display: grid;
+    gap: 2rem;
+    align-items: flex-start;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: hsl(var(--primary-hue), 25%, 5%); */
+}
+
+/* BODY */
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    text-align: right;
+    padding: 2rem;
+    padding-right: 0px;
+    /* padding-block: 4rem; */
+    gap: 2rem;
+}
+.body h4 {
+    font-size: 2.5em;
+    color: hsl(var(--primary-hue), 50%, 90%);
+    width: 100%;
+}
+.body p {
+    margin-top: 0.5em;
+    line-height: 1.25em;
+    font-size: 1.25em;
+    color: hsl(var(--primary-hue), 25%, 80%);
+    width: 100%;
+    
+}
+.body a {
+    color: hsl(var(--primary-hue), 100%, 50%);
+}
+.callToAction {
+    padding: 1rem;
+    background: hsl(var(--primary-hue), 50% 50%);
+    font-size: 1.25em;
+    background-color: hsl(var(--primary-hue), 25%, 10%);
+    border: 2px solid hsl(var(--primary-hue), 25%, 15%);
+    transition: all 125ms var(--curve-snap);
+    border-radius: 0.25rem;
+}
+.callToAction:hover {
+    border: 2px solid hsl(var(--primary-hue), 10%, 50%);
+}
+
+/* POSTER IMAGE */
+
+
+.media {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    min-height: 20rem;
+    width: 100%;
+    max-height: 40rem;
+}
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    inset: 0px;
+}
+.video > video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    inset: 0px;
+}
+.nomination {
+    position: absolute;
+    bottom: 1rem;
+    width: 50%; 
+    height: auto;
+}
+
+.body:first-child {
+    text-align: right;
+    padding-right: 0px;
+}
+.body:last-child {
+    text-align: left;
+    padding-left: 0px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .g {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        height: fit-content;
+        padding-bottom: 0rem;
+        gap: 0px;
+    }
+    .body {
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+        padding-top: 2rem;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .media {
+        margin: 0px;
+    }
+    .body:first-child {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .image {
+        height: 16rem;
+    }
+}

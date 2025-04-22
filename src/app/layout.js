@@ -24,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <SessionProvider>
-      <html lang="en" className={classNames(inter.className, antonio.variable)}>
+      <html lang="en" className={classNames(inter.variable, inter.className, antonio.variable)}>
         <body>{children}</body>
         <Cookies policyId={"0.0.1"} />
 

@@ -1,0 +1,194 @@
+.c {
+    display: flex;
+    flex-direction: column;
+    max-height: 50rem;
+    width: 100%;
+    gap: 1rem;
+    margin-block: 4rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.body > h1 {
+    font-size: 3.5em;
+    color: hsl(50, 100%, 50%);;
+    margin-bottom: -0.5rem;
+}
+.g {
+    display: grid;
+    gap: 2rem;
+    align-items: flex-start;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: hsl(var(--primary-hue), 25%, 5%); */
+}
+
+/* BODY */
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    text-align: right;
+    padding: 2rem;
+    padding-right: 0px;
+    padding-block: 2rem;
+    gap: 1rem;
+}
+.body h4 {
+    font-size: 2.5em;
+    color: hsl(var(--primary-hue), 50%, 90%);
+    width: 100%;
+}
+.body p {
+    margin-top: 0em;
+    line-height: 1.25em;
+    font-size: 1.25em;
+    color: hsl(var(--primary-hue), 25%, 80%);
+    width: 100%;
+    
+}
+.callToAction {
+    margin-top: 1rem;
+    padding: 0.5rem 3rem;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: hsl(50, 100%, 50%);;
+    border: 2px solid hsl(50, 100%, 50%);
+    color: hsl(50, 100%, 10%);
+    transition: all 125ms var(--curve-snap);
+    border-radius: 2rem;
+}
+.callToAction:hover {
+    scale: 1.05;
+}
+
+/* POSTER IMAGE */
+
+
+.image {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 2px solid hsl(51, 20%, 20%);
+    animation: nominee 5s ease-in-out infinite;
+}
+.image img {
+    transition: all 125ms var(--curve-snap);
+}
+.image:hover img {
+    scale: 1.1;
+}
+.image:hover {
+    animation: none;
+    border: 2px solid hsl(51, 100%, 50%);
+}
+.poster {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    inset: 0px;
+}
+
+@keyframes nominee {
+    0% {
+        border: 2px solid hsl(50, 100%, 15%);
+    }
+    50% {
+        border: 2px solid hsl(50, 100%, 40%);
+    }
+    100% {
+        border: 2px solid hsl(50, 100%, 15%);
+    }
+} 
+.nomination {
+    position: absolute;
+    bottom: 1rem;
+    width: 50%; 
+    height: auto;
+}
+
+.desktop {
+    display: inline;
+}
+.mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .g {
+        display: grid;
+        padding-bottom: 0rem;
+        background-color: hsl(var(--primary-hue), 25%, 5%);
+        border-radius: 0.5rem;
+        overflow: hidden;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 4fr;
+        border-radius: 0.5rem;
+        border: 2px solid hsl(50, 100%, 40%);
+        animation: nominee 5s ease-in-out infinite;
+    }
+    .body {
+        padding: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        z-index: 2;
+        bottom: 0px;
+        grid-row-start: 2;
+        background: linear-gradient(0deg, hsla(var(--primary-hue), 10%, 5%), hsla(var(--primary-hue), 10%, 5%, 75%), hsla(var(--primary-hue), 10%, 5%, 0%));
+    }
+    .image {
+        animation: none;
+        border: none;
+        border-radius: 0px;
+        position: absolute;
+        height: 100%;
+        z-index: 1;
+        scale: 1;
+        inset: 0px;
+    }
+    .image:hover {
+        border: unset;
+    }
+    .image:hover img {
+        scale: 1.05;
+    }
+    .image .poster {
+        position: absolute;
+        inset: 0px;
+        top: 0px;
+    }
+    .poster {
+        object-position: top;
+        height: 100%;
+        object-fit: cover;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inline;
+    }
+    .nomination {
+        position: absolute;
+        bottom: 4rem;
+        filter: blur(1rem);
+    }
+}
