@@ -1,6 +1,6 @@
 .c {    
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     background: hsl(var(--hue), 75%, 10%);
     padding-bottom: 8em;
 }
@@ -25,13 +25,16 @@
     padding: 1em 1.5em 1em 2em;
     border-radius: 0.5em;
     font-size: 1em;
-    background-color: hsl(var(--hue), 75%, 5%);
+    background-color: hsl(var(--hue), 75%, 7.5%);
     translate: 0px -50%;
     font-size: 1em;
     display: flex;
     gap: 1em;
     align-items: center;
     color: hsl(var(--hue), 25%, 50%);
+}
+.header > * {
+    font-size: 1.25em;
 }
 .play:disabled {
     background-color: hsl(var(--hue), 10%, 10%);

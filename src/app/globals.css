@@ -284,6 +284,8 @@ font-family: var(--font-inter) !important;
 }
 html, body {
 overscroll-behavior-x: none;
+scrollbar-color: hsl(var(--hue), 50%, 50%) hsl(var(--hue), 50%, 25%);
+scrollbar-width: large;
 }
 @media only screen and (max-width: 1200px) {
 :root {
