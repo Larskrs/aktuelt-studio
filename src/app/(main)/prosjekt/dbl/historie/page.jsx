@@ -174,7 +174,7 @@ export default function DBL_PAGE () {
                             <h1 className={styles.lastwords}>SISTE ORD</h1>
                             <span>{`"Til tross for den hare perioden`}</span>
                             <span>og flere søvnløse netter, så vil denne produksjonen</span>
-                            <span>{`alltid ha en varm plass i våre hjerter`}"</span>
+                            <span>{`alltid ha en varm plass i våre hjerter`}</span>
                             </p>
                     </MaxWidthWrapper>
 
