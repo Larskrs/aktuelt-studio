@@ -20,7 +20,8 @@ export default function Watch ({}) {
                 }
             `}</style>
 
-                <SimpleVideoPlayer controls className={styles.video} progress={false} autoPlay alt="player" src={"https://bamblingen.no/api/v1/files/video?v=20250212-ebe60e6295425917"} />
+                {/* <SimpleVideoPlayer controls className={styles.video} progress={false} autoPlay alt="player" src={"https://bamblingen.no/api/v1/files/video?v=20250212-ebe60e6295425917"} /> */}
+                <p>{`Send epost å spør om tilgang her: (post@aktuelt.tv)`}</p>
 
         </div>
     )
