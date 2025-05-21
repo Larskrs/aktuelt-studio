@@ -340,6 +340,7 @@ font-family: var(--font-inter);
 
 h1, h2, h3, h4 {
   font-family: var(--font-antonio);
+  color: hsl(var(--hue), 100%, 70%);
 }
 p {
   font-family: var(--font-inter) !important;

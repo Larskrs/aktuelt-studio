@@ -79,12 +79,7 @@ export default function Home () {
 
             
 
-            <FadeOnScroll>
-                <BannerSection hue={265}>
-                    <h1>VÅRT ARBEID</h1>
-                    <p>Vi skaper unike filmproduksjoner, reklamefilmer og musikkvideoer skreddersydd for dine behov.</p>
-                </BannerSection>
-            </FadeOnScroll>
+
             <FadeOnScroll>
                 <SingleColumn
                     media={{

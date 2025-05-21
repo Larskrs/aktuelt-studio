@@ -71,6 +71,24 @@
     background: linear-gradient(90deg, hsla(var(--primary-hue), 0%, 0%, 75%), hsla(var(--primary-hue), 0%, 0%, 100%), hsla(var(--primary-hue), 0%, 0%, 75%));
     z-index: 10;
 }
+
+.lastwords {
+    z-index: 10;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5em;
+    font-size: 1.25em;
+    margin-top: 2em;
+    color: antiquewhite;
+}
+.quote > h1 {
+    margin-bottom: .5em;
+}
+
 @keyframes img-show {
     0% {
         scale: 2;

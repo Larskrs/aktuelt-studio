@@ -55,12 +55,13 @@
     display: flex;
     gap: 16px;
     align-items: center;
+
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
 }
-.nav .links a:hover {
-    color: var(--primary-500);
-}
-.active {
-    color: var(--primary-500);
+.nav .links a:hover, .active {
+    color: hsl(var(--hue), 75%, 60%);
 }
 .inactive {
     color: var(--white-900);

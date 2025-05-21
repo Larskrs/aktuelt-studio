@@ -41,28 +41,28 @@
 }
 .body h4 {
     font-size: 2.5em;
-    color: hsl(var(--primary-hue), 50%, 90%);
+    color: hsl(var(--hue), 100%, 70%);
     width: 100%;
 }
 .body p {
     margin-top: 0.5em;
     line-height: 1.25em;
     font-size: 1.25em;
-    color: hsl(var(--primary-hue), 25%, 80%);
+    color: hsl(var(--hue), 50%, 75%);
     width: 100%;
     
 }
 .callToAction {
     padding: 1rem;
-    background: hsl(var(--primary-hue), 50% 50%);
+    background: hsl(var(--hue), 50% 50%);
     font-size: 1.25em;
-    background-color: hsl(var(--primary-hue), 25%, 10%);
-    border: 2px solid hsl(var(--primary-hue), 25%, 15%);
+    background-color: hsl(var(--hue), 25%, 10%);
+    border: 2px solid hsl(var(--hue), 25%, 15%);
     transition: all 125ms var(--curve-snap);
     border-radius: 0.25rem;
 }
 .callToAction:hover {
-    border: 2px solid hsl(var(--primary-hue), 10%, 50%);
+    border: 2px solid hsl(var(--hue), 10%, 50%);
 }
 
 /* POSTER IMAGE */
@@ -82,6 +82,14 @@
     max-height: 40rem;
 }
 .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0px;
+    display: flex;
+}
+.image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -136,8 +144,5 @@
     .body:first-child {
         grid-row-start: 2;
         grid-row-end: 3;
-    }
-    .image {
-        height: 16rem;
     }
 }

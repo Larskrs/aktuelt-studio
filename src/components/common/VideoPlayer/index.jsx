@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import Progress from '../Progress';
 import Image from 'next/image';
 
-export default function VideoPlayer({style, progress=true, clickToFullScreen=true, forceMuted, progressBar, poster, src, className, ...props }) {
+export default function VideoPlayer({style, toolbar=false, progress=true, clickToFullScreen=true, forceMuted, progressBar, poster, src, className, ...props }) {
     const videoRef = useRef(null)
     const containerRef = useRef(null)
     const [currentTime, setCurrentTime] = useState(0)
@@ -121,7 +121,7 @@ export default function VideoPlayer({style, progress=true, clickToFullScreen=tru
             styles.v, playing ? styles.playing : styles.paused,
         )}
         >   
-            <div className={styles.toolbar}>
+            {toolbar && <div className={styles.toolbar}>
                 {/* // MUTE */}
                 <div className={styles.audioToggle} onClick={handleToggleAudio}>
                 {   muted
@@ -133,7 +133,7 @@ export default function VideoPlayer({style, progress=true, clickToFullScreen=tru
                 <div className={styles.audioToggle} onClick={openFullScreen}>
                     <Image draggable={false} alt='mute-button' width={32} height={32} src={"/icons/ui/Fullscreen.svg"}/>
                 </div>
-            </div>
+            </div> }
             <video style={style} {...props} poster={poster} ref={videoRef} className={isFullscreen ? styles.fullscreen : "" } />
             {progress && <Progress barClass={styles.progress} containerClass={styles.progressBar} max={duration} value={currentTime} />}
         </div>
