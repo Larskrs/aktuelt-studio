@@ -7,6 +7,7 @@ import Split from "../../home/_split";
 import VideoPlayer from "@/components/common/VideoPlayer";
 import { useState } from "react";
 import Link from "next/link";
+import SingleColumn from "../../home/_single";
 
 export default function Desperados ({}) {
 
@@ -37,11 +38,21 @@ export default function Desperados ({}) {
                     </Link>
                 </header>
 
+                <Link href={"/prosjekt/dbl/historie"}>
+                    <SingleColumn
+                            direction="ltr"
+                            media={{
+                                type: "video",
+                                src: "https://bamblingen.no/api/v1/files/video?v=20250520-9b7cef94531d45fb"
+                            }}
+                            >
+                                <div>
+                                    <h4>REISEN TIL FILMEN</h4>
+                                    <p>Trykk her og les om historien bak filmen. Se bak kameraet og klipp som ble fjernet.</p>
+                                </div>
+                    </SingleColumn> 
+                </Link>
                 <Split media={[
-                    {
-                        type: "image",
-                        content: "/dbl/dvd/oppne.jpg"
-                    },
                     {
                         type: "html",
                         content: <>
@@ -50,10 +61,12 @@ export default function Desperados ({}) {
                                 <p>Send en e-post til: dan@aktuelt.tv</p>
                             </>
                     },
-                ]} />
-
+                    {
+                        type: "image",
+                        content: "/dbl/dvd/oppne.jpg"
+                    },
+                ]} />              
                 
-
                 </MaxWidthWrapper>
         </div>
     )

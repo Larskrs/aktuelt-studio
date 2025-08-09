@@ -6,11 +6,16 @@ import LocalImage from "@/components/common/LocalImage";
 import LinedTitle from "@/components/common/LinedTitle";
 import classNames from "classnames";
 import VideoPlayer from "@/components/common/VideoPlayer";
+import { useRouter } from "next/navigation";
 
 export default function SplitElement ({
     media=[],
-    height="100%"
+    height="100%",
+    link="/"
 }) {
+
+    const router = useRouter()
+    
     return (
         <div className={styles.c}>
             <MaxWidthWrapper className={classNames(styles.g)}>

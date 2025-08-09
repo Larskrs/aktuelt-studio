@@ -6,9 +6,15 @@
     z-index: 100;
     position: fixed;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: hsl(var(--hue), 75%, 75%);
+}
+.button {
+    padding-inline: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 .c video {
     width: 100%;

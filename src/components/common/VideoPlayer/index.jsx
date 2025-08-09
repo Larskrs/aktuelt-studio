@@ -6,14 +6,14 @@ import classNames from 'classnames';
 import Progress from '../Progress';
 import Image from 'next/image';
 
-export default function VideoPlayer({style, toolbar=false, progress=true, clickToFullScreen=true, forceMuted, progressBar, poster, src, className, ...props }) {
+export default function VideoPlayer({style, fullScreen=false, toolbar=false, progress=true, clickToFullScreen=true, forceMuted, progressBar, poster, src, className, ...props }) {
     const videoRef = useRef(null)
     const containerRef = useRef(null)
     const [currentTime, setCurrentTime] = useState(0)
     const [duration, setDuration] = useState(0)
     const [playing, setPlaying] = useState(false)
     const [muted, setMuted] = useState(true) // Default muted
-    const [isFullscreen, setIsFullscreen] = useState(false)
+    const [isFullscreen, setIsFullscreen] = useState(fullScreen)
     const [isLoaded, setIsLoaded] = useState(false)
 
     const LoadVideo = (src) => {
@@ -34,6 +34,13 @@ export default function VideoPlayer({style, toolbar=false, progress=true, clickT
             }
         }
     }
+
+    useEffect(() => {
+        if (isFullscreen && videoRef.current) {
+            openFullScreen();
+            videoRef.current.play().catch(() => {});
+        }
+    }, [isFullscreen]);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
