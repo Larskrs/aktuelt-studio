@@ -33,12 +33,12 @@ export default function Desperados ({}) {
                 
                 <header className={styles.header}>
                     <p>En ung mann forlater Norge på 1700-tallet for et bedre liv i USA, men reisen viser seg å være langt farligere enn han kunne ha forestilt seg.</p>
-                    <Link href={"/prosjekt/dbl/watch"} className={styles.play}>
+                    <Link href={"https://www.youtube.com/watch?v=AcXdlgIQ07k"} className={styles.play}>
                         Se film
                     </Link>
                 </header>
 
-                <Link href={"https://www.youtube.com/watch?v=AcXdlgIQ07k"}>
+                <Link href={"/prosjekt/dbl/historie"}>
                     <SingleColumn
                             direction="ltr"
                             media={{
