@@ -38,7 +38,7 @@ export default function Desperados ({}) {
                     </Link>
                 </header>
 
-                <Link href={"/prosjekt/dbl/historie"}>
+                <Link href={"https://www.youtube.com/watch?v=AcXdlgIQ07k"}>
                     <SingleColumn
                             direction="ltr"
                             media={{
