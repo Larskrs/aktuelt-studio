@@ -1,0 +1,71 @@
+{
+  "title": "Norske fjelltopper",
+  "instructions": "Hvilket fjell er høyest?",
+  "type": "higher-lower",
+  "fallbackImage": "/fallback-mountain.jpg",
+  "id": "fjell",
+  "tagline": "",
+  "suffix": " moh",
+  "items": [
+    {
+      "title": "Galdhøpiggen",
+      "description": "Norges høyeste fjell i Jotunheimen nasjonalpark",
+      "value": 2469,
+      "image": "https://eu-assets.simpleview-europe.com/jotunheimen/imageresizer/?image=%2Fdmsimgs%2F20180727-_OVE0024-Fb1920p_1322200123.jpg&action=ProductDetailEssentials"
+    },
+    {
+      "title": "Glittertind",
+      "description": "Nest høyeste fjell i Norge, også i Jotunheimen",
+      "value": 2452,
+      "image": "https://media.snl.no/media/286710/article_topimage_glittertind.jpg"
+    },
+    {
+      "title": "Store Skagastølstind (Storen)",
+      "description": "Kjent tind for tindebestigere i Hurrungane-massivet",
+      "value": 2405,
+      "image": "https://www.tinderangel.no/wp-content/uploads/2017/01/IMG_3634-scaled.jpg"
+    },
+    {
+      "title": "Snøhetta",
+      "description": "Høyeste fjell på Dovrefjell, lett synlig fra E6",
+      "value": 2286,
+      "image": "https://i0.wp.com/stikkav.no/wp-content/uploads/2021/07/Snohetta_shutterstock_Liv-Oeian_1517426198.jpg?resize=1024%2C684&ssl=1"
+    },
+    {
+      "title": "Skarstind",
+      "description": "Topp i Galdhøpiggmassivet, ofte besteget sammen med hovedtoppen",
+      "value": 2373,
+      "image": "https://peakbook.org/gfx/pbes/aa/b3/aab3238922bcc25a6f606eb525ffdc56/1.jpg"
+    },
+    {
+      "title": "Surtningssue",
+      "description": "Mektig fjell i østlige Jotunheimen",
+      "value": 2368,
+      "image": "https://usercontent.one/wp/www.tinderangel.no/wp-content/uploads/2018/08/IMG_7357-scaled.jpg?media=1715636671"
+    },
+    {
+      "title": "Falketind",
+      "description": "Kjent tind i Jotunheimen, historisk viktig i norsk tindesport",
+      "value": 2067,
+      "image": "https://usercontent.one/wp/www.tyinholmen.no/wp-content/uploads/2021/06/falketind.jpg?media=1707144430"
+    },
+    {
+      "title": "Rondeslottet",
+      "description": "Høyeste topp i Rondane nasjonalpark",
+      "value": 2178,
+      "image": "https://media.snl.no/media/59599/standard_compressed_rondeslottetP1804172.jpg"
+    },
+    {
+      "title": "Torghatten",
+      "description": "Kjent fjell med hull i Brønnøysund – mer kjent for form enn høyde",
+      "value": 258,
+      "image": "https://visithelgeland.com/app/uploads/2024/04/Torghatten-drone-picture-summer_Kristoffer-Mollevik-_-Visit-Helgeland_3007479_1920-edited.jpg"
+    },
+    {
+      "title": "Gaustatoppen",
+      "description": "Ikonisk topp i Telemark med utsikt over 1/6 av Norge",
+      "value": 1883,
+      "image": "https://g.acdn.no/obscura/API/dynamic/r1/ece5/tr_2000_2000_s_f/1717742983000/rjuk/2024/6/7/8/gaustatoppen%2Bsn%25C3%25B8%2Bjuni%2B7.jpg?chk=A9ECC8"
+    }
+  ]
+}

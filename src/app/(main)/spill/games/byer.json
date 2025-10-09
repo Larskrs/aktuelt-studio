@@ -1,0 +1,178 @@
+{
+  "title": "Norske tettsteder",
+  "instructions": "Hvilken har flest innbyggere?",
+  "type": "higher-lower",
+  "fallbackImage": "/fallback-city.jpg",
+  "id": "byer",
+  "tagline": "2025",
+  "items": [
+    {
+      "title": "Larvik",
+      "description": "Kystby i Vestfold med havn og skjærgård.",
+      "value": 48870,
+      "image": "https://www.visitvestfold.com/_next/image?url=https%3A%2F%2Fvisitwordpress.insitemedia.no%2Fwp-content%2Fuploads%2F2025%2F01%2FSvenner-fyr-Simen-Sorhaug.jpg&w=3840&q=75"
+    },
+    {
+      "title": "Bergen",
+      "description": "",
+      "value": 293709,
+      "image": "https://www.visitbergen.com/imageresizer/?image=%2Fdbimgs%2F3-days-in-bergen-norway.jpg&action=ContentImageLimitSize"
+    },
+    {
+      "title": "Ålesund",
+      "description": "Jugendstil-by kjent for kystnatur og fjordutsikt — klynge A",
+      "value": 46554,
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/01/08/81/e4/alesund.jpg"
+    },
+    {
+      "title": "Moss",
+      "description": "Industri- og kystby ved Oslofjorden — klynge A",
+      "value": 43528,
+      "image": "https://media.istockphoto.com/id/613693908/photo/view-of-the-ferry-terminal-at-horten-norway.jpg?s=612x612&w=0&k=20&c=7BB6NhPSezeM657zBaN--D2J0qcD5DPkCSIO9o4SPDc="
+    },
+    {
+      "title": "Arendal",
+      "description": "Sørlandsby med havn og trehusbebyggelse — klynge A",
+      "value": 46429,
+      "image": "https://jobzone.no/globalassets/kontorbilder/arendal.jpg"
+    },
+    {
+      "title": "Hamar",
+      "description": "Byen ved Mjøsa med kultur- og idrettstilbud — klynge B",
+      "value": 30030,
+      "image": "https://www.thonhotels.no/globalassets/hoteller/norge/hamar/hamar-dronebilde.jpg?quality=80&format=webp&width=1312&height=738"
+    },
+    {
+      "title": "Halden",
+      "description": "By med Fredriksten festning og grensehistorie mot Sverige — klynge B",
+      "value": 31387,
+      "image": "https://res.cloudinary.com/simpleview/image/upload/v1612165940/clients/norway/fredriksten_halden_norway_photo_halden_turist_8144a1c4-c958-4984-a403-14726bcd356a.jpg"
+    },
+    {
+      "title": "Porsgrunn",
+      "description": "Industri- og havneby i Grenland-regionen — klynge B",
+      "value": 37193,
+      "image": "https://www.visittelemark.no/dmsimgs/DSCF2404_764840462.jpg"
+    },
+    {
+      "title": "Kongsberg",
+      "description": "Historisk bergverksby med teknologinæring — klynge B",
+      "value": 28500,
+      "image": "https://res.cloudinary.com/ssp/image/fetch/c_fill,g_auto,q_auto,f_auto/https://aimblob.blob.core.windows.net/aimfiles/53f48b76-655e-42c7-8214-e97424ddb8d8.jpg"
+    },
+    {
+      "title": "Sandefjord",
+      "description": "Kystby med hvalfangsthistorie og moderne ferieattraksjoner — klynge C",
+      "value": 66231,
+      "image": "https://thumbs.dreamstime.com/b/expert-artistry-ai-generated-depiction-sandefjord-vestfold-norway-sandefjord-vestfold-norway-generative-ai-273286048.jpg"
+    },
+    {
+      "title": "Kristiansand",
+      "description": "Sørlandets største by med bystrender og dyrepark — klynge C",
+      "value": 67372,
+      "image": "https://res.cloudinary.com/simpleview/image/fetch/c_fill,h_1080,w_1920/f_jpg/q_65/https://media.newmindmedia.com/TellUs/image/%3Ffile%3DEBEDC6F907D2CA1210275ADACE20C97D02F3B7AB.jpg&dh%3D533&dw%3D800&cropX%3D0&cropY%3D0&cropH%3D3494&cropW%3D5249&t%3D4"
+    },
+    {
+      "title": "Tønsberg",
+      "description": "Historisk by med middelalderruiner og havneområde — ekstra",
+      "value": 37622,
+      "image": "https://mediaim.expedia.com/destination/1/32f2c5e4081db31c43fc5396290b8c15.jpg"
+    },
+    {
+      "title": "Ås",
+      "description": "Universitetsbygd med landbruk og forskningsmiljø — nærbyverdi-eksempel",
+      "value": 29500,
+      "image": "https://mediaim.expedia.com/destination/2/cca8c5bed4111683f96820330eef34e0.jpg"
+    },
+    {
+      "title": "Skien",
+      "description": "By i Grenland med kultur- og industrimiljø — ekstra",
+      "value": 56291,
+      "image": "https://www.visittelemark.no/imageresizer/?image=%2Fdbimgs%2FSkien_H%C3%B8st_Alina_Skien-By_1750x600.jpg&action=FeaturedItemsScroll3x2"
+    },
+    {
+      "title": "Lillehammer",
+      "description": "OL-by kjent for sport og kultur — ekstra",
+      "value": 28851,
+      "image": "https://g.acdn.no/obscura/API/dynamic/r1/ece5/tr_2000_2000_s_f/1544446782000/gudb/2018/12/10/13/10766084752_IMG_0941.JPG?chk=569222"
+    },
+    {
+      "title": "Molde",
+      "description": "Rosenes by med fjordutsikt — ekstra",
+      "value": 26962,
+      "image": "https://www.thonhotels.no/globalassets/hoteller/norge/molde/destinasjon-molde-1.jpg?quality=80&format=webp&width=1312&height=738"
+    },
+    {
+      "title": "Bodø",
+      "description": "Nordlandshovedstaden med fjell og kyst — ekstra",
+      "value": 55876,
+      "image": "https://pohcdn.com/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/Bodo.jpg"
+    },
+    {
+      "title": "Åsane (del av Bergen)",
+      "description": "Storbydel/forstad med Bryggen-lignende bymiljø — ekstra",
+      "value": 45000,
+      "image": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/226000/226485-Bryggen-Waterfront.jpg?impolicy=fcrop&w=400&h=225&q=mediumLow"
+    },
+    {
+      "title": "Drammen",
+      "description": "Elveby ved Drammenselva med industri og moderne byliv",
+      "value": 103500,
+      "image": "https://media.istockphoto.com/id/849048646/photo/zombies-hand-silhouette.jpg?s=612x612&w=0&k=20&c=eCh_1bI-uvQh0Af2lXXH_xPToAJydbdyMwMOvndkD1U="
+    },
+    {
+      "title": "Trondheim",
+      "description": "Historisk by med Nidarosdomen og teknologimiljø",
+      "value": 212660,
+      "image": "https://cdn.sanity.io/images/4aans0in/production/783d22ee2eb60daf6ed76c209ec74766ee5002b6-2000x1333.jpg?rect=334,0,1333,1333&w=3840&h=3840&fm=webp&q=100&fit=max&auto=format"
+    },
+    {
+      "title": "Stavanger",
+      "description": "Oljehovedstaden med havn og gamle trehus",
+      "value": 147200,
+      "image": "https://res.cloudinary.com/gofjords-com/images/w_2560,h_1600,c_scale/f_auto,q_auto:eco/v1698920798/Destinations/Stavanger/Stavanger-city-Harbor-sunset-summer-night/Stavanger-city-Harbor-sunset-summer-night.jpg?_i=AA"
+    },
+    {
+      "title": "Tromsø",
+      "description": "Nordens Paris med nordlys og arktisk natur",
+      "value": 77344,
+      "image": "https://i.pinimg.com/736x/f0/27/63/f02763110cd225618ffa7f35eb6c353e.jpg"
+    },
+    {
+      "title": "Harstad",
+      "description": "By i Troms med sjøfart og arktiske omgivelser",
+      "value": 24000,
+      "image": "https://www.harstad.kommune.no/images/200.3b84deaf195b24645314d044/1744185618514/harstad%20drone2.jpg"
+    },
+    {
+      "title": "Alta",
+      "description": "Nordlysbyen i Finnmark med samisk kultur og friluftsliv",
+      "value": 22000,
+      "image": "https://www.dailyscandinavian.com/wp-content/uploads/2018/02/310118-alta-norway.jpg"
+    },
+    {
+      "title": "Narvik",
+      "description": "Havneby i Nordland kjent for krigshistorie og fjell",
+      "value": 21000,
+      "image": "https://www.narvik.kommune.no/handlers/bv.ashx/ic5054ea8-f75b-4dd4-8ec3-54ee75f047a6/w1200/q273/k10198d7cd7e8/skjermbilde-2023-12-08-kl-151424.png"
+    },
+    {
+      "title": "Gjøvik",
+      "description": "Innlandsby ved Mjøsa med industri og skogsområder",
+      "value": 30000,
+      "image": "https://www.gjovik.kommune.no/handlers/bv.ashx/i15cfb16b-e4cf-4fc0-b0c7-d6af6fd0e794/w1200/q3367/kc91905602d4c/drone-utsikt-fra-eiktunet-1.jpg"
+    },
+    {
+      "title": "Sarpsborg",
+      "description": "En av Norges eldste byer med Glomma og Borregaard",
+      "value": 58700,
+      "image": "https://res.cloudinary.com/simpleview/image/upload/v1624891660/clients/norway/Sarps_f4d431a4-8f71-4792-a430-2bbf79d83354.jpg"
+    },
+    {
+      "title": "Fredrikstad",
+      "description": "Festningsby med elveidyll og industri",
+      "value": 84000,
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/a0/96/4b/stjernen-i-ostfold.jpg?w=1200&h=-1&s=1"
+    }
+  ]
+}

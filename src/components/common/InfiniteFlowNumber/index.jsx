@@ -9,7 +9,7 @@ export default function InfiniteFlowNumber ({className, number}) {
     const digits = s.split("")
 
     return (
-        <div className={classNames(styles.digits)}>
+        <div className={classNames(styles.digits, className)}>
             {digits.map((d, i) => {
                 const indexFromRight = digits.length - i - 1;
                 const isSeparatorNeeded = indexFromRight % 3 === 0 && indexFromRight !== 0;

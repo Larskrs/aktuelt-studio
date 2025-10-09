@@ -1,9 +1,9 @@
-import Cookies from '@/components/layout/Cookies'
+// import Cookies from '@/components/layout/Cookies'
 import './globals.css'
 import { Anton, Antonio, Inter, Staatliches } from "next/font/google"
 import { SessionProvider } from 'next-auth/react'
 import classNames from 'classnames'
-import TrackVisit from '@/components/common/TrackIP'
+// import TrackVisit from '@/components/common/TrackIP'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -24,11 +24,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <SessionProvider>
-      <html lang="en" className={classNames(inter.variable, inter.className, antonio.variable)}>
+      <html lang="en" className={classNames("bg-black", inter.variable, inter.className, antonio.variable)}>
         <body>{children}</body>
-        <Cookies policyId={"0.0.1"} />
+        {/* <Cookies policyId={"0.0.1"} /> */}
 
-        <TrackVisit />
+        {/* <TrackVisit /> */}
       </html>
     </SessionProvider>
   )

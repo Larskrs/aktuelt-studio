@@ -1,0 +1,91 @@
+{
+  "title": "Årets store hit",
+  "instructions": "Hvilken sang kom først?",
+  "type": "chronology",
+  "fallbackImage": "/fallback-music.jpg",
+  "id": "aarenes_hit",
+  "tagline": "1960-2025",
+  "suffix": " år",
+  "items": [
+    {
+      "title": "Harry Styles, ‘As It Was",
+      "description": "",
+      "value": 2022,
+      "image": "https://www.rollingstone.com/wp-content/uploads/2024/02/harry-styles-as-it-was.jpg?w=1024"
+    },
+    {
+      "title": "Townes Van Zandt, ‘Pancho and Lefty’",
+      "description": "",
+      "value": 1972,
+      "image": "https://www.rollingstone.com/wp-content/uploads/2021/09/late-great-townes-van-zandt.jpeg?w=1024"
+    },
+    {
+      "title": "Lizzo, ‘Truth Hurts’",
+      "description": "",
+      "value": 2017,
+      "image": "https://www.rollingstone.com/wp-content/uploads/2021/09/496-lizzo-truth-hurts.jpg?w=500"
+    },
+    {
+      "title": "Nirvana, ‘Smells Like Teen Spirit’",
+      "description": "",
+      "value": 1991,
+      "image": "https://i.scdn.co/image/ab67616d0000b273e175a19e530c898d167d39bf"
+    },
+    {
+      "title": "Queen – Bohemian Rhapsody",
+      "description": "",
+      "value": 1975,
+      "image": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/4B19/production/_86352291_bohemianrhapsody.jpg"
+    },
+    {
+      "title": "Michael Jackson – Billie Jean",
+      "description": "Fra albumet 'Thriller', tidenes mest solgte album.",
+      "value": 1982,
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png"
+    },
+    {
+      "title": "Britney Spears – …Baby One More Time",
+      "description": "",
+      "value": 1998,
+      "image": "https://upload.wikimedia.org/wikipedia/en/9/9a/..._Baby_One_More_Time_%28album%29.png"
+    },
+    {
+      "title": "Outkast – Hey Ya!",
+      "description": "",
+      "value": 2003,
+      "image": "https://i.pinimg.com/originals/98/46/a6/9846a6d3485e9811948c27ddd03addc8.gif"
+    },
+    {
+      "title": "Billy Joel - We Didn't Start the Fire",
+      "description": "",
+      "value": 1989,
+      "image": "https://donaldearlcollins.com/wp-content/uploads/2014/11/billy-joel-didnt-start-the-fire.jpg"
+    },
+    {
+      "title": "Pharrell Williams - Happy",
+      "description": "",
+      "value": 2013,
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/23/Pharrell_Williams_-_Happy.jpg"
+    },
+    {
+        "title": "Smash Mouth - All Star",
+        "value": 1998,
+        "image": "https://www.ultimate-guitar.com/static/article/news/8/172998_0_wide_ver1732814145.jpg@1200"
+    },
+    {
+        "title": "Lil Nas X - Old Town Road",
+        "value": 2019,
+        "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/Old_Town_Road_cover.jpg"
+    },
+    {
+        "title": "The Bangles - Walk Like an Egyptian",
+        "value": 1986,
+        "image": "https://m.media-amazon.com/images/M/MV5BMDhkZWNkMDMtYjkwMi00YzNjLTk4MTEtZDk3ZGU3YmMzMTNiXkEyXkFqcGc@._V1_.jpg"
+    },
+    {
+        "title": "Coolio - Gangsta's Paradise",
+        "value": 1995,
+        "image": "https://i.ytimg.com/vi/FJqggatOYd8/maxresdefault.jpg"
+    }
+  ]
+}

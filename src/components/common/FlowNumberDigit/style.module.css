@@ -1,14 +1,14 @@
 .flow {
     display: flex;
     flex-direction: column;
-    height: 1em;
+    height: .9em;
     /* outline: 1px solid red; */
     overflow: hidden;
-    width: .45em;
+    width: .60em;
     position: relative;
-    font-size: 1em;
+    font-size: .4em;
     color: white;
-    font-family: var(--font-antonio);
+    /* font-family: var(--font-antonio); */
 }
 .shifter { 
     display: flex;

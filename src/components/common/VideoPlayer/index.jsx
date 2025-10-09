@@ -5,6 +5,7 @@ import styles from "./style.module.css"
 import classNames from 'classnames';
 import Progress from '../Progress';
 import Image from 'next/image';
+import cn from '@/lib/className';
 
 export default function VideoPlayer({style, fullScreen=false, toolbar=false, progress=true, clickToFullScreen=true, forceMuted, progressBar, poster, src, className, ...props }) {
     const videoRef = useRef(null)
@@ -141,7 +142,7 @@ export default function VideoPlayer({style, fullScreen=false, toolbar=false, pro
                     <Image draggable={false} alt='mute-button' width={32} height={32} src={"/icons/ui/Fullscreen.svg"}/>
                 </div>
             </div> }
-            <video style={style} {...props} poster={poster} ref={videoRef} className={isFullscreen ? styles.fullscreen : "" } />
+            <video style={style} {...props} poster={poster} ref={videoRef} className={cn(className, isFullscreen ? styles.fullscreen : "" )} />
             {progress && <Progress barClass={styles.progress} containerClass={styles.progressBar} max={duration} value={currentTime} />}
         </div>
 }
