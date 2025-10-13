@@ -96,7 +96,7 @@ export default function Page () {
             <div className="w-full mt-16 max-w-240 px-4">
               <div className="flex flex-col md:flex-row items-center gap-6 md:gap-16">
                 <p className="text-xl flex-1 text-center md:text-start">
-                  En ung mann forlater Norge på 1700-tallet for et bedre liv i USA, men reisen viser seg å være langt farligere enn han kunne ha forestilt seg.
+                  En ung mann forlater Norge på 1800-tallet for et bedre liv i USA, men reisen viser seg å være langt farligere enn han kunne ha forestilt seg.
                 </p>
                 <motion.a
                     href={"https://www.youtube.com/watch?v=AcXdlgIQ07k"}
