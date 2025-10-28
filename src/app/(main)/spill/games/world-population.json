@@ -1,0 +1,1642 @@
+{
+  "title": "Verdens land",
+  "instructions": "Hvilket land har flest innbyggere?",
+  "type": "higher-lower",
+  "fallbackImage": "/fallback-country.jpg",
+  "id": "land-befolkning-2025",
+  "suffix": " 🚶",
+  "tagline": "2025",
+  "items": [
+    {
+      "title": "India",
+      "description": "Befolkningstall for India i 2025 (anslått).",
+      "value": 1463865525,
+      "image": "https://flagcdn.com/w320/in.png",
+      "url": "https://www.worldometers.info/world-population/india-population/"
+    },
+    {
+      "title": "China",
+      "description": "Befolkningstall for China i 2025 (anslått).",
+      "value": 1416096094,
+      "image": "https://flagcdn.com/w320/ch.png",
+      "url": "https://www.worldometers.info/world-population/china-population/"
+    },
+    {
+      "title": "United States",
+      "description": "Befolkningstall for United States i 2025 (anslått).",
+      "value": 347275807,
+      "image": "https://flagcdn.com/w320/un.png",
+      "url": "https://www.worldometers.info/world-population/us-population/"
+    },
+    {
+      "title": "Indonesia",
+      "description": "Befolkningstall for Indonesia i 2025 (anslått).",
+      "value": 285721236,
+      "image": "https://flagcdn.com/w320/in.png",
+      "url": "https://www.worldometers.info/world-population/indonesia-population/"
+    },
+    {
+      "title": "Pakistan",
+      "description": "Befolkningstall for Pakistan i 2025 (anslått).",
+      "value": 255219554,
+      "image": "https://flagcdn.com/w320/pa.png",
+      "url": "https://www.worldometers.info/world-population/pakistan-population/"
+    },
+    {
+      "title": "Nigeria",
+      "description": "Befolkningstall for Nigeria i 2025 (anslått).",
+      "value": 237527782,
+      "image": "https://flagcdn.com/w320/ni.png",
+      "url": "https://www.worldometers.info/world-population/nigeria-population/"
+    },
+    {
+      "title": "Brazil",
+      "description": "Befolkningstall for Brazil i 2025 (anslått).",
+      "value": 212812405,
+      "image": "https://flagcdn.com/w320/br.png",
+      "url": "https://www.worldometers.info/world-population/brazil-population/"
+    },
+    {
+      "title": "Bangladesh",
+      "description": "Befolkningstall for Bangladesh i 2025 (anslått).",
+      "value": 175686899,
+      "image": "https://flagcdn.com/w320/ba.png",
+      "url": "https://www.worldometers.info/world-population/bangladesh-population/"
+    },
+    {
+      "title": "Russia",
+      "description": "Befolkningstall for Russia i 2025 (anslått).",
+      "value": 143997393,
+      "image": "https://flagcdn.com/w320/ru.png",
+      "url": "https://www.worldometers.info/world-population/russia-population/"
+    },
+    {
+      "title": "Ethiopia",
+      "description": "Befolkningstall for Ethiopia i 2025 (anslått).",
+      "value": 135472051,
+      "image": "https://flagcdn.com/w320/et.png",
+      "url": "https://www.worldometers.info/world-population/ethiopia-population/"
+    },
+    {
+      "title": "Mexico",
+      "description": "Befolkningstall for Mexico i 2025 (anslått).",
+      "value": 131946900,
+      "image": "https://flagcdn.com/w320/me.png",
+      "url": "https://www.worldometers.info/world-population/mexico-population/"
+    },
+    {
+      "title": "Japan",
+      "description": "Befolkningstall for Japan i 2025 (anslått).",
+      "value": 123103479,
+      "image": "https://flagcdn.com/w320/ja.png",
+      "url": "https://www.worldometers.info/world-population/japan-population/"
+    },
+    {
+      "title": "Egypt",
+      "description": "Befolkningstall for Egypt i 2025 (anslått).",
+      "value": 118365995,
+      "image": "https://flagcdn.com/w320/eg.png",
+      "url": "https://www.worldometers.info/world-population/egypt-population/"
+    },
+    {
+      "title": "Philippines",
+      "description": "Befolkningstall for Philippines i 2025 (anslått).",
+      "value": 116786962,
+      "image": "https://flagcdn.com/w320/ph.png",
+      "url": "https://www.worldometers.info/world-population/philippines-population/"
+    },
+    {
+      "title": "DR Congo",
+      "description": "Befolkningstall for DR Congo i 2025 (anslått).",
+      "value": 112832473,
+      "image": "https://flagcdn.com/w320/dr.png",
+      "url": "https://www.worldometers.info/world-population/democratic-republic-of-the-congo-population/"
+    },
+    {
+      "title": "Vietnam",
+      "description": "Befolkningstall for Vietnam i 2025 (anslått).",
+      "value": 101598527,
+      "image": "https://flagcdn.com/w320/vi.png",
+      "url": "https://www.worldometers.info/world-population/vietnam-population/"
+    },
+    {
+      "title": "Iran",
+      "description": "Befolkningstall for Iran i 2025 (anslått).",
+      "value": 92417681,
+      "image": "https://flagcdn.com/w320/ir.png",
+      "url": "https://www.worldometers.info/world-population/iran-population/"
+    },
+    {
+      "title": "Turkey",
+      "description": "Befolkningstall for Turkey i 2025 (anslått).",
+      "value": 87685426,
+      "image": "https://flagcdn.com/w320/tu.png",
+      "url": "https://www.worldometers.info/world-population/turkey-population/"
+    },
+    {
+      "title": "Germany",
+      "description": "Befolkningstall for Germany i 2025 (anslått).",
+      "value": 84075075,
+      "image": "https://flagcdn.com/w320/ge.png",
+      "url": "https://www.worldometers.info/world-population/germany-population/"
+    },
+    {
+      "title": "Thailand",
+      "description": "Befolkningstall for Thailand i 2025 (anslått).",
+      "value": 71619863,
+      "image": "https://flagcdn.com/w320/th.png",
+      "url": "https://www.worldometers.info/world-population/thailand-population/"
+    },
+    {
+      "title": "Tanzania",
+      "description": "Befolkningstall for Tanzania i 2025 (anslått).",
+      "value": 70545865,
+      "image": "https://flagcdn.com/w320/ta.png",
+      "url": "https://www.worldometers.info/world-population/tanzania-population/"
+    },
+    {
+      "title": "United Kingdom",
+      "description": "Befolkningstall for United Kingdom i 2025 (anslått).",
+      "value": 69551332,
+      "image": "https://flagcdn.com/w320/un.png",
+      "url": "https://www.worldometers.info/world-population/uk-population/"
+    },
+    {
+      "title": "France",
+      "description": "Befolkningstall for France i 2025 (anslått).",
+      "value": 66650804,
+      "image": "https://flagcdn.com/w320/fr.png",
+      "url": "https://www.worldometers.info/world-population/france-population/"
+    },
+    {
+      "title": "South Africa",
+      "description": "Befolkningstall for South Africa i 2025 (anslått).",
+      "value": 64747319,
+      "image": "https://flagcdn.com/w320/so.png",
+      "url": "https://www.worldometers.info/world-population/south-africa-population/"
+    },
+    {
+      "title": "Italy",
+      "description": "Befolkningstall for Italy i 2025 (anslått).",
+      "value": 59146260,
+      "image": "https://flagcdn.com/w320/it.png",
+      "url": "https://www.worldometers.info/world-population/italy-population/"
+    },
+    {
+      "title": "Kenya",
+      "description": "Befolkningstall for Kenya i 2025 (anslått).",
+      "value": 57532493,
+      "image": "https://flagcdn.com/w320/ke.png",
+      "url": "https://www.worldometers.info/world-population/kenya-population/"
+    },
+    {
+      "title": "Myanmar",
+      "description": "Befolkningstall for Myanmar i 2025 (anslått).",
+      "value": 54850648,
+      "image": "https://flagcdn.com/w320/my.png",
+      "url": "https://www.worldometers.info/world-population/myanmar-population/"
+    },
+    {
+      "title": "Colombia",
+      "description": "Befolkningstall for Colombia i 2025 (anslått).",
+      "value": 53425635,
+      "image": "https://flagcdn.com/w320/co.png",
+      "url": "https://www.worldometers.info/world-population/colombia-population/"
+    },
+    {
+      "title": "South Korea",
+      "description": "Befolkningstall for South Korea i 2025 (anslått).",
+      "value": 51667029,
+      "image": "https://flagcdn.com/w320/so.png",
+      "url": "https://www.worldometers.info/world-population/south-korea-population/"
+    },
+    {
+      "title": "Sudan",
+      "description": "Befolkningstall for Sudan i 2025 (anslått).",
+      "value": 51662147,
+      "image": "https://flagcdn.com/w320/su.png",
+      "url": "https://www.worldometers.info/world-population/sudan-population/"
+    },
+    {
+      "title": "Uganda",
+      "description": "Befolkningstall for Uganda i 2025 (anslått).",
+      "value": 51384894,
+      "image": "https://flagcdn.com/w320/ug.png",
+      "url": "https://www.worldometers.info/world-population/uganda-population/"
+    },
+    {
+      "title": "Spain",
+      "description": "Befolkningstall for Spain i 2025 (anslått).",
+      "value": 47889958,
+      "image": "https://flagcdn.com/w320/sp.png",
+      "url": "https://www.worldometers.info/world-population/spain-population/"
+    },
+    {
+      "title": "Algeria",
+      "description": "Befolkningstall for Algeria i 2025 (anslått).",
+      "value": 47435312,
+      "image": "https://flagcdn.com/w320/al.png",
+      "url": "https://www.worldometers.info/world-population/algeria-population/"
+    },
+    {
+      "title": "Iraq",
+      "description": "Befolkningstall for Iraq i 2025 (anslått).",
+      "value": 47020774,
+      "image": "https://flagcdn.com/w320/ir.png",
+      "url": "https://www.worldometers.info/world-population/iraq-population/"
+    },
+    {
+      "title": "Argentina",
+      "description": "Befolkningstall for Argentina i 2025 (anslått).",
+      "value": 45851378,
+      "image": "https://flagcdn.com/w320/ar.png",
+      "url": "https://www.worldometers.info/world-population/argentina-population/"
+    },
+    {
+      "title": "Afghanistan",
+      "description": "Befolkningstall for Afghanistan i 2025 (anslått).",
+      "value": 43844111,
+      "image": "https://flagcdn.com/w320/af.png",
+      "url": "https://www.worldometers.info/world-population/afghanistan-population/"
+    },
+    {
+      "title": "Yemen",
+      "description": "Befolkningstall for Yemen i 2025 (anslått).",
+      "value": 41773878,
+      "image": "https://flagcdn.com/w320/ye.png",
+      "url": "https://www.worldometers.info/world-population/yemen-population/"
+    },
+    {
+      "title": "Canada",
+      "description": "Befolkningstall for Canada i 2025 (anslått).",
+      "value": 40126723,
+      "image": "https://flagcdn.com/w320/ca.png",
+      "url": "https://www.worldometers.info/world-population/canada-population/"
+    },
+    {
+      "title": "Angola",
+      "description": "Befolkningstall for Angola i 2025 (anslått).",
+      "value": 39040039,
+      "image": "https://flagcdn.com/w320/an.png",
+      "url": "https://www.worldometers.info/world-population/angola-population/"
+    },
+    {
+      "title": "Ukraine",
+      "description": "Befolkningstall for Ukraine i 2025 (anslått).",
+      "value": 38980376,
+      "image": "https://flagcdn.com/w320/uk.png",
+      "url": "https://www.worldometers.info/world-population/ukraine-population/"
+    },
+    {
+      "title": "Morocco",
+      "description": "Befolkningstall for Morocco i 2025 (anslått).",
+      "value": 38430770,
+      "image": "https://flagcdn.com/w320/mo.png",
+      "url": "https://www.worldometers.info/world-population/morocco-population/"
+    },
+    {
+      "title": "Poland",
+      "description": "Befolkningstall for Poland i 2025 (anslått).",
+      "value": 38140910,
+      "image": "https://flagcdn.com/w320/po.png",
+      "url": "https://www.worldometers.info/world-population/poland-population/"
+    },
+    {
+      "title": "Uzbekistan",
+      "description": "Befolkningstall for Uzbekistan i 2025 (anslått).",
+      "value": 37053428,
+      "image": "https://flagcdn.com/w320/uz.png",
+      "url": "https://www.worldometers.info/world-population/uzbekistan-population/"
+    },
+    {
+      "title": "Malaysia",
+      "description": "Befolkningstall for Malaysia i 2025 (anslått).",
+      "value": 35977838,
+      "image": "https://flagcdn.com/w320/ma.png",
+      "url": "https://www.worldometers.info/world-population/malaysia-population/"
+    },
+    {
+      "title": "Mozambique",
+      "description": "Befolkningstall for Mozambique i 2025 (anslått).",
+      "value": 35631653,
+      "image": "https://flagcdn.com/w320/mo.png",
+      "url": "https://www.worldometers.info/world-population/mozambique-population/"
+    },
+    {
+      "title": "Ghana",
+      "description": "Befolkningstall for Ghana i 2025 (anslått).",
+      "value": 35064272,
+      "image": "https://flagcdn.com/w320/gh.png",
+      "url": "https://www.worldometers.info/world-population/ghana-population/"
+    },
+    {
+      "title": "Peru",
+      "description": "Befolkningstall for Peru i 2025 (anslått).",
+      "value": 34576665,
+      "image": "https://flagcdn.com/w320/pe.png",
+      "url": "https://www.worldometers.info/world-population/peru-population/"
+    },
+    {
+      "title": "Saudi Arabia",
+      "description": "Befolkningstall for Saudi Arabia i 2025 (anslått).",
+      "value": 34566328,
+      "image": "https://flagcdn.com/w320/sa.png",
+      "url": "https://www.worldometers.info/world-population/saudi-arabia-population/"
+    },
+    {
+      "title": "Madagascar",
+      "description": "Befolkningstall for Madagascar i 2025 (anslått).",
+      "value": 32740678,
+      "image": "https://flagcdn.com/w320/ma.png",
+      "url": "https://www.worldometers.info/world-population/madagascar-population/"
+    },
+    {
+      "title": "Côte d'Ivoire",
+      "description": "Befolkningstall for Côte d'Ivoire i 2025 (anslått).",
+      "value": 32711547,
+      "image": "https://flagcdn.com/w320/cô.png",
+      "url": "https://www.worldometers.info/world-population/cote-d-ivoire-population/"
+    },
+    {
+      "title": "Cameroon",
+      "description": "Befolkningstall for Cameroon i 2025 (anslått).",
+      "value": 29879337,
+      "image": "https://flagcdn.com/w320/ca.png",
+      "url": "https://www.worldometers.info/world-population/cameroon-population/"
+    },
+    {
+      "title": "Nepal",
+      "description": "Befolkningstall for Nepal i 2025 (anslått).",
+      "value": 29618118,
+      "image": "https://flagcdn.com/w320/ne.png",
+      "url": "https://www.worldometers.info/world-population/nepal-population/"
+    },
+    {
+      "title": "Venezuela",
+      "description": "Befolkningstall for Venezuela i 2025 (anslått).",
+      "value": 28516896,
+      "image": "https://flagcdn.com/w320/ve.png",
+      "url": "https://www.worldometers.info/world-population/venezuela-population/"
+    },
+    {
+      "title": "Niger",
+      "description": "Befolkningstall for Niger i 2025 (anslått).",
+      "value": 27917831,
+      "image": "https://flagcdn.com/w320/ni.png",
+      "url": "https://www.worldometers.info/world-population/niger-population/"
+    },
+    {
+      "title": "Australia",
+      "description": "Befolkningstall for Australia i 2025 (anslått).",
+      "value": 26974026,
+      "image": "https://flagcdn.com/w320/au.png",
+      "url": "https://www.worldometers.info/world-population/australia-population/"
+    },
+    {
+      "title": "North Korea",
+      "description": "Befolkningstall for North Korea i 2025 (anslått).",
+      "value": 26571036,
+      "image": "https://flagcdn.com/w320/no.png",
+      "url": "https://www.worldometers.info/world-population/north-korea-population/"
+    },
+    {
+      "title": "Syria",
+      "description": "Befolkningstall for Syria i 2025 (anslått).",
+      "value": 25620427,
+      "image": "https://flagcdn.com/w320/sy.png",
+      "url": "https://www.worldometers.info/world-population/syria-population/"
+    },
+    {
+      "title": "Mali",
+      "description": "Befolkningstall for Mali i 2025 (anslått).",
+      "value": 25198821,
+      "image": "https://flagcdn.com/w320/ma.png",
+      "url": "https://www.worldometers.info/world-population/mali-population/"
+    },
+    {
+      "title": "Burkina Faso",
+      "description": "Befolkningstall for Burkina Faso i 2025 (anslått).",
+      "value": 24074580,
+      "image": "https://flagcdn.com/w320/bu.png",
+      "url": "https://www.worldometers.info/world-population/burkina-faso-population/"
+    },
+    {
+      "title": "Sri Lanka",
+      "description": "Befolkningstall for Sri Lanka i 2025 (anslått).",
+      "value": 23229470,
+      "image": "https://flagcdn.com/w320/sr.png",
+      "url": "https://www.worldometers.info/world-population/sri-lanka-population/"
+    },
+    {
+      "title": "Taiwan",
+      "description": "Befolkningstall for Taiwan i 2025 (anslått).",
+      "value": 23112793,
+      "image": "https://flagcdn.com/w320/ta.png",
+      "url": "https://www.worldometers.info/world-population/taiwan-population/"
+    },
+    {
+      "title": "Malawi",
+      "description": "Befolkningstall for Malawi i 2025 (anslått).",
+      "value": 22216120,
+      "image": "https://flagcdn.com/w320/ma.png",
+      "url": "https://www.worldometers.info/world-population/malawi-population/"
+    },
+    {
+      "title": "Zambia",
+      "description": "Befolkningstall for Zambia i 2025 (anslått).",
+      "value": 21913874,
+      "image": "https://flagcdn.com/w320/za.png",
+      "url": "https://www.worldometers.info/world-population/zambia-population/"
+    },
+    {
+      "title": "Chad",
+      "description": "Befolkningstall for Chad i 2025 (anslått).",
+      "value": 21003705,
+      "image": "https://flagcdn.com/w320/ch.png",
+      "url": "https://www.worldometers.info/world-population/chad-population/"
+    },
+    {
+      "title": "Kazakhstan",
+      "description": "Befolkningstall for Kazakhstan i 2025 (anslått).",
+      "value": 20843754,
+      "image": "https://flagcdn.com/w320/ka.png",
+      "url": "https://www.worldometers.info/world-population/kazakhstan-population/"
+    },
+    {
+      "title": "Chile",
+      "description": "Befolkningstall for Chile i 2025 (anslått).",
+      "value": 19859921,
+      "image": "https://flagcdn.com/w320/ch.png",
+      "url": "https://www.worldometers.info/world-population/chile-population/"
+    },
+    {
+      "title": "Somalia",
+      "description": "Befolkningstall for Somalia i 2025 (anslått).",
+      "value": 19654739,
+      "image": "https://flagcdn.com/w320/so.png",
+      "url": "https://www.worldometers.info/world-population/somalia-population/"
+    },
+    {
+      "title": "Senegal",
+      "description": "Befolkningstall for Senegal i 2025 (anslått).",
+      "value": 18931966,
+      "image": "https://flagcdn.com/w320/se.png",
+      "url": "https://www.worldometers.info/world-population/senegal-population/"
+    },
+    {
+      "title": "Romania",
+      "description": "Befolkningstall for Romania i 2025 (anslått).",
+      "value": 18908650,
+      "image": "https://flagcdn.com/w320/ro.png",
+      "url": "https://www.worldometers.info/world-population/romania-population/"
+    },
+    {
+      "title": "Guatemala",
+      "description": "Befolkningstall for Guatemala i 2025 (anslått).",
+      "value": 18687881,
+      "image": "https://flagcdn.com/w320/gu.png",
+      "url": "https://www.worldometers.info/world-population/guatemala-population/"
+    },
+    {
+      "title": "Netherlands",
+      "description": "Befolkningstall for Netherlands i 2025 (anslått).",
+      "value": 18346819,
+      "image": "https://flagcdn.com/w320/ne.png",
+      "url": "https://www.worldometers.info/world-population/netherlands-population/"
+    },
+    {
+      "title": "Ecuador",
+      "description": "Befolkningstall for Ecuador i 2025 (anslått).",
+      "value": 18289896,
+      "image": "https://flagcdn.com/w320/ec.png",
+      "url": "https://www.worldometers.info/world-population/ecuador-population/"
+    },
+    {
+      "title": "Cambodia",
+      "description": "Befolkningstall for Cambodia i 2025 (anslått).",
+      "value": 17847982,
+      "image": "https://flagcdn.com/w320/ca.png",
+      "url": "https://www.worldometers.info/world-population/cambodia-population/"
+    },
+    {
+      "title": "Zimbabwe",
+      "description": "Befolkningstall for Zimbabwe i 2025 (anslått).",
+      "value": 16950795,
+      "image": "https://flagcdn.com/w320/zi.png",
+      "url": "https://www.worldometers.info/world-population/zimbabwe-population/"
+    },
+    {
+      "title": "Guinea",
+      "description": "Befolkningstall for Guinea i 2025 (anslått).",
+      "value": 15099727,
+      "image": "https://flagcdn.com/w320/gu.png",
+      "url": "https://www.worldometers.info/world-population/guinea-population/"
+    },
+    {
+      "title": "Benin",
+      "description": "Befolkningstall for Benin i 2025 (anslått).",
+      "value": 14814460,
+      "image": "https://flagcdn.com/w320/be.png",
+      "url": "https://www.worldometers.info/world-population/benin-population/"
+    },
+    {
+      "title": "Rwanda",
+      "description": "Befolkningstall for Rwanda i 2025 (anslått).",
+      "value": 14569341,
+      "image": "https://flagcdn.com/w320/rw.png",
+      "url": "https://www.worldometers.info/world-population/rwanda-population/"
+    },
+    {
+      "title": "Burundi",
+      "description": "Befolkningstall for Burundi i 2025 (anslått).",
+      "value": 14390003,
+      "image": "https://flagcdn.com/w320/bu.png",
+      "url": "https://www.worldometers.info/world-population/burundi-population/"
+    },
+    {
+      "title": "Bolivia",
+      "description": "Befolkningstall for Bolivia i 2025 (anslått).",
+      "value": 12581843,
+      "image": "https://flagcdn.com/w320/bo.png",
+      "url": "https://www.worldometers.info/world-population/bolivia-population/"
+    },
+    {
+      "title": "Tunisia",
+      "description": "Befolkningstall for Tunisia i 2025 (anslått).",
+      "value": 12348573,
+      "image": "https://flagcdn.com/w320/tu.png",
+      "url": "https://www.worldometers.info/world-population/tunisia-population/"
+    },
+    {
+      "title": "South Sudan",
+      "description": "Befolkningstall for South Sudan i 2025 (anslått).",
+      "value": 12188788,
+      "image": "https://flagcdn.com/w320/so.png",
+      "url": "https://www.worldometers.info/world-population/south-sudan-population/"
+    },
+    {
+      "title": "Haiti",
+      "description": "Befolkningstall for Haiti i 2025 (anslått).",
+      "value": 11906095,
+      "image": "https://flagcdn.com/w320/ha.png",
+      "url": "https://www.worldometers.info/world-population/haiti-population/"
+    },
+    {
+      "title": "Belgium",
+      "description": "Befolkningstall for Belgium i 2025 (anslått).",
+      "value": 11758603,
+      "image": "https://flagcdn.com/w320/be.png",
+      "url": "https://www.worldometers.info/world-population/belgium-population/"
+    },
+    {
+      "title": "Jordan",
+      "description": "Befolkningstall for Jordan i 2025 (anslått).",
+      "value": 11520684,
+      "image": "https://flagcdn.com/w320/jo.png",
+      "url": "https://www.worldometers.info/world-population/jordan-population/"
+    },
+    {
+      "title": "Dominican Republic",
+      "description": "Befolkningstall for Dominican Republic i 2025 (anslått).",
+      "value": 11520487,
+      "image": "https://flagcdn.com/w320/do.png",
+      "url": "https://www.worldometers.info/world-population/dominican-republic-population/"
+    },
+    {
+      "title": "United Arab Emirates",
+      "description": "Befolkningstall for United Arab Emirates i 2025 (anslått).",
+      "value": 11346000,
+      "image": "https://flagcdn.com/w320/un.png",
+      "url": "https://www.worldometers.info/world-population/united-arab-emirates-population/"
+    },
+    {
+      "title": "Honduras",
+      "description": "Befolkningstall for Honduras i 2025 (anslått).",
+      "value": 11005850,
+      "image": "https://flagcdn.com/w320/ho.png",
+      "url": "https://www.worldometers.info/world-population/honduras-population/"
+    },
+    {
+      "title": "Cuba",
+      "description": "Befolkningstall for Cuba i 2025 (anslått).",
+      "value": 10937203,
+      "image": "https://flagcdn.com/w320/cu.png",
+      "url": "https://www.worldometers.info/world-population/cuba-population/"
+    },
+    {
+      "title": "Tajikistan",
+      "description": "Befolkningstall for Tajikistan i 2025 (anslått).",
+      "value": 10786734,
+      "image": "https://flagcdn.com/w320/ta.png",
+      "url": "https://www.worldometers.info/world-population/tajikistan-population/"
+    },
+    {
+      "title": "Papua New Guinea",
+      "description": "Befolkningstall for Papua New Guinea i 2025 (anslått).",
+      "value": 10762817,
+      "image": "https://flagcdn.com/w320/pa.png",
+      "url": "https://www.worldometers.info/world-population/papua-new-guinea-population/"
+    },
+    {
+      "title": "Sweden",
+      "description": "Befolkningstall for Sweden i 2025 (anslått).",
+      "value": 10656633,
+      "image": "https://flagcdn.com/w320/sw.png",
+      "url": "https://www.worldometers.info/world-population/sweden-population/"
+    },
+    {
+      "title": "Czech Republic (Czechia)",
+      "description": "Befolkningstall for Czech Republic (Czechia) i 2025 (anslått).",
+      "value": 10609239,
+      "image": "https://flagcdn.com/w320/cz.png",
+      "url": "https://www.worldometers.info/world-population/czechia-population/"
+    },
+    {
+      "title": "Portugal",
+      "description": "Befolkningstall for Portugal i 2025 (anslått).",
+      "value": 10411834,
+      "image": "https://flagcdn.com/w320/po.png",
+      "url": "https://www.worldometers.info/world-population/portugal-population/"
+    },
+    {
+      "title": "Azerbaijan",
+      "description": "Befolkningstall for Azerbaijan i 2025 (anslått).",
+      "value": 10397713,
+      "image": "https://flagcdn.com/w320/az.png",
+      "url": "https://www.worldometers.info/world-population/azerbaijan-population/"
+    },
+    {
+      "title": "Greece",
+      "description": "Befolkningstall for Greece i 2025 (anslått).",
+      "value": 9938844,
+      "image": "https://flagcdn.com/w320/gr.png",
+      "url": "https://www.worldometers.info/world-population/greece-population/"
+    },
+    {
+      "title": "Togo",
+      "description": "Befolkningstall for Togo i 2025 (anslått).",
+      "value": 9721608,
+      "image": "https://flagcdn.com/w320/to.png",
+      "url": "https://www.worldometers.info/world-population/togo-population/"
+    },
+    {
+      "title": "Hungary",
+      "description": "Befolkningstall for Hungary i 2025 (anslått).",
+      "value": 9632287,
+      "image": "https://flagcdn.com/w320/hu.png",
+      "url": "https://www.worldometers.info/world-population/hungary-population/"
+    },
+    {
+      "title": "Israel",
+      "description": "Befolkningstall for Israel i 2025 (anslått).",
+      "value": 9517181,
+      "image": "https://flagcdn.com/w320/is.png",
+      "url": "https://www.worldometers.info/world-population/israel-population/"
+    },
+    {
+      "title": "Austria",
+      "description": "Befolkningstall for Austria i 2025 (anslått).",
+      "value": 9113574,
+      "image": "https://flagcdn.com/w320/au.png",
+      "url": "https://www.worldometers.info/world-population/austria-population/"
+    },
+    {
+      "title": "Belarus",
+      "description": "Befolkningstall for Belarus i 2025 (anslått).",
+      "value": 8997603,
+      "image": "https://flagcdn.com/w320/be.png",
+      "url": "https://www.worldometers.info/world-population/belarus-population/"
+    },
+    {
+      "title": "Switzerland",
+      "description": "Befolkningstall for Switzerland i 2025 (anslått).",
+      "value": 8967407,
+      "image": "https://flagcdn.com/w320/sw.png",
+      "url": "https://www.worldometers.info/world-population/switzerland-population/"
+    },
+    {
+      "title": "Sierra Leone",
+      "description": "Befolkningstall for Sierra Leone i 2025 (anslått).",
+      "value": 8819794,
+      "image": "https://flagcdn.com/w320/si.png",
+      "url": "https://www.worldometers.info/world-population/sierra-leone-population/"
+    },
+    {
+      "title": "Laos",
+      "description": "Befolkningstall for Laos i 2025 (anslått).",
+      "value": 7873046,
+      "image": "https://flagcdn.com/w320/la.png",
+      "url": "https://www.worldometers.info/world-population/laos-population/"
+    },
+    {
+      "title": "Turkmenistan",
+      "description": "Befolkningstall for Turkmenistan i 2025 (anslått).",
+      "value": 7618847,
+      "image": "https://flagcdn.com/w320/tu.png",
+      "url": "https://www.worldometers.info/world-population/turkmenistan-population/"
+    },
+    {
+      "title": "Libya",
+      "description": "Befolkningstall for Libya i 2025 (anslått).",
+      "value": 7458555,
+      "image": "https://flagcdn.com/w320/li.png",
+      "url": "https://www.worldometers.info/world-population/libya-population/"
+    },
+    {
+      "title": "Hong Kong",
+      "description": "Befolkningstall for Hong Kong i 2025 (anslått).",
+      "value": 7396076,
+      "image": "https://flagcdn.com/w320/ho.png",
+      "url": "https://www.worldometers.info/world-population/china-hong-kong-sar-population/"
+    },
+    {
+      "title": "Kyrgyzstan",
+      "description": "Befolkningstall for Kyrgyzstan i 2025 (anslått).",
+      "value": 7295034,
+      "image": "https://flagcdn.com/w320/ky.png",
+      "url": "https://www.worldometers.info/world-population/kyrgyzstan-population/"
+    },
+    {
+      "title": "Paraguay",
+      "description": "Befolkningstall for Paraguay i 2025 (anslått).",
+      "value": 7013078,
+      "image": "https://flagcdn.com/w320/pa.png",
+      "url": "https://www.worldometers.info/world-population/paraguay-population/"
+    },
+    {
+      "title": "Nicaragua",
+      "description": "Befolkningstall for Nicaragua i 2025 (anslått).",
+      "value": 7007502,
+      "image": "https://flagcdn.com/w320/ni.png",
+      "url": "https://www.worldometers.info/world-population/nicaragua-population/"
+    },
+    {
+      "title": "Bulgaria",
+      "description": "Befolkningstall for Bulgaria i 2025 (anslått).",
+      "value": 6714560,
+      "image": "https://flagcdn.com/w320/bu.png",
+      "url": "https://www.worldometers.info/world-population/bulgaria-population/"
+    },
+    {
+      "title": "Serbia",
+      "description": "Befolkningstall for Serbia i 2025 (anslått).",
+      "value": 6689039,
+      "image": "https://flagcdn.com/w320/se.png",
+      "url": "https://www.worldometers.info/world-population/serbia-population/"
+    },
+    {
+      "title": "Congo",
+      "description": "Befolkningstall for Congo i 2025 (anslått).",
+      "value": 6484437,
+      "image": "https://flagcdn.com/w320/co.png",
+      "url": "https://www.worldometers.info/world-population/congo-population/"
+    },
+    {
+      "title": "El Salvador",
+      "description": "Befolkningstall for El Salvador i 2025 (anslått).",
+      "value": 6365503,
+      "image": "https://flagcdn.com/w320/el.png",
+      "url": "https://www.worldometers.info/world-population/el-salvador-population/"
+    },
+    {
+      "title": "Denmark",
+      "description": "Befolkningstall for Denmark i 2025 (anslått).",
+      "value": 6002507,
+      "image": "https://flagcdn.com/w320/de.png",
+      "url": "https://www.worldometers.info/world-population/denmark-population/"
+    },
+    {
+      "title": "Singapore",
+      "description": "Befolkningstall for Singapore i 2025 (anslått).",
+      "value": 5870750,
+      "image": "https://flagcdn.com/w320/si.png",
+      "url": "https://www.worldometers.info/world-population/singapore-population/"
+    },
+    {
+      "title": "Lebanon",
+      "description": "Befolkningstall for Lebanon i 2025 (anslått).",
+      "value": 5849421,
+      "image": "https://flagcdn.com/w320/le.png",
+      "url": "https://www.worldometers.info/world-population/lebanon-population/"
+    },
+    {
+      "title": "Liberia",
+      "description": "Befolkningstall for Liberia i 2025 (anslått).",
+      "value": 5731206,
+      "image": "https://flagcdn.com/w320/li.png",
+      "url": "https://www.worldometers.info/world-population/liberia-population/"
+    },
+    {
+      "title": "Finland",
+      "description": "Befolkningstall for Finland i 2025 (anslått).",
+      "value": 5623329,
+      "image": "https://flagcdn.com/w320/fi.png",
+      "url": "https://www.worldometers.info/world-population/finland-population/"
+    },
+    {
+      "title": "Norway",
+      "description": "Befolkningstall for Norway i 2025 (anslått).",
+      "value": 5623071,
+      "image": "https://flagcdn.com/w320/no.png",
+      "url": "https://www.worldometers.info/world-population/norway-population/"
+    },
+    {
+      "title": "State of Palestine",
+      "description": "Befolkningstall for State of Palestine i 2025 (anslått).",
+      "value": 5589623,
+      "image": "https://flagcdn.com/w320/st.png",
+      "url": "https://www.worldometers.info/world-population/state-of-palestine-population/"
+    },
+    {
+      "title": "Central African Republic",
+      "description": "Befolkningstall for Central African Republic i 2025 (anslått).",
+      "value": 5513282,
+      "image": "https://flagcdn.com/w320/ce.png",
+      "url": "https://www.worldometers.info/world-population/central-african-republic-population/"
+    },
+    {
+      "title": "Oman",
+      "description": "Befolkningstall for Oman i 2025 (anslått).",
+      "value": 5494691,
+      "image": "https://flagcdn.com/w320/om.png",
+      "url": "https://www.worldometers.info/world-population/oman-population/"
+    },
+    {
+      "title": "Slovakia",
+      "description": "Befolkningstall for Slovakia i 2025 (anslått).",
+      "value": 5474881,
+      "image": "https://flagcdn.com/w320/sl.png",
+      "url": "https://www.worldometers.info/world-population/slovakia-population/"
+    },
+    {
+      "title": "Mauritania",
+      "description": "Befolkningstall for Mauritania i 2025 (anslått).",
+      "value": 5315065,
+      "image": "https://flagcdn.com/w320/ma.png",
+      "url": "https://www.worldometers.info/world-population/mauritania-population/"
+    },
+    {
+      "title": "Ireland",
+      "description": "Befolkningstall for Ireland i 2025 (anslått).",
+      "value": 5308039,
+      "image": "https://flagcdn.com/w320/ir.png",
+      "url": "https://www.worldometers.info/world-population/ireland-population/"
+    },
+    {
+      "title": "New Zealand",
+      "description": "Befolkningstall for New Zealand i 2025 (anslått).",
+      "value": 5251899,
+      "image": "https://flagcdn.com/w320/ne.png",
+      "url": "https://www.worldometers.info/world-population/new-zealand-population/"
+    },
+    {
+      "title": "Costa Rica",
+      "description": "Befolkningstall for Costa Rica i 2025 (anslått).",
+      "value": 5152950,
+      "image": "https://flagcdn.com/w320/co.png",
+      "url": "https://www.worldometers.info/world-population/costa-rica-population/"
+    },
+    {
+      "title": "Kuwait",
+      "description": "Befolkningstall for Kuwait i 2025 (anslått).",
+      "value": 5026078,
+      "image": "https://flagcdn.com/w320/ku.png",
+      "url": "https://www.worldometers.info/world-population/kuwait-population/"
+    },
+    {
+      "title": "Panama",
+      "description": "Befolkningstall for Panama i 2025 (anslått).",
+      "value": 4571189,
+      "image": "https://flagcdn.com/w320/pa.png",
+      "url": "https://www.worldometers.info/world-population/panama-population/"
+    },
+    {
+      "title": "Croatia",
+      "description": "Befolkningstall for Croatia i 2025 (anslått).",
+      "value": 3848160,
+      "image": "https://flagcdn.com/w320/cr.png",
+      "url": "https://www.worldometers.info/world-population/croatia-population/"
+    },
+    {
+      "title": "Georgia",
+      "description": "Befolkningstall for Georgia i 2025 (anslått).",
+      "value": 3806671,
+      "image": "https://flagcdn.com/w320/ge.png",
+      "url": "https://www.worldometers.info/world-population/georgia-population/"
+    },
+    {
+      "title": "Eritrea",
+      "description": "Befolkningstall for Eritrea i 2025 (anslått).",
+      "value": 3607003,
+      "image": "https://flagcdn.com/w320/er.png",
+      "url": "https://www.worldometers.info/world-population/eritrea-population/"
+    },
+    {
+      "title": "Mongolia",
+      "description": "Befolkningstall for Mongolia i 2025 (anslått).",
+      "value": 3517100,
+      "image": "https://flagcdn.com/w320/mo.png",
+      "url": "https://www.worldometers.info/world-population/mongolia-population/"
+    },
+    {
+      "title": "Uruguay",
+      "description": "Befolkningstall for Uruguay i 2025 (anslått).",
+      "value": 3384688,
+      "image": "https://flagcdn.com/w320/ur.png",
+      "url": "https://www.worldometers.info/world-population/uruguay-population/"
+    },
+    {
+      "title": "Puerto Rico",
+      "description": "Befolkningstall for Puerto Rico i 2025 (anslått).",
+      "value": 3235289,
+      "image": "https://flagcdn.com/w320/pu.png",
+      "url": "https://www.worldometers.info/world-population/puerto-rico-population/"
+    },
+    {
+      "title": "Bosnia and Herzegovina",
+      "description": "Befolkningstall for Bosnia and Herzegovina i 2025 (anslått).",
+      "value": 3140095,
+      "image": "https://flagcdn.com/w320/bo.png",
+      "url": "https://www.worldometers.info/world-population/bosnia-and-herzegovina-population/"
+    },
+    {
+      "title": "Qatar",
+      "description": "Befolkningstall for Qatar i 2025 (anslått).",
+      "value": 3115889,
+      "image": "https://flagcdn.com/w320/qa.png",
+      "url": "https://www.worldometers.info/world-population/qatar-population/"
+    },
+    {
+      "title": "Namibia",
+      "description": "Befolkningstall for Namibia i 2025 (anslått).",
+      "value": 3092816,
+      "image": "https://flagcdn.com/w320/na.png",
+      "url": "https://www.worldometers.info/world-population/namibia-population/"
+    },
+    {
+      "title": "Moldova",
+      "description": "Befolkningstall for Moldova i 2025 (anslått).",
+      "value": 2996106,
+      "image": "https://flagcdn.com/w320/mo.png",
+      "url": "https://www.worldometers.info/world-population/moldova-population/"
+    },
+    {
+      "title": "Armenia",
+      "description": "Befolkningstall for Armenia i 2025 (anslått).",
+      "value": 2952365,
+      "image": "https://flagcdn.com/w320/ar.png",
+      "url": "https://www.worldometers.info/world-population/armenia-population/"
+    },
+    {
+      "title": "Jamaica",
+      "description": "Befolkningstall for Jamaica i 2025 (anslått).",
+      "value": 2837077,
+      "image": "https://flagcdn.com/w320/ja.png",
+      "url": "https://www.worldometers.info/world-population/jamaica-population/"
+    },
+    {
+      "title": "Lithuania",
+      "description": "Befolkningstall for Lithuania i 2025 (anslått).",
+      "value": 2830144,
+      "image": "https://flagcdn.com/w320/li.png",
+      "url": "https://www.worldometers.info/world-population/lithuania-population/"
+    },
+    {
+      "title": "Gambia",
+      "description": "Befolkningstall for Gambia i 2025 (anslått).",
+      "value": 2822093,
+      "image": "https://flagcdn.com/w320/ga.png",
+      "url": "https://www.worldometers.info/world-population/gambia-population/"
+    },
+    {
+      "title": "Albania",
+      "description": "Befolkningstall for Albania i 2025 (anslått).",
+      "value": 2771508,
+      "image": "https://flagcdn.com/w320/al.png",
+      "url": "https://www.worldometers.info/world-population/albania-population/"
+    },
+    {
+      "title": "Gabon",
+      "description": "Befolkningstall for Gabon i 2025 (anslått).",
+      "value": 2593130,
+      "image": "https://flagcdn.com/w320/ga.png",
+      "url": "https://www.worldometers.info/world-population/gabon-population/"
+    },
+    {
+      "title": "Botswana",
+      "description": "Befolkningstall for Botswana i 2025 (anslått).",
+      "value": 2562122,
+      "image": "https://flagcdn.com/w320/bo.png",
+      "url": "https://www.worldometers.info/world-population/botswana-population/"
+    },
+    {
+      "title": "Lesotho",
+      "description": "Befolkningstall for Lesotho i 2025 (anslått).",
+      "value": 2363325,
+      "image": "https://flagcdn.com/w320/le.png",
+      "url": "https://www.worldometers.info/world-population/lesotho-population/"
+    },
+    {
+      "title": "Guinea-Bissau",
+      "description": "Befolkningstall for Guinea-Bissau i 2025 (anslått).",
+      "value": 2249515,
+      "image": "https://flagcdn.com/w320/gu.png",
+      "url": "https://www.worldometers.info/world-population/guinea-bissau-population/"
+    },
+    {
+      "title": "Slovenia",
+      "description": "Befolkningstall for Slovenia i 2025 (anslått).",
+      "value": 2117072,
+      "image": "https://flagcdn.com/w320/sl.png",
+      "url": "https://www.worldometers.info/world-population/slovenia-population/"
+    },
+    {
+      "title": "Equatorial Guinea",
+      "description": "Befolkningstall for Equatorial Guinea i 2025 (anslått).",
+      "value": 1938431,
+      "image": "https://flagcdn.com/w320/eq.png",
+      "url": "https://www.worldometers.info/world-population/equatorial-guinea-population/"
+    },
+    {
+      "title": "Latvia",
+      "description": "Befolkningstall for Latvia i 2025 (anslått).",
+      "value": 1853559,
+      "image": "https://flagcdn.com/w320/la.png",
+      "url": "https://www.worldometers.info/world-population/latvia-population/"
+    },
+    {
+      "title": "North Macedonia",
+      "description": "Befolkningstall for North Macedonia i 2025 (anslått).",
+      "value": 1813791,
+      "image": "https://flagcdn.com/w320/no.png",
+      "url": "https://www.worldometers.info/world-population/north-macedonia-population/"
+    },
+    {
+      "title": "Bahrain",
+      "description": "Befolkningstall for Bahrain i 2025 (anslått).",
+      "value": 1643332,
+      "image": "https://flagcdn.com/w320/ba.png",
+      "url": "https://www.worldometers.info/world-population/bahrain-population/"
+    },
+    {
+      "title": "Trinidad and Tobago",
+      "description": "Befolkningstall for Trinidad and Tobago i 2025 (anslått).",
+      "value": 1511155,
+      "image": "https://flagcdn.com/w320/tr.png",
+      "url": "https://www.worldometers.info/world-population/trinidad-and-tobago-population/"
+    },
+    {
+      "title": "Timor-Leste",
+      "description": "Befolkningstall for Timor-Leste i 2025 (anslått).",
+      "value": 1418517,
+      "image": "https://flagcdn.com/w320/ti.png",
+      "url": "https://www.worldometers.info/world-population/timor-leste-population/"
+    },
+    {
+      "title": "Cyprus",
+      "description": "Befolkningstall for Cyprus i 2025 (anslått).",
+      "value": 1370754,
+      "image": "https://flagcdn.com/w320/cy.png",
+      "url": "https://www.worldometers.info/world-population/cyprus-population/"
+    },
+    {
+      "title": "Estonia",
+      "description": "Befolkningstall for Estonia i 2025 (anslått).",
+      "value": 1344232,
+      "image": "https://flagcdn.com/w320/es.png",
+      "url": "https://www.worldometers.info/world-population/estonia-population/"
+    },
+    {
+      "title": "Mauritius",
+      "description": "Befolkningstall for Mauritius i 2025 (anslått).",
+      "value": 1268280,
+      "image": "https://flagcdn.com/w320/ma.png",
+      "url": "https://www.worldometers.info/world-population/mauritius-population/"
+    },
+    {
+      "title": "Eswatini",
+      "description": "Befolkningstall for Eswatini i 2025 (anslått).",
+      "value": 1256174,
+      "image": "https://flagcdn.com/w320/es.png",
+      "url": "https://www.worldometers.info/world-population/swaziland-population/"
+    },
+    {
+      "title": "Djibouti",
+      "description": "Befolkningstall for Djibouti i 2025 (anslått).",
+      "value": 1184076,
+      "image": "https://flagcdn.com/w320/dj.png",
+      "url": "https://www.worldometers.info/world-population/djibouti-population/"
+    },
+    {
+      "title": "Fiji",
+      "description": "Befolkningstall for Fiji i 2025 (anslått).",
+      "value": 933154,
+      "image": "https://flagcdn.com/w320/fi.png",
+      "url": "https://www.worldometers.info/world-population/fiji-population/"
+    },
+    {
+      "title": "Comoros",
+      "description": "Befolkningstall for Comoros i 2025 (anslått).",
+      "value": 882847,
+      "image": "https://flagcdn.com/w320/co.png",
+      "url": "https://www.worldometers.info/world-population/comoros-population/"
+    },
+    {
+      "title": "Réunion",
+      "description": "Befolkningstall for Réunion i 2025 (anslått).",
+      "value": 882405,
+      "image": "https://flagcdn.com/w320/re.png",
+      "url": "https://www.worldometers.info/world-population/reunion-population/"
+    },
+    {
+      "title": "Solomon Islands",
+      "description": "Befolkningstall for Solomon Islands i 2025 (anslått).",
+      "value": 838645,
+      "image": "https://flagcdn.com/w320/so.png",
+      "url": "https://www.worldometers.info/world-population/solomon-islands-population/"
+    },
+    {
+      "title": "Guyana",
+      "description": "Befolkningstall for Guyana i 2025 (anslått).",
+      "value": 835986,
+      "image": "https://flagcdn.com/w320/gu.png",
+      "url": "https://www.worldometers.info/world-population/guyana-population/"
+    },
+    {
+      "title": "Bhutan",
+      "description": "Befolkningstall for Bhutan i 2025 (anslått).",
+      "value": 796682,
+      "image": "https://flagcdn.com/w320/bh.png",
+      "url": "https://www.worldometers.info/world-population/bhutan-population/"
+    },
+    {
+      "title": "Macao",
+      "description": "Befolkningstall for Macao i 2025 (anslått).",
+      "value": 722007,
+      "image": "https://flagcdn.com/w320/ma.png",
+      "url": "https://www.worldometers.info/world-population/china-macao-sar-population/"
+    },
+    {
+      "title": "Luxembourg",
+      "description": "Befolkningstall for Luxembourg i 2025 (anslått).",
+      "value": 680453,
+      "image": "https://flagcdn.com/w320/lu.png",
+      "url": "https://www.worldometers.info/world-population/luxembourg-population/"
+    },
+    {
+      "title": "Suriname",
+      "description": "Befolkningstall for Suriname i 2025 (anslått).",
+      "value": 639850,
+      "image": "https://flagcdn.com/w320/su.png",
+      "url": "https://www.worldometers.info/world-population/suriname-population/"
+    },
+    {
+      "title": "Montenegro",
+      "description": "Befolkningstall for Montenegro i 2025 (anslått).",
+      "value": 632729,
+      "image": "https://flagcdn.com/w320/mo.png",
+      "url": "https://www.worldometers.info/world-population/montenegro-population/"
+    },
+    {
+      "title": "Western Sahara",
+      "description": "Befolkningstall for Western Sahara i 2025 (anslått).",
+      "value": 600904,
+      "image": "https://flagcdn.com/w320/we.png",
+      "url": "https://www.worldometers.info/world-population/western-sahara-population/"
+    },
+    {
+      "title": "Malta",
+      "description": "Befolkningstall for Malta i 2025 (anslått).",
+      "value": 545405,
+      "image": "https://flagcdn.com/w320/ma.png",
+      "url": "https://www.worldometers.info/world-population/malta-population/"
+    },
+    {
+      "title": "Maldives",
+      "description": "Befolkningstall for Maldives i 2025 (anslått).",
+      "value": 529676,
+      "image": "https://flagcdn.com/w320/ma.png",
+      "url": "https://www.worldometers.info/world-population/maldives-population/"
+    },
+    {
+      "title": "Cabo Verde",
+      "description": "Befolkningstall for Cabo Verde i 2025 (anslått).",
+      "value": 527326,
+      "image": "https://flagcdn.com/w320/ca.png",
+      "url": "https://www.worldometers.info/world-population/cabo-verde-population/"
+    },
+    {
+      "title": "Brunei",
+      "description": "Befolkningstall for Brunei i 2025 (anslått).",
+      "value": 466330,
+      "image": "https://flagcdn.com/w320/br.png",
+      "url": "https://www.worldometers.info/world-population/brunei-darussalam-population/"
+    },
+    {
+      "title": "Belize",
+      "description": "Befolkningstall for Belize i 2025 (anslått).",
+      "value": 422924,
+      "image": "https://flagcdn.com/w320/be.png",
+      "url": "https://www.worldometers.info/world-population/belize-population/"
+    },
+    {
+      "title": "Bahamas",
+      "description": "Befolkningstall for Bahamas i 2025 (anslått).",
+      "value": 403033,
+      "image": "https://flagcdn.com/w320/ba.png",
+      "url": "https://www.worldometers.info/world-population/bahamas-population/"
+    },
+    {
+      "title": "Iceland",
+      "description": "Befolkningstall for Iceland i 2025 (anslått).",
+      "value": 398266,
+      "image": "https://flagcdn.com/w320/ic.png",
+      "url": "https://www.worldometers.info/world-population/iceland-population/"
+    },
+    {
+      "title": "Guadeloupe",
+      "description": "Befolkningstall for Guadeloupe i 2025 (anslått).",
+      "value": 373791,
+      "image": "https://flagcdn.com/w320/gu.png",
+      "url": "https://www.worldometers.info/world-population/guadeloupe-population/"
+    },
+    {
+      "title": "Martinique",
+      "description": "Befolkningstall for Martinique i 2025 (anslått).",
+      "value": 340439,
+      "image": "https://flagcdn.com/w320/ma.png",
+      "url": "https://www.worldometers.info/world-population/martinique-population/"
+    },
+    {
+      "title": "Mayotte",
+      "description": "Befolkningstall for Mayotte i 2025 (anslått).",
+      "value": 337011,
+      "image": "https://flagcdn.com/w320/ma.png",
+      "url": "https://www.worldometers.info/world-population/mayotte-population/"
+    },
+    {
+      "title": "Vanuatu",
+      "description": "Befolkningstall for Vanuatu i 2025 (anslått).",
+      "value": 335169,
+      "image": "https://flagcdn.com/w320/va.png",
+      "url": "https://www.worldometers.info/world-population/vanuatu-population/"
+    },
+    {
+      "title": "French Guiana",
+      "description": "Befolkningstall for French Guiana i 2025 (anslått).",
+      "value": 313666,
+      "image": "https://flagcdn.com/w320/fr.png",
+      "url": "https://www.worldometers.info/world-population/french-guiana-population/"
+    },
+    {
+      "title": "New Caledonia",
+      "description": "Befolkningstall for New Caledonia i 2025 (anslått).",
+      "value": 295333,
+      "image": "https://flagcdn.com/w320/ne.png",
+      "url": "https://www.worldometers.info/world-population/new-caledonia-population/"
+    },
+    {
+      "title": "Barbados",
+      "description": "Befolkningstall for Barbados i 2025 (anslått).",
+      "value": 282623,
+      "image": "https://flagcdn.com/w320/ba.png",
+      "url": "https://www.worldometers.info/world-population/barbados-population/"
+    },
+    {
+      "title": "French Polynesia",
+      "description": "Befolkningstall for French Polynesia i 2025 (anslått).",
+      "value": 282465,
+      "image": "https://flagcdn.com/w320/fr.png",
+      "url": "https://www.worldometers.info/world-population/french-polynesia-population/"
+    },
+    {
+      "title": "Sao Tome & Principe",
+      "description": "Befolkningstall for Sao Tome & Principe i 2025 (anslått).",
+      "value": 240254,
+      "image": "https://flagcdn.com/w320/sa.png",
+      "url": "https://www.worldometers.info/world-population/sao-tome-and-principe-population/"
+    },
+    {
+      "title": "Samoa",
+      "description": "Befolkningstall for Samoa i 2025 (anslått).",
+      "value": 219306,
+      "image": "https://flagcdn.com/w320/sa.png",
+      "url": "https://www.worldometers.info/world-population/samoa-population/"
+    },
+    {
+      "title": "Curaçao",
+      "description": "Befolkningstall for Curaçao i 2025 (anslått).",
+      "value": 185487,
+      "image": "https://flagcdn.com/w320/cu.png",
+      "url": "https://www.worldometers.info/world-population/curacao-population/"
+    },
+    {
+      "title": "Saint Lucia",
+      "description": "Befolkningstall for Saint Lucia i 2025 (anslått).",
+      "value": 180149,
+      "image": "https://flagcdn.com/w320/sa.png",
+      "url": "https://www.worldometers.info/world-population/saint-lucia-population/"
+    },
+    {
+      "title": "Guam",
+      "description": "Befolkningstall for Guam i 2025 (anslått).",
+      "value": 168999,
+      "image": "https://flagcdn.com/w320/gu.png",
+      "url": "https://www.worldometers.info/world-population/guam-population/"
+    },
+    {
+      "title": "Kiribati",
+      "description": "Befolkningstall for Kiribati i 2025 (anslått).",
+      "value": 136488,
+      "image": "https://flagcdn.com/w320/ki.png",
+      "url": "https://www.worldometers.info/world-population/kiribati-population/"
+    },
+    {
+      "title": "Seychelles",
+      "description": "Befolkningstall for Seychelles i 2025 (anslått).",
+      "value": 132779,
+      "image": "https://flagcdn.com/w320/se.png",
+      "url": "https://www.worldometers.info/world-population/seychelles-population/"
+    },
+    {
+      "title": "Grenada",
+      "description": "Befolkningstall for Grenada i 2025 (anslått).",
+      "value": 117303,
+      "image": "https://flagcdn.com/w320/gr.png",
+      "url": "https://www.worldometers.info/world-population/grenada-population/"
+    },
+    {
+      "title": "Micronesia",
+      "description": "Befolkningstall for Micronesia i 2025 (anslått).",
+      "value": 113683,
+      "image": "https://flagcdn.com/w320/mi.png",
+      "url": "https://www.worldometers.info/world-population/micronesia-population/"
+    },
+    {
+      "title": "Aruba",
+      "description": "Befolkningstall for Aruba i 2025 (anslått).",
+      "value": 108147,
+      "image": "https://flagcdn.com/w320/ar.png",
+      "url": "https://www.worldometers.info/world-population/aruba-population/"
+    },
+    {
+      "title": "Tonga",
+      "description": "Befolkningstall for Tonga i 2025 (anslått).",
+      "value": 103742,
+      "image": "https://flagcdn.com/w320/to.png",
+      "url": "https://www.worldometers.info/world-population/tonga-population/"
+    },
+    {
+      "title": "St. Vincent & Grenadines",
+      "description": "Befolkningstall for St. Vincent & Grenadines i 2025 (anslått).",
+      "value": 99924,
+      "image": "https://flagcdn.com/w320/st.png",
+      "url": "https://www.worldometers.info/world-population/saint-vincent-and-the-grenadines-population/"
+    },
+    {
+      "title": "Antigua and Barbuda",
+      "description": "Befolkningstall for Antigua and Barbuda i 2025 (anslått).",
+      "value": 94209,
+      "image": "https://flagcdn.com/w320/an.png",
+      "url": "https://www.worldometers.info/world-population/antigua-and-barbuda-population/"
+    },
+    {
+      "title": "U.S. Virgin Islands",
+      "description": "Befolkningstall for U.S. Virgin Islands i 2025 (anslått).",
+      "value": 84138,
+      "image": "https://flagcdn.com/w320/us.png",
+      "url": "https://www.worldometers.info/world-population/united-states-virgin-islands-population/"
+    },
+    {
+      "title": "Isle of Man",
+      "description": "Befolkningstall for Isle of Man i 2025 (anslått).",
+      "value": 84118,
+      "image": "https://flagcdn.com/w320/is.png",
+      "url": "https://www.worldometers.info/world-population/isle-of-man-population/"
+    },
+    {
+      "title": "Andorra",
+      "description": "Befolkningstall for Andorra i 2025 (anslått).",
+      "value": 82904,
+      "image": "https://flagcdn.com/w320/an.png",
+      "url": "https://www.worldometers.info/world-population/andorra-population/"
+    },
+    {
+      "title": "Cayman Islands",
+      "description": "Befolkningstall for Cayman Islands i 2025 (anslått).",
+      "value": 75844,
+      "image": "https://flagcdn.com/w320/ca.png",
+      "url": "https://www.worldometers.info/world-population/cayman-islands-population/"
+    },
+    {
+      "title": "Dominica",
+      "description": "Befolkningstall for Dominica i 2025 (anslått).",
+      "value": 65871,
+      "image": "https://flagcdn.com/w320/do.png",
+      "url": "https://www.worldometers.info/world-population/dominica-population/"
+    },
+    {
+      "title": "Bermuda",
+      "description": "Befolkningstall for Bermuda i 2025 (anslått).",
+      "value": 64555,
+      "image": "https://flagcdn.com/w320/be.png",
+      "url": "https://www.worldometers.info/world-population/bermuda-population/"
+    },
+    {
+      "title": "Faeroe Islands",
+      "description": "Befolkningstall for Faeroe Islands i 2025 (anslått).",
+      "value": 56002,
+      "image": "https://flagcdn.com/w320/fa.png",
+      "url": "https://www.worldometers.info/world-population/faeroe-islands-population/"
+    },
+    {
+      "title": "Greenland",
+      "description": "Befolkningstall for Greenland i 2025 (anslått).",
+      "value": 55745,
+      "image": "https://flagcdn.com/w320/gr.png",
+      "url": "https://www.worldometers.info/world-population/greenland-population/"
+    },
+    {
+      "title": "Saint Kitts & Nevis",
+      "description": "Befolkningstall for Saint Kitts & Nevis i 2025 (anslått).",
+      "value": 46922,
+      "image": "https://flagcdn.com/w320/sa.png",
+      "url": "https://www.worldometers.info/world-population/saint-kitts-and-nevis-population/"
+    },
+    {
+      "title": "Turks and Caicos",
+      "description": "Befolkningstall for Turks and Caicos i 2025 (anslått).",
+      "value": 46855,
+      "image": "https://flagcdn.com/w320/tu.png",
+      "url": "https://www.worldometers.info/world-population/turks-and-caicos-islands-population/"
+    },
+    {
+      "title": "American Samoa",
+      "description": "Befolkningstall for American Samoa i 2025 (anslått).",
+      "value": 46029,
+      "image": "https://flagcdn.com/w320/am.png",
+      "url": "https://www.worldometers.info/world-population/american-samoa-population/"
+    },
+    {
+      "title": "Sint Maarten",
+      "description": "Befolkningstall for Sint Maarten i 2025 (anslått).",
+      "value": 43923,
+      "image": "https://flagcdn.com/w320/si.png",
+      "url": "https://www.worldometers.info/world-population/sint-maarten-population/"
+    },
+    {
+      "title": "Northern Mariana Islands",
+      "description": "Befolkningstall for Northern Mariana Islands i 2025 (anslått).",
+      "value": 43541,
+      "image": "https://flagcdn.com/w320/no.png",
+      "url": "https://www.worldometers.info/world-population/northern-mariana-islands-population/"
+    },
+    {
+      "title": "Liechtenstein",
+      "description": "Befolkningstall for Liechtenstein i 2025 (anslått).",
+      "value": 40128,
+      "image": "https://flagcdn.com/w320/li.png",
+      "url": "https://www.worldometers.info/world-population/liechtenstein-population/"
+    },
+    {
+      "title": "Gibraltar",
+      "description": "Befolkningstall for Gibraltar i 2025 (anslått).",
+      "value": 40126,
+      "image": "https://flagcdn.com/w320/gi.png",
+      "url": "https://www.worldometers.info/world-population/gibraltar-population/"
+    },
+    {
+      "title": "British Virgin Islands",
+      "description": "Befolkningstall for British Virgin Islands i 2025 (anslått).",
+      "value": 39732,
+      "image": "https://flagcdn.com/w320/br.png",
+      "url": "https://www.worldometers.info/world-population/british-virgin-islands-population/"
+    },
+    {
+      "title": "Monaco",
+      "description": "Befolkningstall for Monaco i 2025 (anslått).",
+      "value": 38341,
+      "image": "https://flagcdn.com/w320/mo.png",
+      "url": "https://www.worldometers.info/world-population/monaco-population/"
+    },
+    {
+      "title": "Marshall Islands",
+      "description": "Befolkningstall for Marshall Islands i 2025 (anslått).",
+      "value": 36282,
+      "image": "https://flagcdn.com/w320/ma.png",
+      "url": "https://www.worldometers.info/world-population/marshall-islands-population/"
+    },
+    {
+      "title": "San Marino",
+      "description": "Befolkningstall for San Marino i 2025 (anslått).",
+      "value": 33572,
+      "image": "https://flagcdn.com/w320/sa.png",
+      "url": "https://www.worldometers.info/world-population/san-marino-population/"
+    },
+    {
+      "title": "Caribbean Netherlands",
+      "description": "Befolkningstall for Caribbean Netherlands i 2025 (anslått).",
+      "value": 31338,
+      "image": "https://flagcdn.com/w320/ca.png",
+      "url": "https://www.worldometers.info/world-population/caribbean-netherlands-population/"
+    },
+    {
+      "title": "Palau",
+      "description": "Befolkningstall for Palau i 2025 (anslått).",
+      "value": 17663,
+      "image": "https://flagcdn.com/w320/pa.png",
+      "url": "https://www.worldometers.info/world-population/palau-population/"
+    },
+    {
+      "title": "Anguilla",
+      "description": "Befolkningstall for Anguilla i 2025 (anslått).",
+      "value": 14728,
+      "image": "https://flagcdn.com/w320/an.png",
+      "url": "https://www.worldometers.info/world-population/anguilla-population/"
+    },
+    {
+      "title": "Cook Islands",
+      "description": "Befolkningstall for Cook Islands i 2025 (anslått).",
+      "value": 13263,
+      "image": "https://flagcdn.com/w320/co.png",
+      "url": "https://www.worldometers.info/world-population/cook-islands-population/"
+    },
+    {
+      "title": "Nauru",
+      "description": "Befolkningstall for Nauru i 2025 (anslått).",
+      "value": 12025,
+      "image": "https://flagcdn.com/w320/na.png",
+      "url": "https://www.worldometers.info/world-population/nauru-population/"
+    },
+    {
+      "title": "Saint Barthelemy",
+      "description": "Befolkningstall for Saint Barthelemy i 2025 (anslått).",
+      "value": 11414,
+      "image": "https://flagcdn.com/w320/sa.png",
+      "url": "https://www.worldometers.info/world-population/saint-barthelemy-population/"
+    },
+    {
+      "title": "Wallis & Futuna",
+      "description": "Befolkningstall for Wallis & Futuna i 2025 (anslått).",
+      "value": 11194,
+      "image": "https://flagcdn.com/w320/wa.png",
+      "url": "https://www.worldometers.info/world-population/wallis-and-futuna-islands-population/"
+    },
+    {
+      "title": "Tuvalu",
+      "description": "Befolkningstall for Tuvalu i 2025 (anslått).",
+      "value": 9492,
+      "image": "https://flagcdn.com/w320/tu.png",
+      "url": "https://www.worldometers.info/world-population/tuvalu-population/"
+    },
+    {
+      "title": "Saint Pierre & Miquelon",
+      "description": "Befolkningstall for Saint Pierre & Miquelon i 2025 (anslått).",
+      "value": 5574,
+      "image": "https://flagcdn.com/w320/sa.png",
+      "url": "https://www.worldometers.info/world-population/saint-pierre-and-miquelon-population/"
+    },
+    {
+      "title": "Saint Helena",
+      "description": "Befolkningstall for Saint Helena i 2025 (anslått).",
+      "value": 5197,
+      "image": "https://flagcdn.com/w320/sa.png",
+      "url": "https://www.worldometers.info/world-population/saint-helena-population/"
+    },
+    {
+      "title": "Montserrat",
+      "description": "Befolkningstall for Montserrat i 2025 (anslått).",
+      "value": 4359,
+      "image": "https://flagcdn.com/w320/mo.png",
+      "url": "https://www.worldometers.info/world-population/montserrat-population/"
+    },
+    {
+      "title": "Falkland Islands",
+      "description": "Befolkningstall for Falkland Islands i 2025 (anslått).",
+      "value": 3469,
+      "image": "https://flagcdn.com/w320/fa.png",
+      "url": "https://www.worldometers.info/world-population/falkland-islands-malvinas-population/"
+    },
+    {
+      "title": "Tokelau",
+      "description": "Befolkningstall for Tokelau i 2025 (anslått).",
+      "value": 2608,
+      "image": "https://flagcdn.com/w320/to.png",
+      "url": "https://www.worldometers.info/world-population/tokelau-population/"
+    },
+    {
+      "title": "Niue",
+      "description": "Befolkningstall for Niue i 2025 (anslått).",
+      "value": 1821,
+      "image": "https://flagcdn.com/w320/ni.png",
+      "url": "https://www.worldometers.info/world-population/niue-population/"
+    },
+    {
+      "title": "Holy See",
+      "description": "Befolkningstall for Holy See i 2025 (anslått).",
+      "value": 501,
+      "image": "https://flagcdn.com/w320/ho.png",
+      "url": "https://www.worldometers.info/world-population/holy-see-population/"
+    }
+  ]
+}
