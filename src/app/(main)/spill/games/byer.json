@@ -19,6 +19,36 @@
       "image": "https://www.visitbergen.com/imageresizer/?image=%2Fdbimgs%2F3-days-in-bergen-norway.jpg&action=ContentImageLimitSize"
     },
     {
+      "title": "Førde",
+      "description": "Norges styggeste by",
+      "image": "https://media.snl.no/media/142997/standard_compressed_F%C3%B8rde_ra%CC%8Adhus.jpg",
+      "value": 10922
+    },
+    {
+      "title": "Kragerø",
+      "description": "Pærlen blandt kystbyene, fy faen lucas bestem deg",
+      "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSiwQUD7PQbC_fZiuue6mQ-eFL94pXNIJdAMHR65oFbhE2geQXZyQO4LEuRi-lQkP3hzIqSshRrFcLbVyj8Mae6Sgo&s=19",
+      "value": 5405
+    },
+    {
+      "title": "Holmestrand",
+      "description": "Vestfolds svar på sørlandet, havneby",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Holmestrand_2018.png",
+      "value": 8621
+    },
+    {
+      "title": "Brummunddal",
+      "description": "Han ene fra brødrene dal",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIoVRg2h3PKrhI-7QjxbFbiYFv99Tumfk0DQ&s",
+      "value": 11470
+    },
+    {
+      "title": "Askim",
+      "description": "Byen der Kraftfestivalen blir holdt",
+      "value": 15629,
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fno.wikipedia.org%2Fwiki%2FAskim&psig=AOvVaw3On7ohnQs_JW3rjGMd15vo&ust=1761734967090000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIDO76jcxpADFQAAAAAdAAAAABAE"
+    },
+    {
       "title": "Ålesund",
       "description": "Jugendstil-by kjent for kystnatur og fjordutsikt — klynge A",
       "value": 46554,
@@ -27,13 +57,13 @@
     {
       "title": "Moss",
       "description": "Industri- og kystby ved Oslofjorden — klynge A",
-      "value": 43528,
+      "value": 50647,
       "image": "https://media.istockphoto.com/id/613693908/photo/view-of-the-ferry-terminal-at-horten-norway.jpg?s=612x612&w=0&k=20&c=7BB6NhPSezeM657zBaN--D2J0qcD5DPkCSIO9o4SPDc="
     },
     {
       "title": "Arendal",
       "description": "Sørlandsby med havn og trehusbebyggelse — klynge A",
-      "value": 46429,
+      "value": 45601,
       "image": "https://jobzone.no/globalassets/kontorbilder/arendal.jpg"
     },
     {
@@ -159,7 +189,7 @@
     {
       "title": "Gjøvik",
       "description": "Innlandsby ved Mjøsa med industri og skogsområder",
-      "value": 30000,
+      "value": 30176,
       "image": "https://www.gjovik.kommune.no/handlers/bv.ashx/i15cfb16b-e4cf-4fc0-b0c7-d6af6fd0e794/w1200/q3367/kc91905602d4c/drone-utsikt-fra-eiktunet-1.jpg"
     },
     {
