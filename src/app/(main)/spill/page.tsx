@@ -11,6 +11,7 @@ import byer from "./games/byer.json";
 import fjelltopper from "./games/fjelltopper.json"
 import hits from "./games/hits.json"
 import world_population from "./games/world-population.json"
+import episoder from "./games/episoder.json"
 
 import cn from "../../../lib/className";
 import { ArrowLeft } from "lucide-react";
@@ -38,7 +39,8 @@ const GAME_LIST: GameConfig[] = [
   byer as GameConfig,
   fjelltopper as GameConfig,
   hits as GameConfig,
-  world_population as GameConfig
+  world_population as GameConfig,
+  episoder as GameConfig
 ];
 
 type Feedback = null | "riktig" | "feil";
