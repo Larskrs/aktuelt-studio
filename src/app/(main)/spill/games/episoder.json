@@ -1,0 +1,263 @@
+{
+ 
+  "title": "Tv-serier",
+  "instructions": "Hvilken Tv-serie har flest episoder?",
+  "type": "higher-lower",
+  "fallbackImage": "https://images.bauerhosting.com/empire/2024/04/100-Greatest-TV-Shows-Update.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80",
+  "id": "tv",
+  "tagline": "2025",
+  "items": [
+    {
+      "title": "Breaking Bad",
+      "description": "Kjemi lærer som blir narkotikaprodusent",
+      "value": 62,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPrUYb8cc5Sn7sQ1sxtRHM8BNKOJq7rKi3sg&s"
+    },
+    {
+      "title": "Band of Brothers",
+      "description": "Historien om 101 divisjonens Easy Company under andre verdenskrig",
+      "value": 10,
+      "image": "https://m.media-amazon.com/images/M/MV5BMWIzZTIzMGMtOGViYi00NTQ1LTlkYzctOWYzNGZlYTI1NWM3XkEyXkFqcGdeQWpybA@@._V1_.jpg"
+    },
+    {
+      "title": "The Wire",
+      "description": "Baltimore narkotikamiljø og politi",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh2NQGmJdXJxqMtCz-mr3dNaQjaqbMpQhvfQ&s",
+      "value": 60
+    },
+    {
+      "title": "Hotel Cæsar",
+      "description": "Norges største såpeopera",
+      "image": "https://m.media-amazon.com/images/M/MV5BYjMzZDFmOGItNjBhMi00NmU0LWFjN2UtMWIxYjMwMmUxNTNjXkEyXkFqcGc@._V1_.jpg",
+      "value": 3124
+    },
+    {
+      "title": "One Piece",
+      "description": "Japansk anime om pirater på jakt etter skatten One Piece",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Holmestrand_2018.png",
+      "value": 1147
+    },
+    {
+      "title": "Death Note",
+      "description": "Japansk anime om en gutt som finner en notatbok som kan drepe mennesker",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIoVRg2h3PKrhI-7QjxbFbiYFv99Tumfk0DQ&s",
+      "value": 37
+    },
+    {
+      "title": "Comunity",
+      "description": "Komedieserie om en gruppe studenter ved et community college",
+      "value": 110,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXYverROmh_8BXuZQSxoOJEhG0FY84e2jHQg&s"
+    },
+    {
+      "title": "Always Sunny in Philadelphia",
+      "description": "Komedieserie om en gruppe venner som driver en bar i Philadelphia",
+      "value": 154,
+      "image": "https://images-prod.ai.tv2.no/v2/image-packs/pfimg_pack_01jp5z32zzemftpyh9dcd4ehka?location=list&width=288"
+    },
+    {
+      "title": "How i Met Your Mother",
+      "description": "Komedieserie om en mann som forteller sine barn hvordan han møtte deres mor",
+      "value": 208,
+      "image": "https://upload.wikimedia.org/wikipedia/en/4/4d/How_I_Met_Your_Mother_%28cast%29.jpg"
+    },
+    {
+      "title": "Game of Thrones",
+      "description": "Fantasyserie basert på bøkene til George R.R. Martin",
+      "value": 73,
+      "image": "https://media.newyorker.com/photos/5cae6ad5671c64058676f05c/master/w_2560%2Cc_limit/Larson-GameofThronesPreview.jpg"
+    },
+    {
+      "title": "Pokemon",
+      "description": "Japansk anime om skapninger kalt Pokemon og deres trenere",
+      "value": 1200,
+      "image": "https://www.thonhotels.no/globalassets/hoteller/norge/hamar/hamar-dronebilde.jpg?quality=80&format=webp&width=1312&height=738"
+    },
+    {
+      "title": "Friends",
+      "description": "Komedieserie om seks venner i New York City",
+      "value": 236,
+      "image": "https://m.media-amazon.com/images/M/MV5BZGY5MTgwOGItN2Q5My00MWZhLTkzMWEtYzEzYTZkNjBmN2RiXkEyXkFqcGdeQXNvbG5vbXM@._V1_.jpg"
+    },
+    {
+      "title": "Daredevil",
+      "description": "Superheltserie om advokaten Matt Murdock som kjemper mot kriminalitet i Hell's Kitchen",
+      "value": 39,
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/8a/Daredevil_%28TV_series%29_logo.jpg"
+    },
+    {
+      "title": "The Boys",
+      "description": "Superheltserie om en gruppe vigilantes som kjemper mot korrupte superhelter",
+      "value": 32,
+      "image": "https://m.media-amazon.com/images/M/MV5BZTIwNjdjZmUtZDJmOC00M2RmLTg2NTItMTMzZjZhNTk3YjVmXkEyXkFqcGdeQWFybm8@._V1_.jpg"
+    },
+    {
+      "title": "Dragon Ball Z",
+      "description": "Japansk anime om krigere med superkrefter",
+      "value": 291,
+      "image": "https://thumbs.dreamstime.com/b/expert-artistry-ai-generated-depiction-sandefjord-vestfold-norway-sandefjord-vestfold-norway-generative-ai-273286048.jpg"
+    },
+    {
+      "title": "Side om Side",
+      "description": "Norsk komedie om naboer i et boligfelt",
+      "value": 60,
+      "image": "https://akamai.vgc.no/v2/images/8632886e-cb7c-4b33-b522-b37cd4a8c94d?format=auto&w=720&s=bd3dbb005467cebfae1b5706bd003ae572f36805"
+    },
+    {
+      "title": "Law and Order: SVU",
+      "description": "Krimserie om spesialenheten for seksuelle overgrep i New York City",
+      "value": 538,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-fGgWAvXaR58BLwETYM5g2EDmrawHH2VsRA&s"
+    },
+    {
+      "title": "Dagsrevyen",
+      "description": "Norsk nyhetsprogram på NRK",
+      "value": 15000,
+      "image": "https://gfx.nrk.no/qcw1NP0Kloxqdtk1tSABtQ7MgMnXLBY88mojzzjqx_9w.jpg"
+    },
+    {
+      "title": "Big Mouth",
+      "description": "Animert komedie om tenåringers pubertet og seksualitet",
+      "value": 40,
+      "image": "https://www.visittelemark.no/imageresizer/?image=%2Fdbimgs%2FSkien_H%C3%B8st_Alina_Skien-By_1750x600.jpg&action=FeaturedItemsScroll3x2"
+    },
+    {
+      "title": "Adventure Time",
+      "description": "Animert serie om eventyrene til en gutt og hans magiske hund i et post-apokalyptisk rike",
+      "value": 283,
+      "image": "https://g.acdn.no/obscura/API/dynamic/r1/ece5/tr_2000_2000_s_f/1544446782000/gudb/2018/12/10/13/10766084752_IMG_0941.JPG?chk=569222"
+    },
+    {
+      "title": "Galakseparken",
+      "description": "Norsk barne-tv-serie om romvesener som besøker jorden",
+      "value": 156,
+      "image": "https://gfx.nrk.no/C4orKWtV0OgkkygmQWfwQAQxyNvBubPLsIJUd0qhT4EQ"
+    },
+    {
+      "title": "Rodde og Kikkan",
+      "description": "Norsk barne-tv-serie om to tidligere dukker som har fått sitt eget Tv-show",
+      "value": 120,
+      "image": "https://gfx.nrk.no/G8xOiVCoHMWacD5hkVs3agxR6OmEAyn-cJgGgC71GbJA"
+    },
+    {
+      "title": "Paradise Hotel",
+      "description": "Norsk realityserie der single deltakere bor sammen på et luksushotell",
+      "value": 483,
+      "image": "https://g.acdn.no/obscura/API/dynamic/r1/media/tr_1200_1200_s_f/0000/nettav/images/27292231-5c68-45aa-b04a-bcc2acaeccc7/27292231-5c68-45aa-b04a-bcc2acaeccc7?chk=F63E8A"
+    },
+    {
+      "title": "The Office (US)",
+      "description": "Komedieserie om hverdagen på et kontor i Scranton, Pennsylvania",
+      "value": 201,
+      "image": "https://images-prod.ai.tv2.no/v2/image-packs/pfimg_pack_01k89p16sbf7wa87arye0py7h2?height=630"
+    },
+    {
+      "title": "The Office (UK)",
+      "description": "Komedieserie om hverdagen på et kontor i Slough, England",
+      "value": 12,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPnfaahC6A7TwDLeB-e_fvxnBK6d5J_VTQNA&s"
+    },
+    {
+      "title": "Rick & Morty",
+      "description": "Amerikansk animert serie om eventyrene til en gal vitenskapsmann og hans barnebarn",
+      "value": 61,
+      "image": "https://res.cloudinary.com/gofjords-com/images/w_2560,h_1600,c_scale/f_auto,q_auto:eco/v1698920798/Destinations/Stavanger/Stavanger-city-Harbor-sunset-summer-night/Stavanger-city-Harbor-sunset-summer-night.jpg?_i=AA"
+    },
+    {
+      "title": "Attack on Titan",
+      "description": "Japansk anime om menneskehetens kamp mot gigantiske skapninger kalt Titans",
+      "value": 87,
+      "image": "https://i.pinimg.com/736x/f0/27/63/f02763110cd225618ffa7f35eb6c353e.jpg"
+    },
+    {
+      "title": "Jul i Svingen",
+      "description": "Norsk julekalenderserie for barn",
+      "value": 24,
+      "image": "https://gfx.nrk.no/deqN1uYiQlaUjErO_zM8VAJ5abDEjx6NHeJR_3OEb3tg"
+    },
+    {
+      "title": "Linus i Svingen",
+      "description": "Norsk barne-tv-serie om gutten Linus og hans eventyr i nabolaget",
+      "value": 20,
+      "image": "https://gfx.nrk.no/qapv8kInoZieUsAJxz5M2wBnEc5qzt8FGZ3MKdXDRXIQ"
+    },
+    {
+      "title": "Re:zero - Starting Life in Another World",
+      "description": "Japansk anime om en gutt som blir transportert til en fantasy-verden",
+      "value": 75,
+      "image": "https://www.narvik.kommune.no/handlers/bv.ashx/ic5054ea8-f75b-4dd4-8ec3-54ee75f047a6/w1200/q273/k10198d7cd7e8/skjermbilde-2023-12-08-kl-151424.png"
+    },
+    {
+      "title": "Squid Game",
+      "description": "Sør-koreansk serie om en dødelig konkurranse basert på barneleker",
+      "value": 22,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvwCSCM8YnpVzsEXV_NASglwL007FLzOlVw&s"
+    },
+    {
+      "title": "Transformers: Beast Wars",
+      "description": "Japansk-amerikansk animert serie om roboter som kan forvandle seg til dyr",
+      "value": 52,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY3atEVr6L3NqSNi7Lgw344PI0Z-YQxw2p4A&s"
+    },
+    {
+      "title": "Lego: Chima",
+      "description": "Animert serie basert på Lego-leketøyserien Chima",
+      "value": 41,
+      "image": "https://i0.wp.com/blocksmag.com/wp-content/uploads/2024/01/LEGO-Legends-of-Chima-1.jpg?fit=1500%2C844&ssl=1"
+    },
+    {
+      "title": "House M.D.",
+      "description": "Medisinsk dramaserie om den geniale, men misantropiske legen Dr. Gregory House",
+      "value": 177,
+      "image": "https://i.pinimg.com/736x/74/6a/f9/746af96604b5682a3bc2a2b635261260.jpg"
+    },
+    {
+      "title": "Dexter",
+      "description": "Drama serie om en rettsmedisiner som lever et dobbeltliv som seriemorder",
+      "value": 96,
+      "image": "https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQUuRk_o7NRq_P_qHdAwRQ-YcDngVt_aDzW5KKXBB3dKAsSsj0yS5Cj71Y_UPXpYdnOJ2MdBgQputSgoXI_fpoGOeXfjxhMD8wNCWPVVBOhfmMbLOwAcbZLDO_ev85VUnyTReIEh6CzT9pzZqkrJW.jpg?r=7b4"
+    },
+    {
+      "title": "Star Wars : The Clone Wars",
+      "description": "Animert serie som følger hendelsene mellom Star Wars Episode II og III",
+      "value": 133,
+      "image": "https://cdn.mos.cms.futurecdn.net/gXYiphMdRhmWZoXKQVyjDh-1920-80.jpg"
+    },
+    {
+      "title": "High School Musical: The Musical: The Series",
+      "description": "Musikalserie om elever ved en videregående skole som setter opp en musikal basert på High School Musical-filmene",
+      "value": 30,
+      "image": "https://images-prod.ai.tv2.no/v2/image-packs/pfimg_pack_01k7f5y9vzer88xw9tvbgbty9q"
+    },
+    {
+      "title": "Teen Titan Go!",
+      "description": "Animert serie om superheltgruppen Teen Titans i en humoristisk setting",
+      "value": 412,
+      "image": "https://i0.wp.com/thenerdsofcolor.org/wp-content/uploads/2018/07/teen-titans-go-to-the-movies-trailer.png?fit=720%2C387&ssl=1"
+    },
+    {
+      "title": "Ultimate Spider-Man",
+      "description": "Animert serei basert på Marvels Spider-man",
+      "value": 104,
+      "image": "https://i.redd.it/pxhqyp5ysjo91.jpg"
+    },
+    {
+      "title": "Greys Anatomy",
+      "description": "Medisinsk dramaserie om livet til kirurger ved et sykehus i Seattle",
+      "value": 450,
+      "image": "https://i0.wp.com/highschool.latimes.com/wp-content/uploads/2022/05/Greys-Article-.webp?fit=2200%2C1238&ssl=1"
+    },
+    {
+      "title": "Lego Ninjago: Masters of Spinjitzu",
+      "description": "Animert serie om Ninjago-krigere som beskytter sin verden mot onde krefter",
+      "value": 210,
+      "image": "https://www.toypro.com/uploads/files/1861.webp"
+    },
+    {
+      "title": "Family Guy",
+      "description": "Animert serie om familien Griffin og deres absurde eventyr i byen Quahog",
+      "value": 435,
+      "image": "https://m.media-amazon.com/images/S/pv-target-images/8a031fd8fb0125843feef9704062f083e55d08b8b3db7a9a41a756c638f5a62e._SX1080_FMjpg_.jpg"
+    }
+  ]
+}
